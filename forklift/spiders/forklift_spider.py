@@ -1,6 +1,8 @@
 import scrapy
 from scrapy.selector import Selector
 from scrapy.crawler import CrawlerProcess
+from selenium import webdriver
+from selenium.webdriver.common.keys import Keys
 
 import time
 import sys
@@ -9,9 +11,15 @@ import os
 
 class ForkliftSpider(scrapy.Spider):
     name = "forklift"
-    start_urls = [
-        'https://www.forklift-international.com/en/e/staplersuche.php?bhvon=0&hhvon=0&fhvon=0&bhbis=20000&hhbis=50000&fhbis=10000&baujahr=0&bjbis=2100&hatbild=0&tkvon=0&tkbis=200000&preisvon=0&preisbis=1000000&antriebsart=*&plz=&entfernung=0&Bauart=alle&reifen=*&Fabrikat=alle&masttypid=alle&landid=kont&sonderbit=0&sortorder=14&page=1'
-    ]
+    start_urls = []
+    # open the file fo the links created to crawl
+    file = open('crawl_links.txt', 'r')
+    # read each line and append to start_urls
+    for url in file.readlines():
+        start_urls.append(url)
+
+    # close file when done writing
+    file.close()
     TMP_FILE = os.path.join(os.path.dirname(sys.modules['forklift'].__file__), 'tmp/forklift.csv')
 
     custom_settings = {
@@ -375,11 +383,11 @@ process = CrawlerProcess({
     # 'FEED_URI': TMP_FILE,
     # 'FEED_EXPORT_FIELDS': FIELDS,
 })
-process.crawl(ForkliftSpider)
+# process.crawl(ForkliftSpider)
 # process.crawl(TradusSpider)
 # process.crawl(MascusSpider)
-process.crawl(SupraliftSpider)
-process.start()
+# process.crawl(SupraliftSpider)
+# process.start()
 # TODO: open files and import into gsheets
 # TODO: Combine common fields into on gsheet
 # TODO: get all url combinations for forklift international

@@ -1,0 +1,27 @@
+https://www.forklift-international.com/us/e/staplersuche.php?sortorder=2&
+Bauart=alle
+&Fabrikat=alle
+&sonderbit=0
+&typ=
+&antriebsart=*
+&masttypid=alle
+&tkvon=0        #capcity from
+&tkbis=200000   # capacity to
+&hhvon=0        # lift height from
+&hhbis=50000    #  lift height to
+&bhvon=0
+&bhbis=780
+&fhvon=0
+&fhbis=390
+&bjbis=2019
+&baujahr=0
+&hrs=100000
+&preisvon=0
+&hatbild=0
+&reifen=*
+&preisbis=10000000
+&landid=70          # country code
+&plz=
+&entfernung=1000
+
+country

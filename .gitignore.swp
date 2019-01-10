@@ -1,1 +1,8 @@
-tmp/allforklift.csvcaptcha_bypassspiders/text.txt
+tmp/allforklift.csv
+captcha_bypass
+spiders/text.txt
+spiders/country.txt
+spiders/crawl_links.txt
+spiders/urls.txt
+scripts/crawl_links.txt
+scripts/url_builder.py
