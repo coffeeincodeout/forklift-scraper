@@ -7,11 +7,14 @@ from selenium.webdriver.common.keys import Keys
 import time
 import sys
 import os
+import re
 
 
 class ForkliftSpider(scrapy.Spider):
     name = "forklift"
-    start_urls = []
+    start_urls = [
+        'https://www.forklift-international.com/de/'
+    ]
     # open the file fo the links created to crawl
     file = open('crawl_links.txt', 'r')
     # read each line and append to start_urls
@@ -35,16 +38,61 @@ class ForkliftSpider(scrapy.Spider):
 
     # parse data from the first page
     def parse(self, response):
+        url = response.url
+        # start chrome web driver. This will need to be changed to headless to run in the background
+        options = webdriver.ChromeOptions()
+        options.add_argument('headless')
+        driver = webdriver.Chrome(chrome_options=options)
+        driver.get(url)
+        time.sleep(3)
+        # //*[@id="cookieModal"]/div/div/div/h2/button
+        cookies_button = driver.find_element_by_xpath('//*[@id="cookieModal"]/div/div/div/h2/button')
+        if cookies_button:
+            cookies_button.click()
+        time.sleep(2)
+        # button with number //*[@id="treffer"]
+        search_button_text = driver.find_element_by_xpath('//*[@id="treffer"]').text
+        # extract the number from the text
+        number = re.search('[^A-z.>+]', search_button_text)
+        # if the number is greater than 500 begin filtering the data to lower the search amount
+        if number.group().strip() == '500':
+            # loop through a 2 lists and update the
+            von_list = list(range(0, 20001, 1000))
+            bis_list = list(range(1001, 20002, 1000))
+            for von, bis in zip(von_list, bis_list):
+                # clear field and enter a search number
+                tragkraft_von = driver.find_element_by_xpath('//*[@id="tkvon"]').clear()
+                tragkraft_von = driver.find_element_by_xpath('//*[@id="tkvon"]')
+                tragkraft_von.send_keys(von)
+                tragkraft_bis = driver.find_element_by_xpath('//*[@id="tkbis"]').clear()
+                tragkraft_bis = driver.find_element_by_xpath('//*[@id="tkbis"]')
+                tragkraft_bis.send_keys(bis)
+                # submit search results
+                search_button = driver.find_element_by_xpath('//*[@id="treffer"]').click()
+                # pause to allow page to load
+                time.sleep(5)
+                # pass url to scrapy to parse
+                page_url = driver.current_url
+                yield scrapy.Request(page_url, callback=self.getPageUrls)
+
+            driver.close()
+        # close the driver
+        driver.close()
+        yield scrapy.Request(url, callback=self.getPageUrls)
+
+    # second parser for link extraction
+    def getPageUrls(self, response):
         # get products url and pass to get_product
         for url in response.css('div.card > a::attr(href)').extract():
-            yield response.follow(url, callback=self.get_product)
+            products_url = response.urljoin(url)
+            yield scrapy.Request(products_url, callback=self.get_product)
         # parse pagination
-        for href in response.css('ul.pagination > li:nth-child(7) > a::attr(href)'):
-            yield response.follow(href, callback=self.parse)
+        for href in response.css('ul.pagination > li:nth-child(7) > a::attr(href)').extract():
+            pagination = response.urljoin(href)
+            yield scrapy.Request(pagination, callback=self.getPageUrls)
 
-    # second parser for the products page
+    # third parser for the products page
     def get_product(self, response):
-
         # page url
         page_url = response.url
         company = response.css("div > div.panel-body.panel-contact > p:nth-child(2)::text").extract_first()
@@ -388,7 +436,3 @@ process = CrawlerProcess({
 # process.crawl(MascusSpider)
 # process.crawl(SupraliftSpider)
 # process.start()
-# TODO: open files and import into gsheets
-# TODO: Combine common fields into on gsheet
-# TODO: get all url combinations for forklift international
-# TODO: Scrub the data in the dealer crawler
