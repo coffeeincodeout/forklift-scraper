@@ -13,16 +13,47 @@ import re
 class ForkliftSpider(scrapy.Spider):
     name = "forklift"
     start_urls = [
-        'https://www.forklift-international.com/de/'
-    ]
-    # open the file fo the links created to crawl
-    file = open('crawl_links.txt', 'r')
-    # read each line and append to start_urls
-    for url in file.readlines():
-        start_urls.append(url)
+        'https://www.forklift-international.com/en/e/staplersuche.php?sortorder=14&Bauart=alle&Fabrikat=alle&sonderbit=0&typ=&antriebsart=*&masttypid=alle&tkvon=0&tkbis=200000&hhvon=0&hhbis=50000&bhvon=0&bhbis=20000&fhvon=0&fhbis=10000&bjbis=2019&baujahr=0&hrs=100000&preisvon=0&hatbild=0&reifen=*&preisbis=1000000&landid=37&plz=&entfernung=1000'
+        'https://www.forklift-international.com/en/e/staplersuche.php?sortorder=14&Bauart=alle&Fabrikat=alle&sonderbit=0&typ=&antriebsart=*&masttypid=alle&tkvon=0&tkbis=200000&hhvon=0&hhbis=50000&bhvon=0&bhbis=20000&fhvon=0&fhbis=10000&bjbis=2019&baujahr=0&hrs=100000&preisvon=0&hatbild=0&reifen=*&preisbis=1000000&landid=2&plz=&entfernung=1000'
+        'https://www.forklift-international.com/en/e/staplersuche.php?sortorder=14&Bauart=alle&Fabrikat=alle&sonderbit=0&typ=&antriebsart=*&masttypid=alle&tkvon=0&tkbis=200000&hhvon=0&hhbis=50000&bhvon=0&bhbis=20000&fhvon=0&fhbis=10000&bjbis=2019&baujahr=0&hrs=100000&preisvon=0&hatbild=0&reifen=*&preisbis=1000000&landid=7&plz=&entfernung=1000'
+        'https://www.forklift-international.com/en/e/staplersuche.php?sortorder=14&Bauart=alle&Fabrikat=alle&sonderbit=0&typ=&antriebsart=*&masttypid=alle&tkvon=0&tkbis=200000&hhvon=0&hhbis=50000&bhvon=0&bhbis=20000&fhvon=0&fhbis=10000&bjbis=2019&baujahr=0&hrs=100000&preisvon=0&hatbild=0&reifen=*&preisbis=1000000&landid=41&plz=&entfernung=1000'
+        'https://www.forklift-international.com/en/e/staplersuche.php?sortorder=14&Bauart=alle&Fabrikat=alle&sonderbit=0&typ=&antriebsart=*&masttypid=alle&tkvon=0&tkbis=200000&hhvon=0&hhbis=50000&bhvon=0&bhbis=20000&fhvon=0&fhbis=10000&bjbis=2019&baujahr=0&hrs=100000&preisvon=0&hatbild=0&reifen=*&preisbis=1000000&landid=15&plz=&entfernung=1000'
+        'https://www.forklift-international.com/en/e/staplersuche.php?sortorder=14&Bauart=alle&Fabrikat=alle&sonderbit=0&typ=&antriebsart=*&masttypid=alle&tkvon=0&tkbis=200000&hhvon=0&hhbis=50000&bhvon=0&bhbis=20000&fhvon=0&fhbis=10000&bjbis=2019&baujahr=0&hrs=100000&preisvon=0&hatbild=0&reifen=*&preisbis=1000000&landid=3&plz=&entfernung=1000'
+        'https://www.forklift-international.com/en/e/staplersuche.php?sortorder=14&Bauart=alle&Fabrikat=alle&sonderbit=0&typ=&antriebsart=*&masttypid=alle&tkvon=0&tkbis=200000&hhvon=0&hhbis=50000&bhvon=0&bhbis=20000&fhvon=0&fhbis=10000&bjbis=2019&baujahr=0&hrs=100000&preisvon=0&hatbild=0&reifen=*&preisbis=1000000&landid=1&plz=&entfernung=1000'
+        'https://www.forklift-international.com/en/e/staplersuche.php?sortorder=14&Bauart=alle&Fabrikat=alle&sonderbit=0&typ=&antriebsart=*&masttypid=alle&tkvon=0&tkbis=200000&hhvon=0&hhbis=50000&bhvon=0&bhbis=20000&fhvon=0&fhbis=10000&bjbis=2019&baujahr=0&hrs=100000&preisvon=0&hatbild=0&reifen=*&preisbis=1000000&landid=23&plz=&entfernung=1000'
+        'https://www.forklift-international.com/en/e/staplersuche.php?sortorder=14&Bauart=alle&Fabrikat=alle&sonderbit=0&typ=&antriebsart=*&masttypid=alle&tkvon=0&tkbis=200000&hhvon=0&hhbis=50000&bhvon=0&bhbis=20000&fhvon=0&fhbis=10000&bjbis=2019&baujahr=0&hrs=100000&preisvon=0&hatbild=0&reifen=*&preisbis=1000000&landid=29&plz=&entfernung=1000'
+        'https://www.forklift-international.com/en/e/staplersuche.php?sortorder=14&Bauart=alle&Fabrikat=alle&sonderbit=0&typ=&antriebsart=*&masttypid=alle&tkvon=0&tkbis=200000&hhvon=0&hhbis=50000&bhvon=0&bhbis=20000&fhvon=0&fhbis=10000&bjbis=2019&baujahr=0&hrs=100000&preisvon=0&hatbild=0&reifen=*&preisbis=1000000&landid=11&plz=&entfernung=1000'
+        'https://www.forklift-international.com/en/e/staplersuche.php?sortorder=14&Bauart=alle&Fabrikat=alle&sonderbit=0&typ=&antriebsart=*&masttypid=alle&tkvon=0&tkbis=200000&hhvon=0&hhbis=50000&bhvon=0&bhbis=20000&fhvon=0&fhbis=10000&bjbis=2019&baujahr=0&hrs=100000&preisvon=0&hatbild=0&reifen=*&preisbis=1000000&landid=16&plz=&entfernung=1000'
+        'https://www.forklift-international.com/en/e/staplersuche.php?sortorder=14&Bauart=alle&Fabrikat=alle&sonderbit=0&typ=&antriebsart=*&masttypid=alle&tkvon=0&tkbis=200000&hhvon=0&hhbis=50000&bhvon=0&bhbis=20000&fhvon=0&fhbis=10000&bjbis=2019&baujahr=0&hrs=100000&preisvon=0&hatbild=0&reifen=*&preisbis=1000000&landid=20&plz=&entfernung=1000'
+        'https://www.forklift-international.com/en/e/staplersuche.php?sortorder=14&Bauart=alle&Fabrikat=alle&sonderbit=0&typ=&antriebsart=*&masttypid=alle&tkvon=0&tkbis=200000&hhvon=0&hhbis=50000&bhvon=0&bhbis=20000&fhvon=0&fhbis=10000&bjbis=2019&baujahr=0&hrs=100000&preisvon=0&hatbild=0&reifen=*&preisbis=1000000&landid=21&plz=&entfernung=1000'
+        'https://www.forklift-international.com/en/e/staplersuche.php?sortorder=14&Bauart=alle&Fabrikat=alle&sonderbit=0&typ=&antriebsart=*&masttypid=alle&tkvon=0&tkbis=200000&hhvon=0&hhbis=50000&bhvon=0&bhbis=20000&fhvon=0&fhbis=10000&bjbis=2019&baujahr=0&hrs=100000&preisvon=0&hatbild=0&reifen=*&preisbis=1000000&landid=47&plz=&entfernung=1000'
+        'https://www.forklift-international.com/en/e/staplersuche.php?sortorder=14&Bauart=alle&Fabrikat=alle&sonderbit=0&typ=&antriebsart=*&masttypid=alle&tkvon=0&tkbis=200000&hhvon=0&hhbis=50000&bhvon=0&bhbis=20000&fhvon=0&fhbis=10000&bjbis=2019&baujahr=0&hrs=100000&preisvon=0&hatbild=0&reifen=*&preisbis=1000000&landid=18&plz=&entfernung=1000'
+        'https://www.forklift-international.com/en/e/staplersuche.php?sortorder=14&Bauart=alle&Fabrikat=alle&sonderbit=0&typ=&antriebsart=*&masttypid=alle&tkvon=0&tkbis=200000&hhvon=0&hhbis=50000&bhvon=0&bhbis=20000&fhvon=0&fhbis=10000&bjbis=2019&baujahr=0&hrs=100000&preisvon=0&hatbild=0&reifen=*&preisbis=1000000&landid=35&plz=&entfernung=1000'
+        'https://www.forklift-international.com/en/e/staplersuche.php?sortorder=14&Bauart=alle&Fabrikat=alle&sonderbit=0&typ=&antriebsart=*&masttypid=alle&tkvon=0&tkbis=200000&hhvon=0&hhbis=50000&bhvon=0&bhbis=20000&fhvon=0&fhbis=10000&bjbis=2019&baujahr=0&hrs=100000&preisvon=0&hatbild=0&reifen=*&preisbis=1000000&landid=5&plz=&entfernung=1000'
+        'https://www.forklift-international.com/en/e/staplersuche.php?sortorder=14&Bauart=alle&Fabrikat=alle&sonderbit=0&typ=&antriebsart=*&masttypid=alle&tkvon=0&tkbis=200000&hhvon=0&hhbis=50000&bhvon=0&bhbis=20000&fhvon=0&fhbis=10000&bjbis=2019&baujahr=0&hrs=100000&preisvon=0&hatbild=0&reifen=*&preisbis=1000000&landid=19&plz=&entfernung=1000'
+        'https://www.forklift-international.com/en/e/staplersuche.php?sortorder=14&Bauart=alle&Fabrikat=alle&sonderbit=0&typ=&antriebsart=*&masttypid=alle&tkvon=0&tkbis=200000&hhvon=0&hhbis=50000&bhvon=0&bhbis=20000&fhvon=0&fhbis=10000&bjbis=2019&baujahr=0&hrs=100000&preisvon=0&hatbild=0&reifen=*&preisbis=1000000&landid=57&plz=&entfernung=1000'
+        'https://www.forklift-international.com/en/e/staplersuche.php?sortorder=14&Bauart=alle&Fabrikat=alle&sonderbit=0&typ=&antriebsart=*&masttypid=alle&tkvon=0&tkbis=200000&hhvon=0&hhbis=50000&bhvon=0&bhbis=20000&fhvon=0&fhbis=10000&bjbis=2019&baujahr=0&hrs=100000&preisvon=0&hatbild=0&reifen=*&preisbis=1000000&landid=59&plz=&entfernung=1000'
+        'https://www.forklift-international.com/en/e/staplersuche.php?sortorder=14&Bauart=alle&Fabrikat=alle&sonderbit=0&typ=&antriebsart=*&masttypid=alle&tkvon=0&tkbis=200000&hhvon=0&hhbis=50000&bhvon=0&bhbis=20000&fhvon=0&fhbis=10000&bjbis=2019&baujahr=0&hrs=100000&preisvon=0&hatbild=0&reifen=*&preisbis=1000000&landid=33&plz=&entfernung=1000'
+        'https://www.forklift-international.com/en/e/staplersuche.php?sortorder=14&Bauart=alle&Fabrikat=alle&sonderbit=0&typ=&antriebsart=*&masttypid=alle&tkvon=0&tkbis=200000&hhvon=0&hhbis=50000&bhvon=0&bhbis=20000&fhvon=0&fhbis=10000&bjbis=2019&baujahr=0&hrs=100000&preisvon=0&hatbild=0&reifen=*&preisbis=1000000&landid=4&plz=&entfernung=1000'
+        'https://www.forklift-international.com/en/e/staplersuche.php?sortorder=14&Bauart=alle&Fabrikat=alle&sonderbit=0&typ=&antriebsart=*&masttypid=alle&tkvon=0&tkbis=200000&hhvon=0&hhbis=50000&bhvon=0&bhbis=20000&fhvon=0&fhbis=10000&bjbis=2019&baujahr=0&hrs=100000&preisvon=0&hatbild=0&reifen=*&preisbis=1000000&landid=27&plz=&entfernung=1000'
+        'https://www.forklift-international.com/en/e/staplersuche.php?sortorder=14&Bauart=alle&Fabrikat=alle&sonderbit=0&typ=&antriebsart=*&masttypid=alle&tkvon=0&tkbis=200000&hhvon=0&hhbis=50000&bhvon=0&bhbis=20000&fhvon=0&fhbis=10000&bjbis=2019&baujahr=0&hrs=100000&preisvon=0&hatbild=0&reifen=*&preisbis=1000000&landid=6&plz=&entfernung=1000'
+        'https://www.forklift-international.com/en/e/staplersuche.php?sortorder=14&Bauart=alle&Fabrikat=alle&sonderbit=0&typ=&antriebsart=*&masttypid=alle&tkvon=0&tkbis=200000&hhvon=0&hhbis=50000&bhvon=0&bhbis=20000&fhvon=0&fhbis=10000&bjbis=2019&baujahr=0&hrs=100000&preisvon=0&hatbild=0&reifen=*&preisbis=1000000&landid=24&plz=&entfernung=1000'
+        'https://www.forklift-international.com/en/e/staplersuche.php?sortorder=14&Bauart=alle&Fabrikat=alle&sonderbit=0&typ=&antriebsart=*&masttypid=alle&tkvon=0&tkbis=200000&hhvon=0&hhbis=50000&bhvon=0&bhbis=20000&fhvon=0&fhbis=10000&bjbis=2019&baujahr=0&hrs=100000&preisvon=0&hatbild=0&reifen=*&preisbis=1000000&landid=14&plz=&entfernung=1000'
+        'https://www.forklift-international.com/en/e/staplersuche.php?sortorder=14&Bauart=alle&Fabrikat=alle&sonderbit=0&typ=&antriebsart=*&masttypid=alle&tkvon=0&tkbis=200000&hhvon=0&hhbis=50000&bhvon=0&bhbis=20000&fhvon=0&fhbis=10000&bjbis=2019&baujahr=0&hrs=100000&preisvon=0&hatbild=0&reifen=*&preisbis=1000000&landid=63&plz=&entfernung=1000'
+        'https://www.forklift-international.com/en/e/staplersuche.php?sortorder=14&Bauart=alle&Fabrikat=alle&sonderbit=0&typ=&antriebsart=*&masttypid=alle&tkvon=0&tkbis=200000&hhvon=0&hhbis=50000&bhvon=0&bhbis=20000&fhvon=0&fhbis=10000&bjbis=2019&baujahr=0&hrs=100000&preisvon=0&hatbild=0&reifen=*&preisbis=1000000&landid=26&plz=&entfernung=1000'
+        'https://www.forklift-international.com/en/e/staplersuche.php?sortorder=14&Bauart=alle&Fabrikat=alle&sonderbit=0&typ=&antriebsart=*&masttypid=alle&tkvon=0&tkbis=200000&hhvon=0&hhbis=50000&bhvon=0&bhbis=20000&fhvon=0&fhbis=10000&bjbis=2019&baujahr=0&hrs=100000&preisvon=0&hatbild=0&reifen=*&preisbis=1000000&landid=12&plz=&entfernung=1000'
+        'https://www.forklift-international.com/en/e/staplersuche.php?sortorder=14&Bauart=alle&Fabrikat=alle&sonderbit=0&typ=&antriebsart=*&masttypid=alle&tkvon=0&tkbis=200000&hhvon=0&hhbis=50000&bhvon=0&bhbis=20000&fhvon=0&fhbis=10000&bjbis=2019&baujahr=0&hrs=100000&preisvon=0&hatbild=0&reifen=*&preisbis=1000000&landid=65&plz=&entfernung=1000'
+        'https://www.forklift-international.com/en/e/staplersuche.php?sortorder=14&Bauart=alle&Fabrikat=alle&sonderbit=0&typ=&antriebsart=*&masttypid=alle&tkvon=0&tkbis=200000&hhvon=0&hhbis=50000&bhvon=0&bhbis=20000&fhvon=0&fhbis=10000&bjbis=2019&baujahr=0&hrs=100000&preisvon=0&hatbild=0&reifen=*&preisbis=1000000&landid=25&plz=&entfernung=1000'
+        'https://www.forklift-international.com/en/e/staplersuche.php?sortorder=14&Bauart=alle&Fabrikat=alle&sonderbit=0&typ=&antriebsart=*&masttypid=alle&tkvon=0&tkbis=200000&hhvon=0&hhbis=50000&bhvon=0&bhbis=20000&fhvon=0&fhbis=10000&bjbis=2019&baujahr=0&hrs=100000&preisvon=0&hatbild=0&reifen=*&preisbis=1000000&landid=13&plz=&entfernung=1000'
+        'https://www.forklift-international.com/en/e/staplersuche.php?sortorder=14&Bauart=alle&Fabrikat=alle&sonderbit=0&typ=&antriebsart=*&masttypid=alle&tkvon=0&tkbis=200000&hhvon=0&hhbis=50000&bhvon=0&bhbis=20000&fhvon=0&fhbis=10000&bjbis=2019&baujahr=0&hrs=100000&preisvon=0&hatbild=0&reifen=*&preisbis=1000000&landid=10&plz=&entfernung=1000'
+        'https://www.forklift-international.com/en/e/staplersuche.php?sortorder=14&Bauart=alle&Fabrikat=alle&sonderbit=0&typ=&antriebsart=*&masttypid=alle&tkvon=0&tkbis=200000&hhvon=0&hhbis=50000&bhvon=0&bhbis=20000&fhvon=0&fhbis=10000&bjbis=2019&baujahr=0&hrs=100000&preisvon=0&hatbild=0&reifen=*&preisbis=1000000&landid=61&plz=&entfernung=1000'
+        'https://www.forklift-international.com/en/e/staplersuche.php?sortorder=14&Bauart=alle&Fabrikat=alle&sonderbit=0&typ=&antriebsart=*&masttypid=alle&tkvon=0&tkbis=200000&hhvon=0&hhbis=50000&bhvon=0&bhbis=20000&fhvon=0&fhbis=10000&bjbis=2019&baujahr=0&hrs=100000&preisvon=0&hatbild=0&reifen=*&preisbis=1000000&landid=8&plz=&entfernung=1000'
+        'https://www.forklift-international.com/en/e/staplersuche.php?sortorder=14&Bauart=alle&Fabrikat=alle&sonderbit=0&typ=&antriebsart=*&masttypid=alle&tkvon=0&tkbis=200000&hhvon=0&hhbis=50000&bhvon=0&bhbis=20000&fhvon=0&fhbis=10000&bjbis=2019&baujahr=0&hrs=100000&preisvon=0&hatbild=0&reifen=*&preisbis=1000000&landid=32&plz=&entfernung=1000'
+        'https://www.forklift-international.com/en/e/staplersuche.php?sortorder=14&Bauart=alle&Fabrikat=alle&sonderbit=0&typ=&antriebsart=*&masttypid=alle&tkvon=0&tkbis=200000&hhvon=0&hhbis=50000&bhvon=0&bhbis=20000&fhvon=0&fhbis=10000&bjbis=2019&baujahr=0&hrs=100000&preisvon=0&hatbild=0&reifen=*&preisbis=1000000&landid=22&plz=&entfernung=1000'
+        'https://www.forklift-international.com/en/e/staplersuche.php?sortorder=14&Bauart=alle&Fabrikat=alle&sonderbit=0&typ=&antriebsart=*&masttypid=alle&tkvon=0&tkbis=200000&hhvon=0&hhbis=50000&bhvon=0&bhbis=20000&fhvon=0&fhbis=10000&bjbis=2019&baujahr=0&hrs=100000&preisvon=0&hatbild=0&reifen=*&preisbis=1000000&landid=31&plz=&entfernung=1000'
 
-    # close file when done writing
-    file.close()
+    ]
+
     TMP_FILE = os.path.join(os.path.dirname(sys.modules['forklift'].__file__), 'tmp/forklift.csv')
 
     custom_settings = {
@@ -33,7 +64,6 @@ class ForkliftSpider(scrapy.Spider):
         'CONCURRENT_REQUESTS_PER_DOMAIN': 1,
         'AUTOTHROTTLE_ENABLED': True,
         'AUTOTHROTTLE_START_DELAY': 8,
-
     }
 
     # parse data from the first page
@@ -53,7 +83,7 @@ class ForkliftSpider(scrapy.Spider):
         # button with number //*[@id="treffer"]
         search_button_text = driver.find_element_by_xpath('//*[@id="treffer"]').text
         # extract the number from the text
-        number = re.search('[^A-z.>+]', search_button_text)
+        number = re.search('[^A-z.>]+', search_button_text)
         # if the number is greater than 500 begin filtering the data to lower the search amount
         if number.group().strip() == '500':
             # loop through a 2 lists and update the
@@ -73,23 +103,27 @@ class ForkliftSpider(scrapy.Spider):
                 time.sleep(5)
                 # pass url to scrapy to parse
                 page_url = driver.current_url
-                yield scrapy.Request(page_url, callback=self.getPageUrls)
+                yield scrapy.Request(page_url, callback=self.pageFollow)
 
             driver.close()
-        # close the driver
-        driver.close()
-        yield scrapy.Request(url, callback=self.getPageUrls)
+        else:
+            # close the driver
+            driver.close()
+            url = response.url
+            yield scrapy.Request(url, callback=self.pageFollow)
 
-    # second parser for link extraction
-    def getPageUrls(self, response):
-        # get products url and pass to get_product
-        for url in response.css('div.card > a::attr(href)').extract():
+
+    # second function to parse pages
+    def pageFollow(self, response):
+        # get individual urls for each forklift
+        for url in response.css('div.card > a.btn.detail.haslink::attr(href)').extract():
             products_url = response.urljoin(url)
             yield scrapy.Request(products_url, callback=self.get_product)
         # parse pagination
-        for href in response.css('ul.pagination > li:nth-child(7) > a::attr(href)').extract():
-            pagination = response.urljoin(href)
-            yield scrapy.Request(pagination, callback=self.getPageUrls)
+        pagination = response.css('ul.pagination > li > a[aria-label="Next"]::attr(href)').extract_first()
+        if pagination is not None:
+            pagination = response.urljoin(pagination)
+            yield scrapy.Request(pagination, callback=self.pageFollow)
 
     # third parser for the products page
     def get_product(self, response):

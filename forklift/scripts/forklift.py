@@ -8,7 +8,9 @@ import time
 url = 'https://www.forklift-international.com/de/e/staplersuche.php?sortorder=14&Bauart=alle&Fabrikat=alle&sonderbit=0&typ=&antriebsart=*&masttypid=alle&tkvon=0&tkbis=200000&hhvon=0&hhbis=50000&bhvon=0&bhbis=20000&fhvon=0&fhbis=10000&bjbis=2019&baujahr=0&hrs=100000&preisvon=0&hatbild=0&reifen=*&preisbis=1000000&landid=2&plz=&entfernung=1000'
 url2 = 'https://www.forklift-international.com/de/e/staplersuche.php?bhvon=0&preisvon=0&fhvon=0&bhbis=20000&fhbis=10000&bjbis=2019&hatbild=0&masttypid=alle&antriebsart=*&reifen=*&typ=&sonderbit=0&hrs=100000&Bauart=alle&baujahr=0&tkvon=0&hhvon=0&landid=37&entfernung=0&Fabrikat=alle&preisbis=1000000&tkbis=200000&hhbis=50000&Treffer='
 # start chrome web driver. This will need to be changed to headless to run in the background
-driver = webdriver.Chrome()
+options = webdriver.ChromeOptions()
+options.add_argument('headless')
+driver = webdriver.Chrome(chrome_options=options)
 driver.get(url)
 time.sleep(3)
 # //*[@id="cookieModal"]/div/div/div/h2/button
@@ -39,7 +41,9 @@ if number.group().strip() == '500':
         time.sleep(10)
         # pass url to scrapy to parse
         page_url = driver.current_url
-        print(page_url)
+        file = open('page_urls.txt', 'a')
+        file.write(page_url + "\n")
+        file.close()
 
     driver.close()
 
