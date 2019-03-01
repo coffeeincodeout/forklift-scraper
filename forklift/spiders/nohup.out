@@ -1,0 +1,1006 @@
+2019-01-30 14:56:09 [scrapy.utils.log] INFO: Scrapy 1.5.1 started (bot: scrapybot)
+2019-01-30 14:56:09 [scrapy.utils.log] INFO: Versions: lxml 4.2.5.0, libxml2 2.9.8, cssselect 1.0.3, parsel 1.5.1, w3lib 1.19.0, Twisted 18.9.0, Python 3.6.7 (default, Oct 22 2018, 11:32:17) - [GCC 8.2.0], pyOpenSSL 18.0.0 (OpenSSL 1.1.0j  20 Nov 2018), cryptography 2.4.2, Platform Linux-4.15.0-44-generic-x86_64-with-Ubuntu-18.04-bionic
+2019-01-30 14:56:09 [scrapy.utils.log] INFO: Scrapy 1.5.1 started (bot: forklift)
+2019-01-30 14:56:09 [scrapy.utils.log] INFO: Versions: lxml 4.2.5.0, libxml2 2.9.8, cssselect 1.0.3, parsel 1.5.1, w3lib 1.19.0, Twisted 18.9.0, Python 3.6.7 (default, Oct 22 2018, 11:32:17) - [GCC 8.2.0], pyOpenSSL 18.0.0 (OpenSSL 1.1.0j  20 Nov 2018), cryptography 2.4.2, Platform Linux-4.15.0-44-generic-x86_64-with-Ubuntu-18.04-bionic
+2019-01-30 14:56:09 [scrapy.crawler] INFO: Overridden settings: {'AUTOTHROTTLE_ENABLED': True, 'AUTOTHROTTLE_START_DELAY': 8, 'BOT_NAME': 'forklift', 'CONCURRENT_REQUESTS': 1, 'CONCURRENT_REQUESTS_PER_DOMAIN': 1, 'DOWNLOAD_DELAY': 8, 'FEED_FORMAT': 'csv', 'FEED_URI': '/home/coffeeincodeout/developer/forklift-crawler/forklift/forklift/tmp/testurls.csv', 'NEWSPIDER_MODULE': 'forklift.spiders', 'RETRY_HTTP_CODES': [500, 503, 504, 400, 403, 404, 408], 'RETRY_TIMES': 10, 'SPIDER_MODULES': ['forklift.spiders']}
+2019-01-30 14:56:09 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.memusage.MemoryUsage',
+ 'scrapy.extensions.feedexport.FeedExporter',
+ 'scrapy.extensions.logstats.LogStats',
+ 'scrapy.extensions.throttle.AutoThrottle']
+2019-01-30 14:56:09 [py.warnings] WARNING: /home/coffeeincodeout/developer/forklift-crawler/lib/python3.6/site-packages/scrapy/utils/deprecate.py:156: ScrapyDeprecationWarning: `scrapy.contrib.downloadermiddleware.useragent.UserAgentMiddleware` class is deprecated, use `scrapy.downloadermiddlewares.useragent.UserAgentMiddleware` instead
+  ScrapyDeprecationWarning)
+
+2019-01-30 14:56:09 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy_proxies.RandomProxy',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy_fake_useragent.middleware.RandomUserAgentMiddleware',
+ 'forklift.middlewares.ForkliftDownloaderMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2019-01-30 14:56:09 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2019-01-30 14:56:09 [scrapy.middleware] INFO: Enabled item pipelines:
+['scrapy.pipelines.images.ImagesPipeline',
+ 'forklift.pipelines.ForkliftPipeline']
+2019-01-30 14:56:09 [scrapy.core.engine] INFO: Spider opened
+2019-01-30 14:56:09 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2019-01-30 14:56:09 [forklifttest] INFO: Spider opened: forklifttest
+2019-01-30 14:56:09 [scrapy.extensions.telnet] DEBUG: Telnet console listening on 127.0.0.1:6024
+2019-01-30 14:56:09 [scrapy.proxies] DEBUG: Proxy user pass not found
+2019-01-30 14:56:09 [scrapy.proxies] DEBUG: Using proxy <http://154.73.45.206:39173>, 221 proxies left
+2019-01-30 14:56:09 [scrapy_fake_useragent.middleware] DEBUG: Assign User-Agent Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.67 Safari/537.36 to Proxy None
+2019-01-30 14:56:11 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.forklift-international.com/de/e/staplersuche.php?sortorder=2&Bauart=4%2C4&Fabrikat=Linde&sonderbit=0&typ=&antriebsart=*&masttypid=alle&tkvon=2501&tkbis=3000&hhvon=0&hhbis=50000&bhvon=0&bhbis=20000&fhvon=0&fhbis=10000&bjbis=2019&baujahr=0&hrs=100000&preisvon=0&hatbild=0&reifen=*&preisbis=1000000&landid=37&entfernung=0> (referer: None)
+2019-01-30 14:56:11 [scrapy.proxies] DEBUG: Proxy user pass not found
+2019-01-30 14:56:11 [scrapy.proxies] DEBUG: Using proxy <http://118.174.220.154:55124>, 221 proxies left
+2019-01-30 14:56:11 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.forklift-international.com/de/e/staplersuche.php?sortorder=2&Bauart=4%2C4&Fabrikat=Linde&sonderbit=0&typ=&antriebsart=*&masttypid=alle&tkvon=2501&tkbis=3000&hhvon=0&hhbis=50000&bhvon=0&bhbis=20000&fhvon=0&fhbis=10000&bjbis=2019&baujahr=0&hrs=100000&preisvon=0&hatbild=0&reifen=*&preisbis=1000000&landid=37&entfernung=0> (referer: None)
+Traceback (most recent call last):
+  File "/home/coffeeincodeout/developer/forklift-crawler/lib/python3.6/site-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/home/coffeeincodeout/developer/forklift-crawler/lib/python3.6/site-packages/scrapy/spidermiddlewares/offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "/home/coffeeincodeout/developer/forklift-crawler/lib/python3.6/site-packages/scrapy/spidermiddlewares/referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/home/coffeeincodeout/developer/forklift-crawler/lib/python3.6/site-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/home/coffeeincodeout/developer/forklift-crawler/lib/python3.6/site-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/home/coffeeincodeout/developer/forklift-crawler/forklift/forklift/spiders/forklift_spider.py", line 83, in parse
+    yield scrapy.Request(pagination, callback=self.pageFollow)
+AttributeError: 'ForkLiftTestSpider' object has no attribute 'pageFollow'
+2019-01-30 14:56:20 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.forklift-international.com/de/e/staplersuche.php?sortorder=2&Bauart=4%2C4&Fabrikat=Linde&sonderbit=0&typ=&antriebsart=*&masttypid=alle&tkvon=2501&tkbis=3000&hhvon=0&hhbis=50000&bhvon=0&bhbis=20000&fhvon=0&fhbis=10000&bjbis=2019&baujahr=0&hrs=100000&preisvon=0&hatbild=0&reifen=*&preisbis=1000000&landid=2&entfernung=0> (referer: None)
+2019-01-30 14:56:20 [scrapy.proxies] DEBUG: Proxy user pass not found
+2019-01-30 14:56:20 [scrapy.proxies] DEBUG: Using proxy <http://36.89.81.129:53732>, 221 proxies left
+2019-01-30 14:56:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.forklift-international.com/de/e/staplersuche.php?sortorder=2&Bauart=4%2C4&Fabrikat=Linde&sonderbit=0&typ=&antriebsart=*&masttypid=alle&tkvon=2501&tkbis=3000&hhvon=0&hhbis=50000&bhvon=0&bhbis=20000&fhvon=0&fhbis=10000&bjbis=2019&baujahr=0&hrs=100000&preisvon=0&hatbild=0&reifen=*&preisbis=1000000&landid=2&entfernung=0>
+{'country': 'Österreich', 'product_url': 'https://www.forklift-international.com/de/e/Gabelstapler-gebraucht-Linde-H-30-D-03-mit-FREIHUB-Mast-3408838s?b=1', 'images': []}
+2019-01-30 14:56:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.forklift-international.com/de/e/staplersuche.php?sortorder=2&Bauart=4%2C4&Fabrikat=Linde&sonderbit=0&typ=&antriebsart=*&masttypid=alle&tkvon=2501&tkbis=3000&hhvon=0&hhbis=50000&bhvon=0&bhbis=20000&fhvon=0&fhbis=10000&bjbis=2019&baujahr=0&hrs=100000&preisvon=0&hatbild=0&reifen=*&preisbis=1000000&landid=2&entfernung=0>
+{'country': 'Österreich', 'product_url': 'https://www.forklift-international.com/de/e/Gabelstapler-gebraucht-Linde-H30D-3431765s?b=1', 'images': []}
+2019-01-30 14:56:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.forklift-international.com/de/e/staplersuche.php?sortorder=2&Bauart=4%2C4&Fabrikat=Linde&sonderbit=0&typ=&antriebsart=*&masttypid=alle&tkvon=2501&tkbis=3000&hhvon=0&hhbis=50000&bhvon=0&bhbis=20000&fhvon=0&fhbis=10000&bjbis=2019&baujahr=0&hrs=100000&preisvon=0&hatbild=0&reifen=*&preisbis=1000000&landid=2&entfernung=0>
+{'country': 'Österreich', 'product_url': 'https://www.forklift-international.com/de/e/Gabelstapler-gebraucht-Linde-H30D-01-3459522s?b=1', 'images': []}
+2019-01-30 14:56:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.forklift-international.com/de/e/staplersuche.php?sortorder=2&Bauart=4%2C4&Fabrikat=Linde&sonderbit=0&typ=&antriebsart=*&masttypid=alle&tkvon=2501&tkbis=3000&hhvon=0&hhbis=50000&bhvon=0&bhbis=20000&fhvon=0&fhbis=10000&bjbis=2019&baujahr=0&hrs=100000&preisvon=0&hatbild=0&reifen=*&preisbis=1000000&landid=2&entfernung=0>
+{'country': 'Österreich', 'product_url': 'https://www.forklift-international.com/de/e/Gabelstapler-gebraucht-Linde-H30D-03-3237968s?b=1', 'images': []}
+2019-01-30 14:56:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.forklift-international.com/de/e/staplersuche.php?sortorder=2&Bauart=4%2C4&Fabrikat=Linde&sonderbit=0&typ=&antriebsart=*&masttypid=alle&tkvon=2501&tkbis=3000&hhvon=0&hhbis=50000&bhvon=0&bhbis=20000&fhvon=0&fhbis=10000&bjbis=2019&baujahr=0&hrs=100000&preisvon=0&hatbild=0&reifen=*&preisbis=1000000&landid=2&entfernung=0>
+{'country': 'Österreich', 'product_url': 'https://www.forklift-international.com/de/e/Gabelstapler-gebraucht-Linde-H30D-03-3244214s?b=1', 'images': []}
+2019-01-30 14:56:20 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.forklift-international.com/de/e/staplersuche.php?sortorder=2&Bauart=4%2C4&Fabrikat=Linde&sonderbit=0&typ=&antriebsart=*&masttypid=alle&tkvon=2501&tkbis=3000&hhvon=0&hhbis=50000&bhvon=0&bhbis=20000&fhvon=0&fhbis=10000&bjbis=2019&baujahr=0&hrs=100000&preisvon=0&hatbild=0&reifen=*&preisbis=1000000&landid=2&entfernung=0> (referer: None)
+Traceback (most recent call last):
+  File "/home/coffeeincodeout/developer/forklift-crawler/lib/python3.6/site-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/home/coffeeincodeout/developer/forklift-crawler/lib/python3.6/site-packages/scrapy/spidermiddlewares/offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "/home/coffeeincodeout/developer/forklift-crawler/lib/python3.6/site-packages/scrapy/spidermiddlewares/referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/home/coffeeincodeout/developer/forklift-crawler/lib/python3.6/site-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/home/coffeeincodeout/developer/forklift-crawler/lib/python3.6/site-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/home/coffeeincodeout/developer/forklift-crawler/forklift/forklift/spiders/forklift_spider.py", line 83, in parse
+    yield scrapy.Request(pagination, callback=self.pageFollow)
+AttributeError: 'ForkLiftTestSpider' object has no attribute 'pageFollow'
+2019-01-30 14:56:28 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.forklift-international.com/de/e/staplersuche.php?sortorder=2&Bauart=4%2C4&Fabrikat=Linde&sonderbit=0&typ=&antriebsart=*&masttypid=alle&tkvon=2501&tkbis=3000&hhvon=0&hhbis=50000&bhvon=0&bhbis=20000&fhvon=0&fhbis=10000&bjbis=2019&baujahr=0&hrs=100000&preisvon=0&hatbild=0&reifen=*&preisbis=1000000&landid=7&entfernung=0> (referer: None)
+2019-01-30 14:56:28 [scrapy.proxies] DEBUG: Proxy user pass not found
+2019-01-30 14:56:28 [scrapy.proxies] DEBUG: Using proxy <http://103.212.128.29:31220>, 221 proxies left
+2019-01-30 14:56:29 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.forklift-international.com/de/e/staplersuche.php?sortorder=2&Bauart=4%2C4&Fabrikat=Linde&sonderbit=0&typ=&antriebsart=*&masttypid=alle&tkvon=2501&tkbis=3000&hhvon=0&hhbis=50000&bhvon=0&bhbis=20000&fhvon=0&fhbis=10000&bjbis=2019&baujahr=0&hrs=100000&preisvon=0&hatbild=0&reifen=*&preisbis=1000000&landid=7&entfernung=0>
+{'country': 'Belgien', 'product_url': 'https://www.forklift-international.com/de/e/Gabelstapler-gebraucht-Linde-H30D-01-3413919s?b=1', 'images': []}
+2019-01-30 14:56:29 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.forklift-international.com/de/e/staplersuche.php?sortorder=2&Bauart=4%2C4&Fabrikat=Linde&sonderbit=0&typ=&antriebsart=*&masttypid=alle&tkvon=2501&tkbis=3000&hhvon=0&hhbis=50000&bhvon=0&bhbis=20000&fhvon=0&fhbis=10000&bjbis=2019&baujahr=0&hrs=100000&preisvon=0&hatbild=0&reifen=*&preisbis=1000000&landid=7&entfernung=0>
+{'country': 'Belgien', 'product_url': 'https://www.forklift-international.com/de/e/Gabelstapler-gebraucht-Linde-H30D-01-3435058s?b=1', 'images': []}
+2019-01-30 14:56:29 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.forklift-international.com/de/e/staplersuche.php?sortorder=2&Bauart=4%2C4&Fabrikat=Linde&sonderbit=0&typ=&antriebsart=*&masttypid=alle&tkvon=2501&tkbis=3000&hhvon=0&hhbis=50000&bhvon=0&bhbis=20000&fhvon=0&fhbis=10000&bjbis=2019&baujahr=0&hrs=100000&preisvon=0&hatbild=0&reifen=*&preisbis=1000000&landid=7&entfernung=0>
+{'country': 'Belgien', 'product_url': 'https://www.forklift-international.com/de/e/Gabelstapler-gebraucht-Linde-H30D-01-3290564s?b=1', 'images': []}
+2019-01-30 14:56:29 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.forklift-international.com/de/e/staplersuche.php?sortorder=2&Bauart=4%2C4&Fabrikat=Linde&sonderbit=0&typ=&antriebsart=*&masttypid=alle&tkvon=2501&tkbis=3000&hhvon=0&hhbis=50000&bhvon=0&bhbis=20000&fhvon=0&fhbis=10000&bjbis=2019&baujahr=0&hrs=100000&preisvon=0&hatbild=0&reifen=*&preisbis=1000000&landid=7&entfernung=0>
+{'country': 'Belgien', 'product_url': 'https://www.forklift-international.com/de/e/Gabelstapler-gebraucht-Linde-H30D-01-3431461s?b=1', 'images': []}
+2019-01-30 14:56:29 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.forklift-international.com/de/e/staplersuche.php?sortorder=2&Bauart=4%2C4&Fabrikat=Linde&sonderbit=0&typ=&antriebsart=*&masttypid=alle&tkvon=2501&tkbis=3000&hhvon=0&hhbis=50000&bhvon=0&bhbis=20000&fhvon=0&fhbis=10000&bjbis=2019&baujahr=0&hrs=100000&preisvon=0&hatbild=0&reifen=*&preisbis=1000000&landid=7&entfernung=0>
+{'country': 'Belgien', 'product_url': 'https://www.forklift-international.com/de/e/Gabelstapler-gebraucht-Linde-H30D-01-3457660s?b=1', 'images': []}
+2019-01-30 14:56:29 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.forklift-international.com/de/e/staplersuche.php?sortorder=2&Bauart=4%2C4&Fabrikat=Linde&sonderbit=0&typ=&antriebsart=*&masttypid=alle&tkvon=2501&tkbis=3000&hhvon=0&hhbis=50000&bhvon=0&bhbis=20000&fhvon=0&fhbis=10000&bjbis=2019&baujahr=0&hrs=100000&preisvon=0&hatbild=0&reifen=*&preisbis=1000000&landid=7&entfernung=0>
+{'country': 'Belgien', 'product_url': 'https://www.forklift-international.com/de/e/Gabelstapler-gebraucht-Linde-H30D-02-3405067s?b=1', 'images': []}
+2019-01-30 14:56:29 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.forklift-international.com/de/e/staplersuche.php?sortorder=2&Bauart=4%2C4&Fabrikat=Linde&sonderbit=0&typ=&antriebsart=*&masttypid=alle&tkvon=2501&tkbis=3000&hhvon=0&hhbis=50000&bhvon=0&bhbis=20000&fhvon=0&fhbis=10000&bjbis=2019&baujahr=0&hrs=100000&preisvon=0&hatbild=0&reifen=*&preisbis=1000000&landid=7&entfernung=0>
+{'country': 'Belgien', 'product_url': 'https://www.forklift-international.com/de/e/Gabelstapler-gebraucht-Linde-H30D-02-3402057s?b=1', 'images': []}
+2019-01-30 14:56:29 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.forklift-international.com/de/e/staplersuche.php?sortorder=2&Bauart=4%2C4&Fabrikat=Linde&sonderbit=0&typ=&antriebsart=*&masttypid=alle&tkvon=2501&tkbis=3000&hhvon=0&hhbis=50000&bhvon=0&bhbis=20000&fhvon=0&fhbis=10000&bjbis=2019&baujahr=0&hrs=100000&preisvon=0&hatbild=0&reifen=*&preisbis=1000000&landid=7&entfernung=0>
+{'country': 'Belgien', 'product_url': 'https://www.forklift-international.com/de/e/Gabelstapler-gebraucht-Linde-H30D-02-3151741s?b=1', 'images': []}
+2019-01-30 14:56:29 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.forklift-international.com/de/e/staplersuche.php?sortorder=2&Bauart=4%2C4&Fabrikat=Linde&sonderbit=0&typ=&antriebsart=*&masttypid=alle&tkvon=2501&tkbis=3000&hhvon=0&hhbis=50000&bhvon=0&bhbis=20000&fhvon=0&fhbis=10000&bjbis=2019&baujahr=0&hrs=100000&preisvon=0&hatbild=0&reifen=*&preisbis=1000000&landid=7&entfernung=0>
+{'country': 'Belgien', 'product_url': 'https://www.forklift-international.com/de/e/Gabelstapler-gebraucht-Linde-H30D-02-3452437s?b=1', 'images': []}
+2019-01-30 14:56:29 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.forklift-international.com/de/e/staplersuche.php?sortorder=2&Bauart=4%2C4&Fabrikat=Linde&sonderbit=0&typ=&antriebsart=*&masttypid=alle&tkvon=2501&tkbis=3000&hhvon=0&hhbis=50000&bhvon=0&bhbis=20000&fhvon=0&fhbis=10000&bjbis=2019&baujahr=0&hrs=100000&preisvon=0&hatbild=0&reifen=*&preisbis=1000000&landid=7&entfernung=0>
+{'country': 'Belgien', 'product_url': 'https://www.forklift-international.com/de/e/Gabelstapler-gebraucht-Linde-H30D-02-3452436s?b=1', 'images': []}
+2019-01-30 14:56:29 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.forklift-international.com/de/e/staplersuche.php?sortorder=2&Bauart=4%2C4&Fabrikat=Linde&sonderbit=0&typ=&antriebsart=*&masttypid=alle&tkvon=2501&tkbis=3000&hhvon=0&hhbis=50000&bhvon=0&bhbis=20000&fhvon=0&fhbis=10000&bjbis=2019&baujahr=0&hrs=100000&preisvon=0&hatbild=0&reifen=*&preisbis=1000000&landid=7&entfernung=0>
+{'country': 'Belgien', 'product_url': 'https://www.forklift-international.com/de/e/Gabelstapler-gebraucht-Linde-H30D-02-3398521s?b=1', 'images': []}
+2019-01-30 14:56:29 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.forklift-international.com/de/e/staplersuche.php?sortorder=2&Bauart=4%2C4&Fabrikat=Linde&sonderbit=0&typ=&antriebsart=*&masttypid=alle&tkvon=2501&tkbis=3000&hhvon=0&hhbis=50000&bhvon=0&bhbis=20000&fhvon=0&fhbis=10000&bjbis=2019&baujahr=0&hrs=100000&preisvon=0&hatbild=0&reifen=*&preisbis=1000000&landid=7&entfernung=0>
+{'country': 'Belgien', 'product_url': 'https://www.forklift-international.com/de/e/Gabelstapler-gebraucht-Linde-H30D-02-3277892s?b=1', 'images': []}
+2019-01-30 14:56:29 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.forklift-international.com/de/e/staplersuche.php?sortorder=2&Bauart=4%2C4&Fabrikat=Linde&sonderbit=0&typ=&antriebsart=*&masttypid=alle&tkvon=2501&tkbis=3000&hhvon=0&hhbis=50000&bhvon=0&bhbis=20000&fhvon=0&fhbis=10000&bjbis=2019&baujahr=0&hrs=100000&preisvon=0&hatbild=0&reifen=*&preisbis=1000000&landid=7&entfernung=0> (referer: None)
+Traceback (most recent call last):
+  File "/home/coffeeincodeout/developer/forklift-crawler/lib/python3.6/site-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/home/coffeeincodeout/developer/forklift-crawler/lib/python3.6/site-packages/scrapy/spidermiddlewares/offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "/home/coffeeincodeout/developer/forklift-crawler/lib/python3.6/site-packages/scrapy/spidermiddlewares/referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/home/coffeeincodeout/developer/forklift-crawler/lib/python3.6/site-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/home/coffeeincodeout/developer/forklift-crawler/lib/python3.6/site-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/home/coffeeincodeout/developer/forklift-crawler/forklift/forklift/spiders/forklift_spider.py", line 83, in parse
+    yield scrapy.Request(pagination, callback=self.pageFollow)
+AttributeError: 'ForkLiftTestSpider' object has no attribute 'pageFollow'
+2019-01-30 14:56:33 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.forklift-international.com/de/e/staplersuche.php?sortorder=2&Bauart=4%2C4&Fabrikat=Linde&sonderbit=0&typ=&antriebsart=*&masttypid=alle&tkvon=2501&tkbis=3000&hhvon=0&hhbis=50000&bhvon=0&bhbis=20000&fhvon=0&fhbis=10000&bjbis=2019&baujahr=0&hrs=100000&preisvon=0&hatbild=0&reifen=*&preisbis=1000000&landid=41&entfernung=0> (referer: None)
+2019-01-30 14:56:33 [scrapy.proxies] DEBUG: Proxy user pass not found
+2019-01-30 14:56:33 [scrapy.proxies] DEBUG: Using proxy <http://1.32.59.217:46288>, 221 proxies left
+2019-01-30 14:56:33 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.forklift-international.com/de/e/staplersuche.php?sortorder=2&Bauart=4%2C4&Fabrikat=Linde&sonderbit=0&typ=&antriebsart=*&masttypid=alle&tkvon=2501&tkbis=3000&hhvon=0&hhbis=50000&bhvon=0&bhbis=20000&fhvon=0&fhbis=10000&bjbis=2019&baujahr=0&hrs=100000&preisvon=0&hatbild=0&reifen=*&preisbis=1000000&landid=41&entfernung=0> (referer: None)
+Traceback (most recent call last):
+  File "/home/coffeeincodeout/developer/forklift-crawler/lib/python3.6/site-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/home/coffeeincodeout/developer/forklift-crawler/lib/python3.6/site-packages/scrapy/spidermiddlewares/offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "/home/coffeeincodeout/developer/forklift-crawler/lib/python3.6/site-packages/scrapy/spidermiddlewares/referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/home/coffeeincodeout/developer/forklift-crawler/lib/python3.6/site-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/home/coffeeincodeout/developer/forklift-crawler/lib/python3.6/site-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/home/coffeeincodeout/developer/forklift-crawler/forklift/forklift/spiders/forklift_spider.py", line 83, in parse
+    yield scrapy.Request(pagination, callback=self.pageFollow)
+AttributeError: 'ForkLiftTestSpider' object has no attribute 'pageFollow'
+2019-01-30 14:56:42 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.forklift-international.com/de/e/staplersuche.php?sortorder=2&Bauart=4%2C4&Fabrikat=Linde&sonderbit=0&typ=&antriebsart=*&masttypid=alle&tkvon=2501&tkbis=3000&hhvon=0&hhbis=50000&bhvon=0&bhbis=20000&fhvon=0&fhbis=10000&bjbis=2019&baujahr=0&hrs=100000&preisvon=0&hatbild=0&reifen=*&preisbis=1000000&landid=15&entfernung=0> (referer: None)
+2019-01-30 14:56:42 [scrapy.proxies] DEBUG: Proxy user pass not found
+2019-01-30 14:56:42 [scrapy.proxies] DEBUG: Using proxy <http://103.72.219.83:47352>, 221 proxies left
+2019-01-30 14:56:42 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.forklift-international.com/de/e/staplersuche.php?sortorder=2&Bauart=4%2C4&Fabrikat=Linde&sonderbit=0&typ=&antriebsart=*&masttypid=alle&tkvon=2501&tkbis=3000&hhvon=0&hhbis=50000&bhvon=0&bhbis=20000&fhvon=0&fhbis=10000&bjbis=2019&baujahr=0&hrs=100000&preisvon=0&hatbild=0&reifen=*&preisbis=1000000&landid=15&entfernung=0> (referer: None)
+Traceback (most recent call last):
+  File "/home/coffeeincodeout/developer/forklift-crawler/lib/python3.6/site-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/home/coffeeincodeout/developer/forklift-crawler/lib/python3.6/site-packages/scrapy/spidermiddlewares/offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "/home/coffeeincodeout/developer/forklift-crawler/lib/python3.6/site-packages/scrapy/spidermiddlewares/referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/home/coffeeincodeout/developer/forklift-crawler/lib/python3.6/site-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/home/coffeeincodeout/developer/forklift-crawler/lib/python3.6/site-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/home/coffeeincodeout/developer/forklift-crawler/forklift/forklift/spiders/forklift_spider.py", line 83, in parse
+    yield scrapy.Request(pagination, callback=self.pageFollow)
+AttributeError: 'ForkLiftTestSpider' object has no attribute 'pageFollow'
+2019-01-30 14:56:51 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.forklift-international.com/de/e/staplersuche.php?sortorder=2&Bauart=4%2C4&Fabrikat=Linde&sonderbit=0&typ=&antriebsart=*&masttypid=alle&tkvon=2501&tkbis=3000&hhvon=0&hhbis=50000&bhvon=0&bhbis=20000&fhvon=0&fhbis=10000&bjbis=2019&baujahr=0&hrs=100000&preisvon=0&hatbild=0&reifen=*&preisbis=1000000&landid=3&entfernung=0> (referer: None)
+2019-01-30 14:56:51 [scrapy.proxies] DEBUG: Proxy user pass not found
+2019-01-30 14:56:51 [scrapy.proxies] DEBUG: Using proxy <http://41.208.20.50:8888>, 221 proxies left
+2019-01-30 14:56:51 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.forklift-international.com/de/e/staplersuche.php?sortorder=2&Bauart=4%2C4&Fabrikat=Linde&sonderbit=0&typ=&antriebsart=*&masttypid=alle&tkvon=2501&tkbis=3000&hhvon=0&hhbis=50000&bhvon=0&bhbis=20000&fhvon=0&fhbis=10000&bjbis=2019&baujahr=0&hrs=100000&preisvon=0&hatbild=0&reifen=*&preisbis=1000000&landid=3&entfernung=0>
+{'country': 'Dänemark', 'product_url': 'https://www.forklift-international.com/de/e/Gabelstapler-gebraucht-Linde-H30D-393-3110990s?b=1', 'images': []}
+2019-01-30 14:56:51 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.forklift-international.com/de/e/staplersuche.php?sortorder=2&Bauart=4%2C4&Fabrikat=Linde&sonderbit=0&typ=&antriebsart=*&masttypid=alle&tkvon=2501&tkbis=3000&hhvon=0&hhbis=50000&bhvon=0&bhbis=20000&fhvon=0&fhbis=10000&bjbis=2019&baujahr=0&hrs=100000&preisvon=0&hatbild=0&reifen=*&preisbis=1000000&landid=3&entfernung=0> (referer: None)
+Traceback (most recent call last):
+  File "/home/coffeeincodeout/developer/forklift-crawler/lib/python3.6/site-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/home/coffeeincodeout/developer/forklift-crawler/lib/python3.6/site-packages/scrapy/spidermiddlewares/offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "/home/coffeeincodeout/developer/forklift-crawler/lib/python3.6/site-packages/scrapy/spidermiddlewares/referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/home/coffeeincodeout/developer/forklift-crawler/lib/python3.6/site-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/home/coffeeincodeout/developer/forklift-crawler/lib/python3.6/site-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/home/coffeeincodeout/developer/forklift-crawler/forklift/forklift/spiders/forklift_spider.py", line 83, in parse
+    yield scrapy.Request(pagination, callback=self.pageFollow)
+AttributeError: 'ForkLiftTestSpider' object has no attribute 'pageFollow'
+2019-01-30 14:57:03 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.forklift-international.com/de/e/staplersuche.php?sortorder=2&Bauart=4%2C4&Fabrikat=Linde&sonderbit=0&typ=&antriebsart=*&masttypid=alle&tkvon=2501&tkbis=3000&hhvon=0&hhbis=50000&bhvon=0&bhbis=20000&fhvon=0&fhbis=10000&bjbis=2019&baujahr=0&hrs=100000&preisvon=0&hatbild=0&reifen=*&preisbis=1000000&landid=1&entfernung=0> (referer: None)
+2019-01-30 14:57:03 [scrapy.proxies] DEBUG: Proxy user pass not found
+2019-01-30 14:57:03 [scrapy.proxies] DEBUG: Using proxy <http://200.68.116.90:30780>, 221 proxies left
+2019-01-30 14:57:03 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.forklift-international.com/de/e/staplersuche.php?sortorder=2&Bauart=4%2C4&Fabrikat=Linde&sonderbit=0&typ=&antriebsart=*&masttypid=alle&tkvon=2501&tkbis=3000&hhvon=0&hhbis=50000&bhvon=0&bhbis=20000&fhvon=0&fhbis=10000&bjbis=2019&baujahr=0&hrs=100000&preisvon=0&hatbild=0&reifen=*&preisbis=1000000&landid=1&entfernung=0>
+{'country': 'Deutschland', 'product_url': 'https://www.forklift-international.com/de/e/Gabelstapler-gebraucht-Linde--3432412s?b=1', 'images': []}
+2019-01-30 14:57:03 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.forklift-international.com/de/e/staplersuche.php?sortorder=2&Bauart=4%2C4&Fabrikat=Linde&sonderbit=0&typ=&antriebsart=*&masttypid=alle&tkvon=2501&tkbis=3000&hhvon=0&hhbis=50000&bhvon=0&bhbis=20000&fhvon=0&fhbis=10000&bjbis=2019&baujahr=0&hrs=100000&preisvon=0&hatbild=0&reifen=*&preisbis=1000000&landid=1&entfernung=0>
+{'country': 'Deutschland', 'product_url': 'https://www.forklift-international.com/de/e/Gabelstapler-gebraucht-Linde-H30D-X393-TRIPLEXMAST-SEITENSCHIEBER-3458813s?b=1', 'images': []}
+2019-01-30 14:57:03 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.forklift-international.com/de/e/staplersuche.php?sortorder=2&Bauart=4%2C4&Fabrikat=Linde&sonderbit=0&typ=&antriebsart=*&masttypid=alle&tkvon=2501&tkbis=3000&hhvon=0&hhbis=50000&bhvon=0&bhbis=20000&fhvon=0&fhbis=10000&bjbis=2019&baujahr=0&hrs=100000&preisvon=0&hatbild=0&reifen=*&preisbis=1000000&landid=1&entfernung=0>
+{'country': 'Deutschland', 'product_url': 'https://www.forklift-international.com/de/e/Gabelstapler-gebraucht-Linde-393-02-3087462s?b=1', 'images': []}
+2019-01-30 14:57:03 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.forklift-international.com/de/e/staplersuche.php?sortorder=2&Bauart=4%2C4&Fabrikat=Linde&sonderbit=0&typ=&antriebsart=*&masttypid=alle&tkvon=2501&tkbis=3000&hhvon=0&hhbis=50000&bhvon=0&bhbis=20000&fhvon=0&fhbis=10000&bjbis=2019&baujahr=0&hrs=100000&preisvon=0&hatbild=0&reifen=*&preisbis=1000000&landid=1&entfernung=0>
+{'country': 'Deutschland', 'product_url': 'https://www.forklift-international.com/de/e/Gabelstapler-gebraucht-Linde-H-30-D--3005213s?b=1', 'images': []}
+2019-01-30 14:57:03 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.forklift-international.com/de/e/staplersuche.php?sortorder=2&Bauart=4%2C4&Fabrikat=Linde&sonderbit=0&typ=&antriebsart=*&masttypid=alle&tkvon=2501&tkbis=3000&hhvon=0&hhbis=50000&bhvon=0&bhbis=20000&fhvon=0&fhbis=10000&bjbis=2019&baujahr=0&hrs=100000&preisvon=0&hatbild=0&reifen=*&preisbis=1000000&landid=1&entfernung=0>
+{'country': 'Deutschland', 'product_url': 'https://www.forklift-international.com/de/e/Gabelstapler-gebraucht-Linde-H-30-D-3117210s?b=1', 'images': []}
+2019-01-30 14:57:03 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.forklift-international.com/de/e/staplersuche.php?sortorder=2&Bauart=4%2C4&Fabrikat=Linde&sonderbit=0&typ=&antriebsart=*&masttypid=alle&tkvon=2501&tkbis=3000&hhvon=0&hhbis=50000&bhvon=0&bhbis=20000&fhvon=0&fhbis=10000&bjbis=2019&baujahr=0&hrs=100000&preisvon=0&hatbild=0&reifen=*&preisbis=1000000&landid=1&entfernung=0>
+{'country': 'Deutschland', 'product_url': 'https://www.forklift-international.com/de/e/Gabelstapler-gebraucht-Linde-H-30-D-3298772s?b=1', 'images': []}
+2019-01-30 14:57:03 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.forklift-international.com/de/e/staplersuche.php?sortorder=2&Bauart=4%2C4&Fabrikat=Linde&sonderbit=0&typ=&antriebsart=*&masttypid=alle&tkvon=2501&tkbis=3000&hhvon=0&hhbis=50000&bhvon=0&bhbis=20000&fhvon=0&fhbis=10000&bjbis=2019&baujahr=0&hrs=100000&preisvon=0&hatbild=0&reifen=*&preisbis=1000000&landid=1&entfernung=0>
+{'country': 'Deutschland', 'product_url': 'https://www.forklift-international.com/de/e/Gabelstapler-gebraucht-Linde-H-30-D-3400130s?b=1', 'images': []}
+2019-01-30 14:57:03 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.forklift-international.com/de/e/staplersuche.php?sortorder=2&Bauart=4%2C4&Fabrikat=Linde&sonderbit=0&typ=&antriebsart=*&masttypid=alle&tkvon=2501&tkbis=3000&hhvon=0&hhbis=50000&bhvon=0&bhbis=20000&fhvon=0&fhbis=10000&bjbis=2019&baujahr=0&hrs=100000&preisvon=0&hatbild=0&reifen=*&preisbis=1000000&landid=1&entfernung=0>
+{'country': 'Deutschland', 'product_url': 'https://www.forklift-international.com/de/e/Gabelstapler-gebraucht-Linde-H-30-D-3406467s?b=1', 'images': []}
+2019-01-30 14:57:03 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.forklift-international.com/de/e/staplersuche.php?sortorder=2&Bauart=4%2C4&Fabrikat=Linde&sonderbit=0&typ=&antriebsart=*&masttypid=alle&tkvon=2501&tkbis=3000&hhvon=0&hhbis=50000&bhvon=0&bhbis=20000&fhvon=0&fhbis=10000&bjbis=2019&baujahr=0&hrs=100000&preisvon=0&hatbild=0&reifen=*&preisbis=1000000&landid=1&entfernung=0>
+{'country': 'Deutschland', 'product_url': 'https://www.forklift-international.com/de/e/Gabelstapler-gebraucht-Linde-H-30-D--3409108s?b=1', 'images': []}
+2019-01-30 14:57:03 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.forklift-international.com/de/e/staplersuche.php?sortorder=2&Bauart=4%2C4&Fabrikat=Linde&sonderbit=0&typ=&antriebsart=*&masttypid=alle&tkvon=2501&tkbis=3000&hhvon=0&hhbis=50000&bhvon=0&bhbis=20000&fhvon=0&fhbis=10000&bjbis=2019&baujahr=0&hrs=100000&preisvon=0&hatbild=0&reifen=*&preisbis=1000000&landid=1&entfernung=0>
+{'country': 'Deutschland', 'product_url': 'https://www.forklift-international.com/de/e/Gabelstapler-gebraucht-Linde-H-30-D--3414008s?b=1', 'images': []}
+2019-01-30 14:57:03 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.forklift-international.com/de/e/staplersuche.php?sortorder=2&Bauart=4%2C4&Fabrikat=Linde&sonderbit=0&typ=&antriebsart=*&masttypid=alle&tkvon=2501&tkbis=3000&hhvon=0&hhbis=50000&bhvon=0&bhbis=20000&fhvon=0&fhbis=10000&bjbis=2019&baujahr=0&hrs=100000&preisvon=0&hatbild=0&reifen=*&preisbis=1000000&landid=1&entfernung=0>
+{'country': 'Deutschland', 'product_url': 'https://www.forklift-international.com/de/e/Gabelstapler-gebraucht-Linde-H-30-D-3434426s?b=1', 'images': []}
+2019-01-30 14:57:03 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.forklift-international.com/de/e/staplersuche.php?sortorder=2&Bauart=4%2C4&Fabrikat=Linde&sonderbit=0&typ=&antriebsart=*&masttypid=alle&tkvon=2501&tkbis=3000&hhvon=0&hhbis=50000&bhvon=0&bhbis=20000&fhvon=0&fhbis=10000&bjbis=2019&baujahr=0&hrs=100000&preisvon=0&hatbild=0&reifen=*&preisbis=1000000&landid=1&entfernung=0>
+{'country': 'Deutschland', 'product_url': 'https://www.forklift-international.com/de/e/Gabelstapler-gebraucht-Linde-H-30-D--3457109s?b=1', 'images': []}
+2019-01-30 14:57:03 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.forklift-international.com/de/e/staplersuche.php?sortorder=2&Bauart=4%2C4&Fabrikat=Linde&sonderbit=0&typ=&antriebsart=*&masttypid=alle&tkvon=2501&tkbis=3000&hhvon=0&hhbis=50000&bhvon=0&bhbis=20000&fhvon=0&fhbis=10000&bjbis=2019&baujahr=0&hrs=100000&preisvon=0&hatbild=0&reifen=*&preisbis=1000000&landid=1&entfernung=0>
+{'country': 'Deutschland', 'product_url': 'https://www.forklift-international.com/de/e/Gabelstapler-gebraucht-Linde-H-30-D-393-3410045s?b=1', 'images': []}
+2019-01-30 14:57:03 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.forklift-international.com/de/e/staplersuche.php?sortorder=2&Bauart=4%2C4&Fabrikat=Linde&sonderbit=0&typ=&antriebsart=*&masttypid=alle&tkvon=2501&tkbis=3000&hhvon=0&hhbis=50000&bhvon=0&bhbis=20000&fhvon=0&fhbis=10000&bjbis=2019&baujahr=0&hrs=100000&preisvon=0&hatbild=0&reifen=*&preisbis=1000000&landid=1&entfernung=0>
+{'country': 'Deutschland', 'product_url': 'https://www.forklift-international.com/de/e/Gabelstapler-gebraucht-Linde-H-30-D-393-3443557s?b=1', 'images': []}
+2019-01-30 14:57:03 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.forklift-international.com/de/e/staplersuche.php?sortorder=2&Bauart=4%2C4&Fabrikat=Linde&sonderbit=0&typ=&antriebsart=*&masttypid=alle&tkvon=2501&tkbis=3000&hhvon=0&hhbis=50000&bhvon=0&bhbis=20000&fhvon=0&fhbis=10000&bjbis=2019&baujahr=0&hrs=100000&preisvon=0&hatbild=0&reifen=*&preisbis=1000000&landid=1&entfernung=0>
+{'country': 'Deutschland', 'product_url': 'https://www.forklift-international.com/de/e/Gabelstapler-gebraucht-Linde-H-30-D-393-3449463s?b=1', 'images': []}
+2019-01-30 14:57:03 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.forklift-international.com/de/e/staplersuche.php?sortorder=2&Bauart=4%2C4&Fabrikat=Linde&sonderbit=0&typ=&antriebsart=*&masttypid=alle&tkvon=2501&tkbis=3000&hhvon=0&hhbis=50000&bhvon=0&bhbis=20000&fhvon=0&fhbis=10000&bjbis=2019&baujahr=0&hrs=100000&preisvon=0&hatbild=0&reifen=*&preisbis=1000000&landid=1&entfernung=0>
+{'country': 'Deutschland', 'product_url': 'https://www.forklift-international.com/de/e/Gabelstapler-gebraucht-Linde-H-30-D-02-393-EVO-3391021s?b=1', 'images': []}
+2019-01-30 14:57:03 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.forklift-international.com/de/e/staplersuche.php?sortorder=2&Bauart=4%2C4&Fabrikat=Linde&sonderbit=0&typ=&antriebsart=*&masttypid=alle&tkvon=2501&tkbis=3000&hhvon=0&hhbis=50000&bhvon=0&bhbis=20000&fhvon=0&fhbis=10000&bjbis=2019&baujahr=0&hrs=100000&preisvon=0&hatbild=0&reifen=*&preisbis=1000000&landid=1&entfernung=0>
+{'country': 'Deutschland', 'product_url': 'https://www.forklift-international.com/de/e/Gabelstapler-gebraucht-Linde-H-30-D-393-3265786s?b=1', 'images': []}
+2019-01-30 14:57:03 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.forklift-international.com/de/e/staplersuche.php?sortorder=2&Bauart=4%2C4&Fabrikat=Linde&sonderbit=0&typ=&antriebsart=*&masttypid=alle&tkvon=2501&tkbis=3000&hhvon=0&hhbis=50000&bhvon=0&bhbis=20000&fhvon=0&fhbis=10000&bjbis=2019&baujahr=0&hrs=100000&preisvon=0&hatbild=0&reifen=*&preisbis=1000000&landid=1&entfernung=0>
+{'country': 'Deutschland', 'product_url': 'https://www.forklift-international.com/de/e/Gabelstapler-gebraucht-Linde-H-30-D-393-3428484s?b=1', 'images': []}
+2019-01-30 14:57:03 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.forklift-international.com/de/e/staplersuche.php?sortorder=2&Bauart=4%2C4&Fabrikat=Linde&sonderbit=0&typ=&antriebsart=*&masttypid=alle&tkvon=2501&tkbis=3000&hhvon=0&hhbis=50000&bhvon=0&bhbis=20000&fhvon=0&fhbis=10000&bjbis=2019&baujahr=0&hrs=100000&preisvon=0&hatbild=0&reifen=*&preisbis=1000000&landid=1&entfernung=0>
+{'country': 'Deutschland', 'product_url': 'https://www.forklift-international.com/de/e/Gabelstapler-gebraucht-Linde-H-30-D-393-3428486s?b=1', 'images': []}
+2019-01-30 14:57:03 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.forklift-international.com/de/e/staplersuche.php?sortorder=2&Bauart=4%2C4&Fabrikat=Linde&sonderbit=0&typ=&antriebsart=*&masttypid=alle&tkvon=2501&tkbis=3000&hhvon=0&hhbis=50000&bhvon=0&bhbis=20000&fhvon=0&fhbis=10000&bjbis=2019&baujahr=0&hrs=100000&preisvon=0&hatbild=0&reifen=*&preisbis=1000000&landid=1&entfernung=0>
+{'country': 'Deutschland', 'product_url': 'https://www.forklift-international.com/de/e/Gabelstapler-gebraucht-Linde-H-30-D-393-EVO--3153014s?b=1', 'images': []}
+2019-01-30 14:57:03 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.forklift-international.com/de/e/staplersuche.php?sortorder=2&Bauart=4%2C4&Fabrikat=Linde&sonderbit=0&typ=&antriebsart=*&masttypid=alle&tkvon=2501&tkbis=3000&hhvon=0&hhbis=50000&bhvon=0&bhbis=20000&fhvon=0&fhbis=10000&bjbis=2019&baujahr=0&hrs=100000&preisvon=0&hatbild=0&reifen=*&preisbis=1000000&landid=1&entfernung=0>
+{'country': 'Deutschland', 'product_url': 'https://www.forklift-international.com/de/e/Gabelstapler-gebraucht-Linde-H-30-D-3A-393-02-3456258s?b=1', 'images': []}
+2019-01-30 14:57:03 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.forklift-international.com/de/e/staplersuche.php?sortorder=2&Bauart=4%2C4&Fabrikat=Linde&sonderbit=0&typ=&antriebsart=*&masttypid=alle&tkvon=2501&tkbis=3000&hhvon=0&hhbis=50000&bhvon=0&bhbis=20000&fhvon=0&fhbis=10000&bjbis=2019&baujahr=0&hrs=100000&preisvon=0&hatbild=0&reifen=*&preisbis=1000000&landid=1&entfernung=0> (referer: None)
+Traceback (most recent call last):
+  File "/home/coffeeincodeout/developer/forklift-crawler/lib/python3.6/site-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/home/coffeeincodeout/developer/forklift-crawler/lib/python3.6/site-packages/scrapy/spidermiddlewares/offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "/home/coffeeincodeout/developer/forklift-crawler/lib/python3.6/site-packages/scrapy/spidermiddlewares/referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/home/coffeeincodeout/developer/forklift-crawler/lib/python3.6/site-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/home/coffeeincodeout/developer/forklift-crawler/lib/python3.6/site-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/home/coffeeincodeout/developer/forklift-crawler/forklift/forklift/spiders/forklift_spider.py", line 83, in parse
+    yield scrapy.Request(pagination, callback=self.pageFollow)
+AttributeError: 'ForkLiftTestSpider' object has no attribute 'pageFollow'
+2019-01-30 14:57:09 [scrapy.extensions.logstats] INFO: Crawled 7 pages (at 7 pages/min), scraped 39 items (at 39 items/min)
+2019-01-30 14:57:14 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.forklift-international.com/de/e/staplersuche.php?sortorder=2&Bauart=4%2C4&Fabrikat=Linde&sonderbit=0&typ=&antriebsart=*&masttypid=alle&tkvon=2501&tkbis=3000&hhvon=0&hhbis=50000&bhvon=0&bhbis=20000&fhvon=0&fhbis=10000&bjbis=2019&baujahr=0&hrs=100000&preisvon=0&hatbild=0&reifen=*&preisbis=1000000&landid=23&entfernung=0> (referer: None)
+2019-01-30 14:57:14 [scrapy.proxies] DEBUG: Proxy user pass not found
+2019-01-30 14:57:14 [scrapy.proxies] DEBUG: Using proxy <http://5.202.18.58:8080>, 221 proxies left
+2019-01-30 14:57:14 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.forklift-international.com/de/e/staplersuche.php?sortorder=2&Bauart=4%2C4&Fabrikat=Linde&sonderbit=0&typ=&antriebsart=*&masttypid=alle&tkvon=2501&tkbis=3000&hhvon=0&hhbis=50000&bhvon=0&bhbis=20000&fhvon=0&fhbis=10000&bjbis=2019&baujahr=0&hrs=100000&preisvon=0&hatbild=0&reifen=*&preisbis=1000000&landid=23&entfernung=0>
+{'country': 'Estland', 'product_url': 'https://www.forklift-international.com/de/e/Gabelstapler-gebraucht-Linde-H30D-351-3226309s?b=1', 'images': []}
+2019-01-30 14:57:14 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.forklift-international.com/de/e/staplersuche.php?sortorder=2&Bauart=4%2C4&Fabrikat=Linde&sonderbit=0&typ=&antriebsart=*&masttypid=alle&tkvon=2501&tkbis=3000&hhvon=0&hhbis=50000&bhvon=0&bhbis=20000&fhvon=0&fhbis=10000&bjbis=2019&baujahr=0&hrs=100000&preisvon=0&hatbild=0&reifen=*&preisbis=1000000&landid=23&entfernung=0>
+{'country': 'Estland', 'product_url': 'https://www.forklift-international.com/de/e/Gabelstapler-gebraucht-Linde-H30D-393-3404883s?b=1', 'images': []}
+2019-01-30 14:57:14 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.forklift-international.com/de/e/staplersuche.php?sortorder=2&Bauart=4%2C4&Fabrikat=Linde&sonderbit=0&typ=&antriebsart=*&masttypid=alle&tkvon=2501&tkbis=3000&hhvon=0&hhbis=50000&bhvon=0&bhbis=20000&fhvon=0&fhbis=10000&bjbis=2019&baujahr=0&hrs=100000&preisvon=0&hatbild=0&reifen=*&preisbis=1000000&landid=23&entfernung=0>
+{'country': 'Estland', 'product_url': 'https://www.forklift-international.com/de/e/Gabelstapler-gebraucht-Linde-H30D-393-3226343s?b=1', 'images': []}
+2019-01-30 14:57:14 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.forklift-international.com/de/e/staplersuche.php?sortorder=2&Bauart=4%2C4&Fabrikat=Linde&sonderbit=0&typ=&antriebsart=*&masttypid=alle&tkvon=2501&tkbis=3000&hhvon=0&hhbis=50000&bhvon=0&bhbis=20000&fhvon=0&fhbis=10000&bjbis=2019&baujahr=0&hrs=100000&preisvon=0&hatbild=0&reifen=*&preisbis=1000000&landid=23&entfernung=0> (referer: None)
+Traceback (most recent call last):
+  File "/home/coffeeincodeout/developer/forklift-crawler/lib/python3.6/site-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/home/coffeeincodeout/developer/forklift-crawler/lib/python3.6/site-packages/scrapy/spidermiddlewares/offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "/home/coffeeincodeout/developer/forklift-crawler/lib/python3.6/site-packages/scrapy/spidermiddlewares/referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/home/coffeeincodeout/developer/forklift-crawler/lib/python3.6/site-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/home/coffeeincodeout/developer/forklift-crawler/lib/python3.6/site-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/home/coffeeincodeout/developer/forklift-crawler/forklift/forklift/spiders/forklift_spider.py", line 83, in parse
+    yield scrapy.Request(pagination, callback=self.pageFollow)
+AttributeError: 'ForkLiftTestSpider' object has no attribute 'pageFollow'
+2019-01-30 14:57:22 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.forklift-international.com/de/e/staplersuche.php?sortorder=2&Bauart=4%2C4&Fabrikat=Linde&sonderbit=0&typ=&antriebsart=*&masttypid=alle&tkvon=2501&tkbis=3000&hhvon=0&hhbis=50000&bhvon=0&bhbis=20000&fhvon=0&fhbis=10000&bjbis=2019&baujahr=0&hrs=100000&preisvon=0&hatbild=0&reifen=*&preisbis=1000000&landid=29&entfernung=0> (referer: None)
+2019-01-30 14:57:22 [scrapy.proxies] DEBUG: Proxy user pass not found
+2019-01-30 14:57:22 [scrapy.proxies] DEBUG: Using proxy <http://103.224.101.155:31538>, 221 proxies left
+2019-01-30 14:57:22 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.forklift-international.com/de/e/staplersuche.php?sortorder=2&Bauart=4%2C4&Fabrikat=Linde&sonderbit=0&typ=&antriebsart=*&masttypid=alle&tkvon=2501&tkbis=3000&hhvon=0&hhbis=50000&bhvon=0&bhbis=20000&fhvon=0&fhbis=10000&bjbis=2019&baujahr=0&hrs=100000&preisvon=0&hatbild=0&reifen=*&preisbis=1000000&landid=29&entfernung=0> (referer: None)
+Traceback (most recent call last):
+  File "/home/coffeeincodeout/developer/forklift-crawler/lib/python3.6/site-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/home/coffeeincodeout/developer/forklift-crawler/lib/python3.6/site-packages/scrapy/spidermiddlewares/offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "/home/coffeeincodeout/developer/forklift-crawler/lib/python3.6/site-packages/scrapy/spidermiddlewares/referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/home/coffeeincodeout/developer/forklift-crawler/lib/python3.6/site-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/home/coffeeincodeout/developer/forklift-crawler/lib/python3.6/site-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/home/coffeeincodeout/developer/forklift-crawler/forklift/forklift/spiders/forklift_spider.py", line 83, in parse
+    yield scrapy.Request(pagination, callback=self.pageFollow)
+AttributeError: 'ForkLiftTestSpider' object has no attribute 'pageFollow'
+2019-01-30 14:57:34 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.forklift-international.com/de/e/staplersuche.php?sortorder=2&Bauart=4%2C4&Fabrikat=Linde&sonderbit=0&typ=&antriebsart=*&masttypid=alle&tkvon=2501&tkbis=3000&hhvon=0&hhbis=50000&bhvon=0&bhbis=20000&fhvon=0&fhbis=10000&bjbis=2019&baujahr=0&hrs=100000&preisvon=0&hatbild=0&reifen=*&preisbis=1000000&landid=11&entfernung=0> (referer: None)
+2019-01-30 14:57:34 [scrapy.proxies] DEBUG: Proxy user pass not found
+2019-01-30 14:57:34 [scrapy.proxies] DEBUG: Using proxy <http://180.180.217.124:53502>, 221 proxies left
+2019-01-30 14:57:34 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.forklift-international.com/de/e/staplersuche.php?sortorder=2&Bauart=4%2C4&Fabrikat=Linde&sonderbit=0&typ=&antriebsart=*&masttypid=alle&tkvon=2501&tkbis=3000&hhvon=0&hhbis=50000&bhvon=0&bhbis=20000&fhvon=0&fhbis=10000&bjbis=2019&baujahr=0&hrs=100000&preisvon=0&hatbild=0&reifen=*&preisbis=1000000&landid=11&entfernung=0> (referer: None)
+Traceback (most recent call last):
+  File "/home/coffeeincodeout/developer/forklift-crawler/lib/python3.6/site-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/home/coffeeincodeout/developer/forklift-crawler/lib/python3.6/site-packages/scrapy/spidermiddlewares/offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "/home/coffeeincodeout/developer/forklift-crawler/lib/python3.6/site-packages/scrapy/spidermiddlewares/referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/home/coffeeincodeout/developer/forklift-crawler/lib/python3.6/site-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/home/coffeeincodeout/developer/forklift-crawler/lib/python3.6/site-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/home/coffeeincodeout/developer/forklift-crawler/forklift/forklift/spiders/forklift_spider.py", line 83, in parse
+    yield scrapy.Request(pagination, callback=self.pageFollow)
+AttributeError: 'ForkLiftTestSpider' object has no attribute 'pageFollow'
+2019-01-30 14:57:46 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.forklift-international.com/de/e/staplersuche.php?sortorder=2&Bauart=4%2C4&Fabrikat=Linde&sonderbit=0&typ=&antriebsart=*&masttypid=alle&tkvon=2501&tkbis=3000&hhvon=0&hhbis=50000&bhvon=0&bhbis=20000&fhvon=0&fhbis=10000&bjbis=2019&baujahr=0&hrs=100000&preisvon=0&hatbild=0&reifen=*&preisbis=1000000&landid=16&entfernung=0> (referer: None)
+2019-01-30 14:57:46 [scrapy.proxies] DEBUG: Proxy user pass not found
+2019-01-30 14:57:46 [scrapy.proxies] DEBUG: Using proxy <http://185.12.25.90:8080>, 221 proxies left
+2019-01-30 14:57:46 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.forklift-international.com/de/e/staplersuche.php?sortorder=2&Bauart=4%2C4&Fabrikat=Linde&sonderbit=0&typ=&antriebsart=*&masttypid=alle&tkvon=2501&tkbis=3000&hhvon=0&hhbis=50000&bhvon=0&bhbis=20000&fhvon=0&fhbis=10000&bjbis=2019&baujahr=0&hrs=100000&preisvon=0&hatbild=0&reifen=*&preisbis=1000000&landid=16&entfernung=0> (referer: None)
+Traceback (most recent call last):
+  File "/home/coffeeincodeout/developer/forklift-crawler/lib/python3.6/site-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/home/coffeeincodeout/developer/forklift-crawler/lib/python3.6/site-packages/scrapy/spidermiddlewares/offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "/home/coffeeincodeout/developer/forklift-crawler/lib/python3.6/site-packages/scrapy/spidermiddlewares/referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/home/coffeeincodeout/developer/forklift-crawler/lib/python3.6/site-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/home/coffeeincodeout/developer/forklift-crawler/lib/python3.6/site-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/home/coffeeincodeout/developer/forklift-crawler/forklift/forklift/spiders/forklift_spider.py", line 83, in parse
+    yield scrapy.Request(pagination, callback=self.pageFollow)
+AttributeError: 'ForkLiftTestSpider' object has no attribute 'pageFollow'
+2019-01-30 14:57:53 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.forklift-international.com/de/e/staplersuche.php?sortorder=2&Bauart=4%2C4&Fabrikat=Linde&sonderbit=0&typ=&antriebsart=*&masttypid=alle&tkvon=2501&tkbis=3000&hhvon=0&hhbis=50000&bhvon=0&bhbis=20000&fhvon=0&fhbis=10000&bjbis=2019&baujahr=0&hrs=100000&preisvon=0&hatbild=0&reifen=*&preisbis=1000000&landid=20&entfernung=0> (referer: None)
+2019-01-30 14:57:53 [scrapy.proxies] DEBUG: Proxy user pass not found
+2019-01-30 14:57:53 [scrapy.proxies] DEBUG: Using proxy <http://103.78.75.27:8080>, 221 proxies left
+2019-01-30 14:57:54 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.forklift-international.com/de/e/staplersuche.php?sortorder=2&Bauart=4%2C4&Fabrikat=Linde&sonderbit=0&typ=&antriebsart=*&masttypid=alle&tkvon=2501&tkbis=3000&hhvon=0&hhbis=50000&bhvon=0&bhbis=20000&fhvon=0&fhbis=10000&bjbis=2019&baujahr=0&hrs=100000&preisvon=0&hatbild=0&reifen=*&preisbis=1000000&landid=20&entfernung=0>
+{'country': 'Großbritannien', 'product_url': 'https://www.forklift-international.com/de/e/Gabelstapler-gebraucht-Linde-H30D-3385903s?b=1', 'images': []}
+2019-01-30 14:57:54 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.forklift-international.com/de/e/staplersuche.php?sortorder=2&Bauart=4%2C4&Fabrikat=Linde&sonderbit=0&typ=&antriebsart=*&masttypid=alle&tkvon=2501&tkbis=3000&hhvon=0&hhbis=50000&bhvon=0&bhbis=20000&fhvon=0&fhbis=10000&bjbis=2019&baujahr=0&hrs=100000&preisvon=0&hatbild=0&reifen=*&preisbis=1000000&landid=20&entfernung=0>
+{'country': 'Großbritannien', 'product_url': 'https://www.forklift-international.com/de/e/Gabelstapler-gebraucht-Linde-H30D-3424819s?b=1', 'images': []}
+2019-01-30 14:57:54 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.forklift-international.com/de/e/staplersuche.php?sortorder=2&Bauart=4%2C4&Fabrikat=Linde&sonderbit=0&typ=&antriebsart=*&masttypid=alle&tkvon=2501&tkbis=3000&hhvon=0&hhbis=50000&bhvon=0&bhbis=20000&fhvon=0&fhbis=10000&bjbis=2019&baujahr=0&hrs=100000&preisvon=0&hatbild=0&reifen=*&preisbis=1000000&landid=20&entfernung=0>
+{'country': 'Großbritannien', 'product_url': 'https://www.forklift-international.com/de/e/Gabelstapler-gebraucht-Linde-H30D-3432245s?b=1', 'images': []}
+2019-01-30 14:57:54 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.forklift-international.com/de/e/staplersuche.php?sortorder=2&Bauart=4%2C4&Fabrikat=Linde&sonderbit=0&typ=&antriebsart=*&masttypid=alle&tkvon=2501&tkbis=3000&hhvon=0&hhbis=50000&bhvon=0&bhbis=20000&fhvon=0&fhbis=10000&bjbis=2019&baujahr=0&hrs=100000&preisvon=0&hatbild=0&reifen=*&preisbis=1000000&landid=20&entfernung=0>
+{'country': 'Großbritannien', 'product_url': 'https://www.forklift-international.com/de/e/Gabelstapler-gebraucht-Linde-H30D-01-3397670s?b=1', 'images': []}
+2019-01-30 14:57:54 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.forklift-international.com/de/e/staplersuche.php?sortorder=2&Bauart=4%2C4&Fabrikat=Linde&sonderbit=0&typ=&antriebsart=*&masttypid=alle&tkvon=2501&tkbis=3000&hhvon=0&hhbis=50000&bhvon=0&bhbis=20000&fhvon=0&fhbis=10000&bjbis=2019&baujahr=0&hrs=100000&preisvon=0&hatbild=0&reifen=*&preisbis=1000000&landid=20&entfernung=0> (referer: None)
+Traceback (most recent call last):
+  File "/home/coffeeincodeout/developer/forklift-crawler/lib/python3.6/site-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/home/coffeeincodeout/developer/forklift-crawler/lib/python3.6/site-packages/scrapy/spidermiddlewares/offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "/home/coffeeincodeout/developer/forklift-crawler/lib/python3.6/site-packages/scrapy/spidermiddlewares/referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/home/coffeeincodeout/developer/forklift-crawler/lib/python3.6/site-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/home/coffeeincodeout/developer/forklift-crawler/lib/python3.6/site-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/home/coffeeincodeout/developer/forklift-crawler/forklift/forklift/spiders/forklift_spider.py", line 83, in parse
+    yield scrapy.Request(pagination, callback=self.pageFollow)
+AttributeError: 'ForkLiftTestSpider' object has no attribute 'pageFollow'
+2019-01-30 14:58:05 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.forklift-international.com/de/e/staplersuche.php?sortorder=2&Bauart=4%2C4&Fabrikat=Linde&sonderbit=0&typ=&antriebsart=*&masttypid=alle&tkvon=2501&tkbis=3000&hhvon=0&hhbis=50000&bhvon=0&bhbis=20000&fhvon=0&fhbis=10000&bjbis=2019&baujahr=0&hrs=100000&preisvon=0&hatbild=0&reifen=*&preisbis=1000000&landid=21&entfernung=0> (referer: None)
+2019-01-30 14:58:05 [scrapy.proxies] DEBUG: Proxy user pass not found
+2019-01-30 14:58:05 [scrapy.proxies] DEBUG: Using proxy <http://103.109.14.237:60458>, 221 proxies left
+2019-01-30 14:58:05 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.forklift-international.com/de/e/staplersuche.php?sortorder=2&Bauart=4%2C4&Fabrikat=Linde&sonderbit=0&typ=&antriebsart=*&masttypid=alle&tkvon=2501&tkbis=3000&hhvon=0&hhbis=50000&bhvon=0&bhbis=20000&fhvon=0&fhbis=10000&bjbis=2019&baujahr=0&hrs=100000&preisvon=0&hatbild=0&reifen=*&preisbis=1000000&landid=21&entfernung=0> (referer: None)
+Traceback (most recent call last):
+  File "/home/coffeeincodeout/developer/forklift-crawler/lib/python3.6/site-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/home/coffeeincodeout/developer/forklift-crawler/lib/python3.6/site-packages/scrapy/spidermiddlewares/offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "/home/coffeeincodeout/developer/forklift-crawler/lib/python3.6/site-packages/scrapy/spidermiddlewares/referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/home/coffeeincodeout/developer/forklift-crawler/lib/python3.6/site-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/home/coffeeincodeout/developer/forklift-crawler/lib/python3.6/site-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/home/coffeeincodeout/developer/forklift-crawler/forklift/forklift/spiders/forklift_spider.py", line 83, in parse
+    yield scrapy.Request(pagination, callback=self.pageFollow)
+AttributeError: 'ForkLiftTestSpider' object has no attribute 'pageFollow'
+2019-01-30 14:58:09 [scrapy.extensions.logstats] INFO: Crawled 13 pages (at 6 pages/min), scraped 46 items (at 7 items/min)
+2019-01-30 14:58:16 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.forklift-international.com/de/e/staplersuche.php?sortorder=2&Bauart=4%2C4&Fabrikat=Linde&sonderbit=0&typ=&antriebsart=*&masttypid=alle&tkvon=2501&tkbis=3000&hhvon=0&hhbis=50000&bhvon=0&bhbis=20000&fhvon=0&fhbis=10000&bjbis=2019&baujahr=0&hrs=100000&preisvon=0&hatbild=0&reifen=*&preisbis=1000000&landid=47&entfernung=0> (referer: None)
+2019-01-30 14:58:17 [scrapy.proxies] DEBUG: Proxy user pass not found
+2019-01-30 14:58:17 [scrapy.proxies] DEBUG: Using proxy <http://154.66.122.198:34647>, 221 proxies left
+2019-01-30 14:58:17 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.forklift-international.com/de/e/staplersuche.php?sortorder=2&Bauart=4%2C4&Fabrikat=Linde&sonderbit=0&typ=&antriebsart=*&masttypid=alle&tkvon=2501&tkbis=3000&hhvon=0&hhbis=50000&bhvon=0&bhbis=20000&fhvon=0&fhbis=10000&bjbis=2019&baujahr=0&hrs=100000&preisvon=0&hatbild=0&reifen=*&preisbis=1000000&landid=47&entfernung=0> (referer: None)
+Traceback (most recent call last):
+  File "/home/coffeeincodeout/developer/forklift-crawler/lib/python3.6/site-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/home/coffeeincodeout/developer/forklift-crawler/lib/python3.6/site-packages/scrapy/spidermiddlewares/offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "/home/coffeeincodeout/developer/forklift-crawler/lib/python3.6/site-packages/scrapy/spidermiddlewares/referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/home/coffeeincodeout/developer/forklift-crawler/lib/python3.6/site-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/home/coffeeincodeout/developer/forklift-crawler/lib/python3.6/site-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/home/coffeeincodeout/developer/forklift-crawler/forklift/forklift/spiders/forklift_spider.py", line 83, in parse
+    yield scrapy.Request(pagination, callback=self.pageFollow)
+AttributeError: 'ForkLiftTestSpider' object has no attribute 'pageFollow'
+2019-01-30 14:58:24 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.forklift-international.com/de/e/staplersuche.php?sortorder=2&Bauart=4%2C4&Fabrikat=Linde&sonderbit=0&typ=&antriebsart=*&masttypid=alle&tkvon=2501&tkbis=3000&hhvon=0&hhbis=50000&bhvon=0&bhbis=20000&fhvon=0&fhbis=10000&bjbis=2019&baujahr=0&hrs=100000&preisvon=0&hatbild=0&reifen=*&preisbis=1000000&landid=18&entfernung=0> (referer: None)
+2019-01-30 14:58:24 [scrapy.proxies] DEBUG: Proxy user pass not found
+2019-01-30 14:58:24 [scrapy.proxies] DEBUG: Using proxy <http://196.200.21.194:48503>, 221 proxies left
+2019-01-30 14:58:24 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.forklift-international.com/de/e/staplersuche.php?sortorder=2&Bauart=4%2C4&Fabrikat=Linde&sonderbit=0&typ=&antriebsart=*&masttypid=alle&tkvon=2501&tkbis=3000&hhvon=0&hhbis=50000&bhvon=0&bhbis=20000&fhvon=0&fhbis=10000&bjbis=2019&baujahr=0&hrs=100000&preisvon=0&hatbild=0&reifen=*&preisbis=1000000&landid=18&entfernung=0>
+{'country': 'Italien', 'product_url': 'https://www.forklift-international.com/de/e/Gabelstapler-gebraucht-Linde-H-30-D-3220492s?b=1', 'images': []}
+2019-01-30 14:58:24 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.forklift-international.com/de/e/staplersuche.php?sortorder=2&Bauart=4%2C4&Fabrikat=Linde&sonderbit=0&typ=&antriebsart=*&masttypid=alle&tkvon=2501&tkbis=3000&hhvon=0&hhbis=50000&bhvon=0&bhbis=20000&fhvon=0&fhbis=10000&bjbis=2019&baujahr=0&hrs=100000&preisvon=0&hatbild=0&reifen=*&preisbis=1000000&landid=18&entfernung=0>
+{'country': 'Italien', 'product_url': 'https://www.forklift-international.com/de/e/Gabelstapler-gebraucht-Linde-H-30-D-3220497s?b=1', 'images': []}
+2019-01-30 14:58:24 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.forklift-international.com/de/e/staplersuche.php?sortorder=2&Bauart=4%2C4&Fabrikat=Linde&sonderbit=0&typ=&antriebsart=*&masttypid=alle&tkvon=2501&tkbis=3000&hhvon=0&hhbis=50000&bhvon=0&bhbis=20000&fhvon=0&fhbis=10000&bjbis=2019&baujahr=0&hrs=100000&preisvon=0&hatbild=0&reifen=*&preisbis=1000000&landid=18&entfernung=0>
+{'country': 'Italien', 'product_url': 'https://www.forklift-international.com/de/e/Gabelstapler-gebraucht-Linde-H-30-D-3220721s?b=1', 'images': []}
+2019-01-30 14:58:24 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.forklift-international.com/de/e/staplersuche.php?sortorder=2&Bauart=4%2C4&Fabrikat=Linde&sonderbit=0&typ=&antriebsart=*&masttypid=alle&tkvon=2501&tkbis=3000&hhvon=0&hhbis=50000&bhvon=0&bhbis=20000&fhvon=0&fhbis=10000&bjbis=2019&baujahr=0&hrs=100000&preisvon=0&hatbild=0&reifen=*&preisbis=1000000&landid=18&entfernung=0>
+{'country': 'Italien', 'product_url': 'https://www.forklift-international.com/de/e/Gabelstapler-gebraucht-Linde-H-30-D-3271126s?b=1', 'images': []}
+2019-01-30 14:58:24 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.forklift-international.com/de/e/staplersuche.php?sortorder=2&Bauart=4%2C4&Fabrikat=Linde&sonderbit=0&typ=&antriebsart=*&masttypid=alle&tkvon=2501&tkbis=3000&hhvon=0&hhbis=50000&bhvon=0&bhbis=20000&fhvon=0&fhbis=10000&bjbis=2019&baujahr=0&hrs=100000&preisvon=0&hatbild=0&reifen=*&preisbis=1000000&landid=18&entfernung=0>
+{'country': 'Italien', 'product_url': 'https://www.forklift-international.com/de/e/Gabelstapler-gebraucht-Linde-H-30-D-3387705s?b=1', 'images': []}
+2019-01-30 14:58:24 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.forklift-international.com/de/e/staplersuche.php?sortorder=2&Bauart=4%2C4&Fabrikat=Linde&sonderbit=0&typ=&antriebsart=*&masttypid=alle&tkvon=2501&tkbis=3000&hhvon=0&hhbis=50000&bhvon=0&bhbis=20000&fhvon=0&fhbis=10000&bjbis=2019&baujahr=0&hrs=100000&preisvon=0&hatbild=0&reifen=*&preisbis=1000000&landid=18&entfernung=0>
+{'country': 'Italien', 'product_url': 'https://www.forklift-international.com/de/e/Gabelstapler-gebraucht-Linde-H-30-D--3410934s?b=1', 'images': []}
+2019-01-30 14:58:24 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.forklift-international.com/de/e/staplersuche.php?sortorder=2&Bauart=4%2C4&Fabrikat=Linde&sonderbit=0&typ=&antriebsart=*&masttypid=alle&tkvon=2501&tkbis=3000&hhvon=0&hhbis=50000&bhvon=0&bhbis=20000&fhvon=0&fhbis=10000&bjbis=2019&baujahr=0&hrs=100000&preisvon=0&hatbild=0&reifen=*&preisbis=1000000&landid=18&entfernung=0>
+{'country': 'Italien', 'product_url': 'https://www.forklift-international.com/de/e/Gabelstapler-gebraucht-Linde-H-30-D-3420419s?b=1', 'images': []}
+2019-01-30 14:58:24 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.forklift-international.com/de/e/staplersuche.php?sortorder=2&Bauart=4%2C4&Fabrikat=Linde&sonderbit=0&typ=&antriebsart=*&masttypid=alle&tkvon=2501&tkbis=3000&hhvon=0&hhbis=50000&bhvon=0&bhbis=20000&fhvon=0&fhbis=10000&bjbis=2019&baujahr=0&hrs=100000&preisvon=0&hatbild=0&reifen=*&preisbis=1000000&landid=18&entfernung=0>
+{'country': 'Italien', 'product_url': 'https://www.forklift-international.com/de/e/Gabelstapler-gebraucht-Linde-H-30-D-3457662s?b=1', 'images': []}
+2019-01-30 14:58:24 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.forklift-international.com/de/e/staplersuche.php?sortorder=2&Bauart=4%2C4&Fabrikat=Linde&sonderbit=0&typ=&antriebsart=*&masttypid=alle&tkvon=2501&tkbis=3000&hhvon=0&hhbis=50000&bhvon=0&bhbis=20000&fhvon=0&fhbis=10000&bjbis=2019&baujahr=0&hrs=100000&preisvon=0&hatbild=0&reifen=*&preisbis=1000000&landid=18&entfernung=0>
+{'country': 'Italien', 'product_url': 'https://www.forklift-international.com/de/e/Gabelstapler-gebraucht-Linde-H-30-D-393-%28FLOTTA-NOLO%29-3432235s?b=1', 'images': []}
+2019-01-30 14:58:24 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.forklift-international.com/de/e/staplersuche.php?sortorder=2&Bauart=4%2C4&Fabrikat=Linde&sonderbit=0&typ=&antriebsart=*&masttypid=alle&tkvon=2501&tkbis=3000&hhvon=0&hhbis=50000&bhvon=0&bhbis=20000&fhvon=0&fhbis=10000&bjbis=2019&baujahr=0&hrs=100000&preisvon=0&hatbild=0&reifen=*&preisbis=1000000&landid=18&entfernung=0>
+{'country': 'Italien', 'product_url': 'https://www.forklift-international.com/de/e/Gabelstapler-gebraucht-Linde-H-30-D-01-3452768s?b=1', 'images': []}
+2019-01-30 14:58:24 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.forklift-international.com/de/e/staplersuche.php?sortorder=2&Bauart=4%2C4&Fabrikat=Linde&sonderbit=0&typ=&antriebsart=*&masttypid=alle&tkvon=2501&tkbis=3000&hhvon=0&hhbis=50000&bhvon=0&bhbis=20000&fhvon=0&fhbis=10000&bjbis=2019&baujahr=0&hrs=100000&preisvon=0&hatbild=0&reifen=*&preisbis=1000000&landid=18&entfernung=0>
+{'country': 'Italien', 'product_url': 'https://www.forklift-international.com/de/e/Gabelstapler-gebraucht-Linde-H-30-D-01-esecuzione-container-3432234s?b=1', 'images': []}
+2019-01-30 14:58:24 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.forklift-international.com/de/e/staplersuche.php?sortorder=2&Bauart=4%2C4&Fabrikat=Linde&sonderbit=0&typ=&antriebsart=*&masttypid=alle&tkvon=2501&tkbis=3000&hhvon=0&hhbis=50000&bhvon=0&bhbis=20000&fhvon=0&fhbis=10000&bjbis=2019&baujahr=0&hrs=100000&preisvon=0&hatbild=0&reifen=*&preisbis=1000000&landid=18&entfernung=0>
+{'country': 'Italien', 'product_url': 'https://www.forklift-international.com/de/e/Gabelstapler-gebraucht-Linde-H-30-D-01-393-3397124s?b=1', 'images': []}
+2019-01-30 14:58:24 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.forklift-international.com/de/e/staplersuche.php?sortorder=2&Bauart=4%2C4&Fabrikat=Linde&sonderbit=0&typ=&antriebsart=*&masttypid=alle&tkvon=2501&tkbis=3000&hhvon=0&hhbis=50000&bhvon=0&bhbis=20000&fhvon=0&fhbis=10000&bjbis=2019&baujahr=0&hrs=100000&preisvon=0&hatbild=0&reifen=*&preisbis=1000000&landid=18&entfernung=0>
+{'country': 'Italien', 'product_url': 'https://www.forklift-international.com/de/e/Gabelstapler-gebraucht-Linde-H-30-D-01-393-%28FLOTTA-NOLO%29-3443289s?b=1', 'images': []}
+2019-01-30 14:58:24 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.forklift-international.com/de/e/staplersuche.php?sortorder=2&Bauart=4%2C4&Fabrikat=Linde&sonderbit=0&typ=&antriebsart=*&masttypid=alle&tkvon=2501&tkbis=3000&hhvon=0&hhbis=50000&bhvon=0&bhbis=20000&fhvon=0&fhbis=10000&bjbis=2019&baujahr=0&hrs=100000&preisvon=0&hatbild=0&reifen=*&preisbis=1000000&landid=18&entfernung=0>
+{'country': 'Italien', 'product_url': 'https://www.forklift-international.com/de/e/Gabelstapler-gebraucht-Linde-H-30-D-03-351-3413460s?b=1', 'images': []}
+2019-01-30 14:58:24 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.forklift-international.com/de/e/staplersuche.php?sortorder=2&Bauart=4%2C4&Fabrikat=Linde&sonderbit=0&typ=&antriebsart=*&masttypid=alle&tkvon=2501&tkbis=3000&hhvon=0&hhbis=50000&bhvon=0&bhbis=20000&fhvon=0&fhbis=10000&bjbis=2019&baujahr=0&hrs=100000&preisvon=0&hatbild=0&reifen=*&preisbis=1000000&landid=18&entfernung=0>
+{'country': 'Italien', 'product_url': 'https://www.forklift-international.com/de/e/Gabelstapler-gebraucht-Linde-H-30-D-393-01-3246291s?b=1', 'images': []}
+2019-01-30 14:58:24 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.forklift-international.com/de/e/staplersuche.php?sortorder=2&Bauart=4%2C4&Fabrikat=Linde&sonderbit=0&typ=&antriebsart=*&masttypid=alle&tkvon=2501&tkbis=3000&hhvon=0&hhbis=50000&bhvon=0&bhbis=20000&fhvon=0&fhbis=10000&bjbis=2019&baujahr=0&hrs=100000&preisvon=0&hatbild=0&reifen=*&preisbis=1000000&landid=18&entfernung=0>
+{'country': 'Italien', 'product_url': 'https://www.forklift-international.com/de/e/Gabelstapler-gebraucht-Linde-H-30-D-393-01-3413462s?b=1', 'images': []}
+2019-01-30 14:58:24 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.forklift-international.com/de/e/staplersuche.php?sortorder=2&Bauart=4%2C4&Fabrikat=Linde&sonderbit=0&typ=&antriebsart=*&masttypid=alle&tkvon=2501&tkbis=3000&hhvon=0&hhbis=50000&bhvon=0&bhbis=20000&fhvon=0&fhbis=10000&bjbis=2019&baujahr=0&hrs=100000&preisvon=0&hatbild=0&reifen=*&preisbis=1000000&landid=18&entfernung=0>
+{'country': 'Italien', 'product_url': 'https://www.forklift-international.com/de/e/Gabelstapler-gebraucht-Linde-H-30-D-393-01-3422508s?b=1', 'images': []}
+2019-01-30 14:58:24 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.forklift-international.com/de/e/staplersuche.php?sortorder=2&Bauart=4%2C4&Fabrikat=Linde&sonderbit=0&typ=&antriebsart=*&masttypid=alle&tkvon=2501&tkbis=3000&hhvon=0&hhbis=50000&bhvon=0&bhbis=20000&fhvon=0&fhbis=10000&bjbis=2019&baujahr=0&hrs=100000&preisvon=0&hatbild=0&reifen=*&preisbis=1000000&landid=18&entfernung=0>
+{'country': 'Italien', 'product_url': 'https://www.forklift-international.com/de/e/Gabelstapler-gebraucht-Linde-H30-2713731s?b=1', 'images': []}
+2019-01-30 14:58:24 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.forklift-international.com/de/e/staplersuche.php?sortorder=2&Bauart=4%2C4&Fabrikat=Linde&sonderbit=0&typ=&antriebsart=*&masttypid=alle&tkvon=2501&tkbis=3000&hhvon=0&hhbis=50000&bhvon=0&bhbis=20000&fhvon=0&fhbis=10000&bjbis=2019&baujahr=0&hrs=100000&preisvon=0&hatbild=0&reifen=*&preisbis=1000000&landid=18&entfernung=0>
+{'country': 'Italien', 'product_url': 'https://www.forklift-international.com/de/e/Gabelstapler-gebraucht-Linde-H30-D-3456567s?b=1', 'images': []}
+2019-01-30 14:58:24 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.forklift-international.com/de/e/staplersuche.php?sortorder=2&Bauart=4%2C4&Fabrikat=Linde&sonderbit=0&typ=&antriebsart=*&masttypid=alle&tkvon=2501&tkbis=3000&hhvon=0&hhbis=50000&bhvon=0&bhbis=20000&fhvon=0&fhbis=10000&bjbis=2019&baujahr=0&hrs=100000&preisvon=0&hatbild=0&reifen=*&preisbis=1000000&landid=18&entfernung=0>
+{'country': 'Italien', 'product_url': 'https://www.forklift-international.com/de/e/Gabelstapler-gebraucht-Linde-H30D-2898779s?b=1', 'images': []}
+2019-01-30 14:58:24 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.forklift-international.com/de/e/staplersuche.php?sortorder=2&Bauart=4%2C4&Fabrikat=Linde&sonderbit=0&typ=&antriebsart=*&masttypid=alle&tkvon=2501&tkbis=3000&hhvon=0&hhbis=50000&bhvon=0&bhbis=20000&fhvon=0&fhbis=10000&bjbis=2019&baujahr=0&hrs=100000&preisvon=0&hatbild=0&reifen=*&preisbis=1000000&landid=18&entfernung=0>
+{'country': 'Italien', 'product_url': 'https://www.forklift-international.com/de/e/Gabelstapler-gebraucht-Linde-H30D-393-3394469s?b=1', 'images': []}
+2019-01-30 14:58:24 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.forklift-international.com/de/e/staplersuche.php?sortorder=2&Bauart=4%2C4&Fabrikat=Linde&sonderbit=0&typ=&antriebsart=*&masttypid=alle&tkvon=2501&tkbis=3000&hhvon=0&hhbis=50000&bhvon=0&bhbis=20000&fhvon=0&fhbis=10000&bjbis=2019&baujahr=0&hrs=100000&preisvon=0&hatbild=0&reifen=*&preisbis=1000000&landid=18&entfernung=0> (referer: None)
+Traceback (most recent call last):
+  File "/home/coffeeincodeout/developer/forklift-crawler/lib/python3.6/site-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/home/coffeeincodeout/developer/forklift-crawler/lib/python3.6/site-packages/scrapy/spidermiddlewares/offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "/home/coffeeincodeout/developer/forklift-crawler/lib/python3.6/site-packages/scrapy/spidermiddlewares/referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/home/coffeeincodeout/developer/forklift-crawler/lib/python3.6/site-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/home/coffeeincodeout/developer/forklift-crawler/lib/python3.6/site-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/home/coffeeincodeout/developer/forklift-crawler/forklift/forklift/spiders/forklift_spider.py", line 83, in parse
+    yield scrapy.Request(pagination, callback=self.pageFollow)
+AttributeError: 'ForkLiftTestSpider' object has no attribute 'pageFollow'
+2019-01-30 14:58:30 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.forklift-international.com/de/e/staplersuche.php?sortorder=2&Bauart=4%2C4&Fabrikat=Linde&sonderbit=0&typ=&antriebsart=*&masttypid=alle&tkvon=2501&tkbis=3000&hhvon=0&hhbis=50000&bhvon=0&bhbis=20000&fhvon=0&fhbis=10000&bjbis=2019&baujahr=0&hrs=100000&preisvon=0&hatbild=0&reifen=*&preisbis=1000000&landid=35&entfernung=0> (referer: None)
+2019-01-30 14:58:30 [scrapy.proxies] DEBUG: Proxy user pass not found
+2019-01-30 14:58:30 [scrapy.proxies] DEBUG: Using proxy <http://185.221.190.124:48472>, 221 proxies left
+2019-01-30 14:58:30 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.forklift-international.com/de/e/staplersuche.php?sortorder=2&Bauart=4%2C4&Fabrikat=Linde&sonderbit=0&typ=&antriebsart=*&masttypid=alle&tkvon=2501&tkbis=3000&hhvon=0&hhbis=50000&bhvon=0&bhbis=20000&fhvon=0&fhbis=10000&bjbis=2019&baujahr=0&hrs=100000&preisvon=0&hatbild=0&reifen=*&preisbis=1000000&landid=35&entfernung=0> (referer: None)
+Traceback (most recent call last):
+  File "/home/coffeeincodeout/developer/forklift-crawler/lib/python3.6/site-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/home/coffeeincodeout/developer/forklift-crawler/lib/python3.6/site-packages/scrapy/spidermiddlewares/offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "/home/coffeeincodeout/developer/forklift-crawler/lib/python3.6/site-packages/scrapy/spidermiddlewares/referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/home/coffeeincodeout/developer/forklift-crawler/lib/python3.6/site-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/home/coffeeincodeout/developer/forklift-crawler/lib/python3.6/site-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/home/coffeeincodeout/developer/forklift-crawler/forklift/forklift/spiders/forklift_spider.py", line 83, in parse
+    yield scrapy.Request(pagination, callback=self.pageFollow)
+AttributeError: 'ForkLiftTestSpider' object has no attribute 'pageFollow'
+2019-01-30 14:58:41 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.forklift-international.com/de/e/staplersuche.php?sortorder=2&Bauart=4%2C4&Fabrikat=Linde&sonderbit=0&typ=&antriebsart=*&masttypid=alle&tkvon=2501&tkbis=3000&hhvon=0&hhbis=50000&bhvon=0&bhbis=20000&fhvon=0&fhbis=10000&bjbis=2019&baujahr=0&hrs=100000&preisvon=0&hatbild=0&reifen=*&preisbis=1000000&landid=5&entfernung=0> (referer: None)
+2019-01-30 14:58:41 [scrapy.proxies] DEBUG: Proxy user pass not found
+2019-01-30 14:58:41 [scrapy.proxies] DEBUG: Using proxy <http://96.9.66.125:55634>, 221 proxies left
+2019-01-30 14:58:41 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.forklift-international.com/de/e/staplersuche.php?sortorder=2&Bauart=4%2C4&Fabrikat=Linde&sonderbit=0&typ=&antriebsart=*&masttypid=alle&tkvon=2501&tkbis=3000&hhvon=0&hhbis=50000&bhvon=0&bhbis=20000&fhvon=0&fhbis=10000&bjbis=2019&baujahr=0&hrs=100000&preisvon=0&hatbild=0&reifen=*&preisbis=1000000&landid=5&entfernung=0> (referer: None)
+Traceback (most recent call last):
+  File "/home/coffeeincodeout/developer/forklift-crawler/lib/python3.6/site-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/home/coffeeincodeout/developer/forklift-crawler/lib/python3.6/site-packages/scrapy/spidermiddlewares/offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "/home/coffeeincodeout/developer/forklift-crawler/lib/python3.6/site-packages/scrapy/spidermiddlewares/referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/home/coffeeincodeout/developer/forklift-crawler/lib/python3.6/site-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/home/coffeeincodeout/developer/forklift-crawler/lib/python3.6/site-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/home/coffeeincodeout/developer/forklift-crawler/forklift/forklift/spiders/forklift_spider.py", line 83, in parse
+    yield scrapy.Request(pagination, callback=self.pageFollow)
+AttributeError: 'ForkLiftTestSpider' object has no attribute 'pageFollow'
+2019-01-30 14:58:52 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.forklift-international.com/de/e/staplersuche.php?sortorder=2&Bauart=4%2C4&Fabrikat=Linde&sonderbit=0&typ=&antriebsart=*&masttypid=alle&tkvon=2501&tkbis=3000&hhvon=0&hhbis=50000&bhvon=0&bhbis=20000&fhvon=0&fhbis=10000&bjbis=2019&baujahr=0&hrs=100000&preisvon=0&hatbild=0&reifen=*&preisbis=1000000&landid=19&entfernung=0> (referer: None)
+2019-01-30 14:58:52 [scrapy.proxies] DEBUG: Proxy user pass not found
+2019-01-30 14:58:52 [scrapy.proxies] DEBUG: Using proxy <http://103.245.188.86:51923>, 221 proxies left
+2019-01-30 14:58:52 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.forklift-international.com/de/e/staplersuche.php?sortorder=2&Bauart=4%2C4&Fabrikat=Linde&sonderbit=0&typ=&antriebsart=*&masttypid=alle&tkvon=2501&tkbis=3000&hhvon=0&hhbis=50000&bhvon=0&bhbis=20000&fhvon=0&fhbis=10000&bjbis=2019&baujahr=0&hrs=100000&preisvon=0&hatbild=0&reifen=*&preisbis=1000000&landid=19&entfernung=0> (referer: None)
+Traceback (most recent call last):
+  File "/home/coffeeincodeout/developer/forklift-crawler/lib/python3.6/site-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/home/coffeeincodeout/developer/forklift-crawler/lib/python3.6/site-packages/scrapy/spidermiddlewares/offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "/home/coffeeincodeout/developer/forklift-crawler/lib/python3.6/site-packages/scrapy/spidermiddlewares/referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/home/coffeeincodeout/developer/forklift-crawler/lib/python3.6/site-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/home/coffeeincodeout/developer/forklift-crawler/lib/python3.6/site-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/home/coffeeincodeout/developer/forklift-crawler/forklift/forklift/spiders/forklift_spider.py", line 83, in parse
+    yield scrapy.Request(pagination, callback=self.pageFollow)
+AttributeError: 'ForkLiftTestSpider' object has no attribute 'pageFollow'
+2019-01-30 14:59:00 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.forklift-international.com/de/e/staplersuche.php?sortorder=2&Bauart=4%2C4&Fabrikat=Linde&sonderbit=0&typ=&antriebsart=*&masttypid=alle&tkvon=2501&tkbis=3000&hhvon=0&hhbis=50000&bhvon=0&bhbis=20000&fhvon=0&fhbis=10000&bjbis=2019&baujahr=0&hrs=100000&preisvon=0&hatbild=0&reifen=*&preisbis=1000000&landid=57&entfernung=0> (referer: None)
+2019-01-30 14:59:00 [scrapy.proxies] DEBUG: Proxy user pass not found
+2019-01-30 14:59:00 [scrapy.proxies] DEBUG: Using proxy <http://41.75.13.79:52120>, 221 proxies left
+2019-01-30 14:59:01 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.forklift-international.com/de/e/staplersuche.php?sortorder=2&Bauart=4%2C4&Fabrikat=Linde&sonderbit=0&typ=&antriebsart=*&masttypid=alle&tkvon=2501&tkbis=3000&hhvon=0&hhbis=50000&bhvon=0&bhbis=20000&fhvon=0&fhbis=10000&bjbis=2019&baujahr=0&hrs=100000&preisvon=0&hatbild=0&reifen=*&preisbis=1000000&landid=57&entfernung=0> (referer: None)
+Traceback (most recent call last):
+  File "/home/coffeeincodeout/developer/forklift-crawler/lib/python3.6/site-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/home/coffeeincodeout/developer/forklift-crawler/lib/python3.6/site-packages/scrapy/spidermiddlewares/offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "/home/coffeeincodeout/developer/forklift-crawler/lib/python3.6/site-packages/scrapy/spidermiddlewares/referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/home/coffeeincodeout/developer/forklift-crawler/lib/python3.6/site-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/home/coffeeincodeout/developer/forklift-crawler/lib/python3.6/site-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/home/coffeeincodeout/developer/forklift-crawler/forklift/forklift/spiders/forklift_spider.py", line 83, in parse
+    yield scrapy.Request(pagination, callback=self.pageFollow)
+AttributeError: 'ForkLiftTestSpider' object has no attribute 'pageFollow'
+2019-01-30 14:59:09 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.forklift-international.com/de/e/staplersuche.php?sortorder=2&Bauart=4%2C4&Fabrikat=Linde&sonderbit=0&typ=&antriebsart=*&masttypid=alle&tkvon=2501&tkbis=3000&hhvon=0&hhbis=50000&bhvon=0&bhbis=20000&fhvon=0&fhbis=10000&bjbis=2019&baujahr=0&hrs=100000&preisvon=0&hatbild=0&reifen=*&preisbis=1000000&landid=59&entfernung=0> (referer: None)
+2019-01-30 14:59:09 [scrapy.proxies] DEBUG: Proxy user pass not found
+2019-01-30 14:59:09 [scrapy.proxies] DEBUG: Using proxy <http://128.74.175.248:57998>, 221 proxies left
+2019-01-30 14:59:09 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.forklift-international.com/de/e/staplersuche.php?sortorder=2&Bauart=4%2C4&Fabrikat=Linde&sonderbit=0&typ=&antriebsart=*&masttypid=alle&tkvon=2501&tkbis=3000&hhvon=0&hhbis=50000&bhvon=0&bhbis=20000&fhvon=0&fhbis=10000&bjbis=2019&baujahr=0&hrs=100000&preisvon=0&hatbild=0&reifen=*&preisbis=1000000&landid=59&entfernung=0> (referer: None)
+Traceback (most recent call last):
+  File "/home/coffeeincodeout/developer/forklift-crawler/lib/python3.6/site-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/home/coffeeincodeout/developer/forklift-crawler/lib/python3.6/site-packages/scrapy/spidermiddlewares/offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "/home/coffeeincodeout/developer/forklift-crawler/lib/python3.6/site-packages/scrapy/spidermiddlewares/referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/home/coffeeincodeout/developer/forklift-crawler/lib/python3.6/site-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/home/coffeeincodeout/developer/forklift-crawler/lib/python3.6/site-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/home/coffeeincodeout/developer/forklift-crawler/forklift/forklift/spiders/forklift_spider.py", line 83, in parse
+    yield scrapy.Request(pagination, callback=self.pageFollow)
+AttributeError: 'ForkLiftTestSpider' object has no attribute 'pageFollow'
+2019-01-30 14:59:09 [scrapy.extensions.logstats] INFO: Crawled 20 pages (at 7 pages/min), scraped 67 items (at 21 items/min)
+2019-01-30 14:59:18 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.forklift-international.com/de/e/staplersuche.php?sortorder=2&Bauart=4%2C4&Fabrikat=Linde&sonderbit=0&typ=&antriebsart=*&masttypid=alle&tkvon=2501&tkbis=3000&hhvon=0&hhbis=50000&bhvon=0&bhbis=20000&fhvon=0&fhbis=10000&bjbis=2019&baujahr=0&hrs=100000&preisvon=0&hatbild=0&reifen=*&preisbis=1000000&landid=33&entfernung=0> (referer: None)
+2019-01-30 14:59:18 [scrapy.proxies] DEBUG: Proxy user pass not found
+2019-01-30 14:59:18 [scrapy.proxies] DEBUG: Using proxy <http://84.21.27.205:51962>, 221 proxies left
+2019-01-30 14:59:19 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.forklift-international.com/de/e/staplersuche.php?sortorder=2&Bauart=4%2C4&Fabrikat=Linde&sonderbit=0&typ=&antriebsart=*&masttypid=alle&tkvon=2501&tkbis=3000&hhvon=0&hhbis=50000&bhvon=0&bhbis=20000&fhvon=0&fhbis=10000&bjbis=2019&baujahr=0&hrs=100000&preisvon=0&hatbild=0&reifen=*&preisbis=1000000&landid=33&entfernung=0> (referer: None)
+Traceback (most recent call last):
+  File "/home/coffeeincodeout/developer/forklift-crawler/lib/python3.6/site-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/home/coffeeincodeout/developer/forklift-crawler/lib/python3.6/site-packages/scrapy/spidermiddlewares/offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "/home/coffeeincodeout/developer/forklift-crawler/lib/python3.6/site-packages/scrapy/spidermiddlewares/referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/home/coffeeincodeout/developer/forklift-crawler/lib/python3.6/site-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/home/coffeeincodeout/developer/forklift-crawler/lib/python3.6/site-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/home/coffeeincodeout/developer/forklift-crawler/forklift/forklift/spiders/forklift_spider.py", line 83, in parse
+    yield scrapy.Request(pagination, callback=self.pageFollow)
+AttributeError: 'ForkLiftTestSpider' object has no attribute 'pageFollow'
+2019-01-30 14:59:26 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.forklift-international.com/de/e/staplersuche.php?sortorder=2&Bauart=4%2C4&Fabrikat=Linde&sonderbit=0&typ=&antriebsart=*&masttypid=alle&tkvon=2501&tkbis=3000&hhvon=0&hhbis=50000&bhvon=0&bhbis=20000&fhvon=0&fhbis=10000&bjbis=2019&baujahr=0&hrs=100000&preisvon=0&hatbild=0&reifen=*&preisbis=1000000&landid=4&entfernung=0> (referer: None)
+2019-01-30 14:59:26 [scrapy.proxies] DEBUG: Proxy user pass not found
+2019-01-30 14:59:26 [scrapy.proxies] DEBUG: Using proxy <http://158.181.16.205:54820>, 221 proxies left
+2019-01-30 14:59:26 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.forklift-international.com/de/e/staplersuche.php?sortorder=2&Bauart=4%2C4&Fabrikat=Linde&sonderbit=0&typ=&antriebsart=*&masttypid=alle&tkvon=2501&tkbis=3000&hhvon=0&hhbis=50000&bhvon=0&bhbis=20000&fhvon=0&fhbis=10000&bjbis=2019&baujahr=0&hrs=100000&preisvon=0&hatbild=0&reifen=*&preisbis=1000000&landid=4&entfernung=0>
+{'country': 'Niederlande', 'product_url': 'https://www.forklift-international.com/de/e/Gabelstapler-gebraucht-Linde-H-30-D-3440453s?b=1', 'images': []}
+2019-01-30 14:59:26 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.forklift-international.com/de/e/staplersuche.php?sortorder=2&Bauart=4%2C4&Fabrikat=Linde&sonderbit=0&typ=&antriebsart=*&masttypid=alle&tkvon=2501&tkbis=3000&hhvon=0&hhbis=50000&bhvon=0&bhbis=20000&fhvon=0&fhbis=10000&bjbis=2019&baujahr=0&hrs=100000&preisvon=0&hatbild=0&reifen=*&preisbis=1000000&landid=4&entfernung=0>
+{'country': 'Niederlande', 'product_url': 'https://www.forklift-international.com/de/e/Gabelstapler-gebraucht-Linde-H-30-D-01-3396078s?b=1', 'images': []}
+2019-01-30 14:59:26 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.forklift-international.com/de/e/staplersuche.php?sortorder=2&Bauart=4%2C4&Fabrikat=Linde&sonderbit=0&typ=&antriebsart=*&masttypid=alle&tkvon=2501&tkbis=3000&hhvon=0&hhbis=50000&bhvon=0&bhbis=20000&fhvon=0&fhbis=10000&bjbis=2019&baujahr=0&hrs=100000&preisvon=0&hatbild=0&reifen=*&preisbis=1000000&landid=4&entfernung=0>
+{'country': 'Niederlande', 'product_url': 'https://www.forklift-international.com/de/e/Gabelstapler-gebraucht-Linde-H30D-2730469s?b=1', 'images': []}
+2019-01-30 14:59:26 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.forklift-international.com/de/e/staplersuche.php?sortorder=2&Bauart=4%2C4&Fabrikat=Linde&sonderbit=0&typ=&antriebsart=*&masttypid=alle&tkvon=2501&tkbis=3000&hhvon=0&hhbis=50000&bhvon=0&bhbis=20000&fhvon=0&fhbis=10000&bjbis=2019&baujahr=0&hrs=100000&preisvon=0&hatbild=0&reifen=*&preisbis=1000000&landid=4&entfernung=0>
+{'country': 'Niederlande', 'product_url': 'https://www.forklift-international.com/de/e/Gabelstapler-gebraucht-Linde-H30D-2730470s?b=1', 'images': []}
+2019-01-30 14:59:26 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.forklift-international.com/de/e/staplersuche.php?sortorder=2&Bauart=4%2C4&Fabrikat=Linde&sonderbit=0&typ=&antriebsart=*&masttypid=alle&tkvon=2501&tkbis=3000&hhvon=0&hhbis=50000&bhvon=0&bhbis=20000&fhvon=0&fhbis=10000&bjbis=2019&baujahr=0&hrs=100000&preisvon=0&hatbild=0&reifen=*&preisbis=1000000&landid=4&entfernung=0>
+{'country': 'Niederlande', 'product_url': 'https://www.forklift-international.com/de/e/Gabelstapler-gebraucht-Linde-H30D-2766698s?b=1', 'images': []}
+2019-01-30 14:59:26 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.forklift-international.com/de/e/staplersuche.php?sortorder=2&Bauart=4%2C4&Fabrikat=Linde&sonderbit=0&typ=&antriebsart=*&masttypid=alle&tkvon=2501&tkbis=3000&hhvon=0&hhbis=50000&bhvon=0&bhbis=20000&fhvon=0&fhbis=10000&bjbis=2019&baujahr=0&hrs=100000&preisvon=0&hatbild=0&reifen=*&preisbis=1000000&landid=4&entfernung=0>
+{'country': 'Niederlande', 'product_url': 'https://www.forklift-international.com/de/e/Gabelstapler-gebraucht-Linde-H30D-3403164s?b=1', 'images': []}
+2019-01-30 14:59:26 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.forklift-international.com/de/e/staplersuche.php?sortorder=2&Bauart=4%2C4&Fabrikat=Linde&sonderbit=0&typ=&antriebsart=*&masttypid=alle&tkvon=2501&tkbis=3000&hhvon=0&hhbis=50000&bhvon=0&bhbis=20000&fhvon=0&fhbis=10000&bjbis=2019&baujahr=0&hrs=100000&preisvon=0&hatbild=0&reifen=*&preisbis=1000000&landid=4&entfernung=0>
+{'country': 'Niederlande', 'product_url': 'https://www.forklift-international.com/de/e/Gabelstapler-gebraucht-Linde-H30D-3434683s?b=1', 'images': []}
+2019-01-30 14:59:26 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.forklift-international.com/de/e/staplersuche.php?sortorder=2&Bauart=4%2C4&Fabrikat=Linde&sonderbit=0&typ=&antriebsart=*&masttypid=alle&tkvon=2501&tkbis=3000&hhvon=0&hhbis=50000&bhvon=0&bhbis=20000&fhvon=0&fhbis=10000&bjbis=2019&baujahr=0&hrs=100000&preisvon=0&hatbild=0&reifen=*&preisbis=1000000&landid=4&entfernung=0>
+{'country': 'Niederlande', 'product_url': 'https://www.forklift-international.com/de/e/Gabelstapler-gebraucht-Linde-H30D-3434684s?b=1', 'images': []}
+2019-01-30 14:59:26 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.forklift-international.com/de/e/staplersuche.php?sortorder=2&Bauart=4%2C4&Fabrikat=Linde&sonderbit=0&typ=&antriebsart=*&masttypid=alle&tkvon=2501&tkbis=3000&hhvon=0&hhbis=50000&bhvon=0&bhbis=20000&fhvon=0&fhbis=10000&bjbis=2019&baujahr=0&hrs=100000&preisvon=0&hatbild=0&reifen=*&preisbis=1000000&landid=4&entfernung=0>
+{'country': 'Niederlande', 'product_url': 'https://www.forklift-international.com/de/e/Gabelstapler-gebraucht-Linde-H30D-3439260s?b=1', 'images': []}
+2019-01-30 14:59:26 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.forklift-international.com/de/e/staplersuche.php?sortorder=2&Bauart=4%2C4&Fabrikat=Linde&sonderbit=0&typ=&antriebsart=*&masttypid=alle&tkvon=2501&tkbis=3000&hhvon=0&hhbis=50000&bhvon=0&bhbis=20000&fhvon=0&fhbis=10000&bjbis=2019&baujahr=0&hrs=100000&preisvon=0&hatbild=0&reifen=*&preisbis=1000000&landid=4&entfernung=0>
+{'country': 'Niederlande', 'product_url': 'https://www.forklift-international.com/de/e/Gabelstapler-gebraucht-Linde-H30D-3449395s?b=1', 'images': []}
+2019-01-30 14:59:26 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.forklift-international.com/de/e/staplersuche.php?sortorder=2&Bauart=4%2C4&Fabrikat=Linde&sonderbit=0&typ=&antriebsart=*&masttypid=alle&tkvon=2501&tkbis=3000&hhvon=0&hhbis=50000&bhvon=0&bhbis=20000&fhvon=0&fhbis=10000&bjbis=2019&baujahr=0&hrs=100000&preisvon=0&hatbild=0&reifen=*&preisbis=1000000&landid=4&entfernung=0>
+{'country': 'Niederlande', 'product_url': 'https://www.forklift-international.com/de/e/Gabelstapler-gebraucht-Linde-H30D-3453734s?b=1', 'images': []}
+2019-01-30 14:59:26 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.forklift-international.com/de/e/staplersuche.php?sortorder=2&Bauart=4%2C4&Fabrikat=Linde&sonderbit=0&typ=&antriebsart=*&masttypid=alle&tkvon=2501&tkbis=3000&hhvon=0&hhbis=50000&bhvon=0&bhbis=20000&fhvon=0&fhbis=10000&bjbis=2019&baujahr=0&hrs=100000&preisvon=0&hatbild=0&reifen=*&preisbis=1000000&landid=4&entfernung=0>
+{'country': 'Niederlande', 'product_url': 'https://www.forklift-international.com/de/e/Gabelstapler-gebraucht-Linde-H30D-3456439s?b=1', 'images': []}
+2019-01-30 14:59:26 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.forklift-international.com/de/e/staplersuche.php?sortorder=2&Bauart=4%2C4&Fabrikat=Linde&sonderbit=0&typ=&antriebsart=*&masttypid=alle&tkvon=2501&tkbis=3000&hhvon=0&hhbis=50000&bhvon=0&bhbis=20000&fhvon=0&fhbis=10000&bjbis=2019&baujahr=0&hrs=100000&preisvon=0&hatbild=0&reifen=*&preisbis=1000000&landid=4&entfernung=0>
+{'country': 'Niederlande', 'product_url': 'https://www.forklift-international.com/de/e/Gabelstapler-gebraucht-Linde-H30D-%28393%29-3431434s?b=1', 'images': []}
+2019-01-30 14:59:26 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.forklift-international.com/de/e/staplersuche.php?sortorder=2&Bauart=4%2C4&Fabrikat=Linde&sonderbit=0&typ=&antriebsart=*&masttypid=alle&tkvon=2501&tkbis=3000&hhvon=0&hhbis=50000&bhvon=0&bhbis=20000&fhvon=0&fhbis=10000&bjbis=2019&baujahr=0&hrs=100000&preisvon=0&hatbild=0&reifen=*&preisbis=1000000&landid=4&entfernung=0>
+{'country': 'Niederlande', 'product_url': 'https://www.forklift-international.com/de/e/Gabelstapler-gebraucht-Linde-H30D-01-3441324s?b=1', 'images': []}
+2019-01-30 14:59:26 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.forklift-international.com/de/e/staplersuche.php?sortorder=2&Bauart=4%2C4&Fabrikat=Linde&sonderbit=0&typ=&antriebsart=*&masttypid=alle&tkvon=2501&tkbis=3000&hhvon=0&hhbis=50000&bhvon=0&bhbis=20000&fhvon=0&fhbis=10000&bjbis=2019&baujahr=0&hrs=100000&preisvon=0&hatbild=0&reifen=*&preisbis=1000000&landid=4&entfernung=0>
+{'country': 'Niederlande', 'product_url': 'https://www.forklift-international.com/de/e/Gabelstapler-gebraucht-Linde-H30D-01-3425011s?b=1', 'images': []}
+2019-01-30 14:59:26 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.forklift-international.com/de/e/staplersuche.php?sortorder=2&Bauart=4%2C4&Fabrikat=Linde&sonderbit=0&typ=&antriebsart=*&masttypid=alle&tkvon=2501&tkbis=3000&hhvon=0&hhbis=50000&bhvon=0&bhbis=20000&fhvon=0&fhbis=10000&bjbis=2019&baujahr=0&hrs=100000&preisvon=0&hatbild=0&reifen=*&preisbis=1000000&landid=4&entfernung=0>
+{'country': 'Niederlande', 'product_url': 'https://www.forklift-international.com/de/e/Gabelstapler-gebraucht-Linde-H30D-01-3427960s?b=1', 'images': []}
+2019-01-30 14:59:26 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.forklift-international.com/de/e/staplersuche.php?sortorder=2&Bauart=4%2C4&Fabrikat=Linde&sonderbit=0&typ=&antriebsart=*&masttypid=alle&tkvon=2501&tkbis=3000&hhvon=0&hhbis=50000&bhvon=0&bhbis=20000&fhvon=0&fhbis=10000&bjbis=2019&baujahr=0&hrs=100000&preisvon=0&hatbild=0&reifen=*&preisbis=1000000&landid=4&entfernung=0>
+{'country': 'Niederlande', 'product_url': 'https://www.forklift-international.com/de/e/Gabelstapler-gebraucht-Linde-H30D-01-3443511s?b=1', 'images': []}
+2019-01-30 14:59:26 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.forklift-international.com/de/e/staplersuche.php?sortorder=2&Bauart=4%2C4&Fabrikat=Linde&sonderbit=0&typ=&antriebsart=*&masttypid=alle&tkvon=2501&tkbis=3000&hhvon=0&hhbis=50000&bhvon=0&bhbis=20000&fhvon=0&fhbis=10000&bjbis=2019&baujahr=0&hrs=100000&preisvon=0&hatbild=0&reifen=*&preisbis=1000000&landid=4&entfernung=0>
+{'country': 'Niederlande', 'product_url': 'https://www.forklift-international.com/de/e/Gabelstapler-gebraucht-Linde-H30D-01-3449404s?b=1', 'images': []}
+2019-01-30 14:59:26 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.forklift-international.com/de/e/staplersuche.php?sortorder=2&Bauart=4%2C4&Fabrikat=Linde&sonderbit=0&typ=&antriebsart=*&masttypid=alle&tkvon=2501&tkbis=3000&hhvon=0&hhbis=50000&bhvon=0&bhbis=20000&fhvon=0&fhbis=10000&bjbis=2019&baujahr=0&hrs=100000&preisvon=0&hatbild=0&reifen=*&preisbis=1000000&landid=4&entfernung=0>
+{'country': 'Niederlande', 'product_url': 'https://www.forklift-international.com/de/e/Gabelstapler-gebraucht-Linde-H30D-02-EVO-%28393%29-3390752s?b=1', 'images': []}
+2019-01-30 14:59:26 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.forklift-international.com/de/e/staplersuche.php?sortorder=2&Bauart=4%2C4&Fabrikat=Linde&sonderbit=0&typ=&antriebsart=*&masttypid=alle&tkvon=2501&tkbis=3000&hhvon=0&hhbis=50000&bhvon=0&bhbis=20000&fhvon=0&fhbis=10000&bjbis=2019&baujahr=0&hrs=100000&preisvon=0&hatbild=0&reifen=*&preisbis=1000000&landid=4&entfernung=0>
+{'country': 'Niederlande', 'product_url': 'https://www.forklift-international.com/de/e/Gabelstapler-gebraucht-Linde-H30D-02-EVO-%28393%29-3452387s?b=1', 'images': []}
+2019-01-30 14:59:26 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.forklift-international.com/de/e/staplersuche.php?sortorder=2&Bauart=4%2C4&Fabrikat=Linde&sonderbit=0&typ=&antriebsart=*&masttypid=alle&tkvon=2501&tkbis=3000&hhvon=0&hhbis=50000&bhvon=0&bhbis=20000&fhvon=0&fhbis=10000&bjbis=2019&baujahr=0&hrs=100000&preisvon=0&hatbild=0&reifen=*&preisbis=1000000&landid=4&entfernung=0> (referer: None)
+Traceback (most recent call last):
+  File "/home/coffeeincodeout/developer/forklift-crawler/lib/python3.6/site-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/home/coffeeincodeout/developer/forklift-crawler/lib/python3.6/site-packages/scrapy/spidermiddlewares/offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "/home/coffeeincodeout/developer/forklift-crawler/lib/python3.6/site-packages/scrapy/spidermiddlewares/referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/home/coffeeincodeout/developer/forklift-crawler/lib/python3.6/site-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/home/coffeeincodeout/developer/forklift-crawler/lib/python3.6/site-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/home/coffeeincodeout/developer/forklift-crawler/forklift/forklift/spiders/forklift_spider.py", line 83, in parse
+    yield scrapy.Request(pagination, callback=self.pageFollow)
+AttributeError: 'ForkLiftTestSpider' object has no attribute 'pageFollow'
+2019-01-30 14:59:38 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.forklift-international.com/de/e/staplersuche.php?sortorder=2&Bauart=4%2C4&Fabrikat=Linde&sonderbit=0&typ=&antriebsart=*&masttypid=alle&tkvon=2501&tkbis=3000&hhvon=0&hhbis=50000&bhvon=0&bhbis=20000&fhvon=0&fhbis=10000&bjbis=2019&baujahr=0&hrs=100000&preisvon=0&hatbild=0&reifen=*&preisbis=1000000&landid=27&entfernung=0> (referer: None)
+2019-01-30 14:59:38 [scrapy.proxies] DEBUG: Proxy user pass not found
+2019-01-30 14:59:38 [scrapy.proxies] DEBUG: Using proxy <http://206.130.141.255:55130>, 221 proxies left
+2019-01-30 14:59:38 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.forklift-international.com/de/e/staplersuche.php?sortorder=2&Bauart=4%2C4&Fabrikat=Linde&sonderbit=0&typ=&antriebsart=*&masttypid=alle&tkvon=2501&tkbis=3000&hhvon=0&hhbis=50000&bhvon=0&bhbis=20000&fhvon=0&fhbis=10000&bjbis=2019&baujahr=0&hrs=100000&preisvon=0&hatbild=0&reifen=*&preisbis=1000000&landid=27&entfernung=0> (referer: None)
+Traceback (most recent call last):
+  File "/home/coffeeincodeout/developer/forklift-crawler/lib/python3.6/site-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/home/coffeeincodeout/developer/forklift-crawler/lib/python3.6/site-packages/scrapy/spidermiddlewares/offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "/home/coffeeincodeout/developer/forklift-crawler/lib/python3.6/site-packages/scrapy/spidermiddlewares/referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/home/coffeeincodeout/developer/forklift-crawler/lib/python3.6/site-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/home/coffeeincodeout/developer/forklift-crawler/lib/python3.6/site-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/home/coffeeincodeout/developer/forklift-crawler/forklift/forklift/spiders/forklift_spider.py", line 83, in parse
+    yield scrapy.Request(pagination, callback=self.pageFollow)
+AttributeError: 'ForkLiftTestSpider' object has no attribute 'pageFollow'
+2019-01-30 14:59:49 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.forklift-international.com/de/e/staplersuche.php?sortorder=2&Bauart=4%2C4&Fabrikat=Linde&sonderbit=0&typ=&antriebsart=*&masttypid=alle&tkvon=2501&tkbis=3000&hhvon=0&hhbis=50000&bhvon=0&bhbis=20000&fhvon=0&fhbis=10000&bjbis=2019&baujahr=0&hrs=100000&preisvon=0&hatbild=0&reifen=*&preisbis=1000000&landid=6&entfernung=0> (referer: None)
+2019-01-30 14:59:49 [scrapy.proxies] DEBUG: Proxy user pass not found
+2019-01-30 14:59:49 [scrapy.proxies] DEBUG: Using proxy <http://190.110.213.42:34841>, 221 proxies left
+2019-01-30 14:59:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.forklift-international.com/de/e/staplersuche.php?sortorder=2&Bauart=4%2C4&Fabrikat=Linde&sonderbit=0&typ=&antriebsart=*&masttypid=alle&tkvon=2501&tkbis=3000&hhvon=0&hhbis=50000&bhvon=0&bhbis=20000&fhvon=0&fhbis=10000&bjbis=2019&baujahr=0&hrs=100000&preisvon=0&hatbild=0&reifen=*&preisbis=1000000&landid=6&entfernung=0>
+{'country': 'Polen', 'product_url': 'https://www.forklift-international.com/de/e/Gabelstapler-gebraucht-Linde-H-30-D--3408355s?b=1', 'images': []}
+2019-01-30 14:59:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.forklift-international.com/de/e/staplersuche.php?sortorder=2&Bauart=4%2C4&Fabrikat=Linde&sonderbit=0&typ=&antriebsart=*&masttypid=alle&tkvon=2501&tkbis=3000&hhvon=0&hhbis=50000&bhvon=0&bhbis=20000&fhvon=0&fhbis=10000&bjbis=2019&baujahr=0&hrs=100000&preisvon=0&hatbild=0&reifen=*&preisbis=1000000&landid=6&entfernung=0>
+{'country': 'Polen', 'product_url': 'https://www.forklift-international.com/de/e/Gabelstapler-gebraucht-Linde-H-30-D-3431554s?b=1', 'images': []}
+2019-01-30 14:59:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.forklift-international.com/de/e/staplersuche.php?sortorder=2&Bauart=4%2C4&Fabrikat=Linde&sonderbit=0&typ=&antriebsart=*&masttypid=alle&tkvon=2501&tkbis=3000&hhvon=0&hhbis=50000&bhvon=0&bhbis=20000&fhvon=0&fhbis=10000&bjbis=2019&baujahr=0&hrs=100000&preisvon=0&hatbild=0&reifen=*&preisbis=1000000&landid=6&entfernung=0>
+{'country': 'Polen', 'product_url': 'https://www.forklift-international.com/de/e/Gabelstapler-gebraucht-Linde-H30-D-3417211s?b=1', 'images': []}
+2019-01-30 14:59:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.forklift-international.com/de/e/staplersuche.php?sortorder=2&Bauart=4%2C4&Fabrikat=Linde&sonderbit=0&typ=&antriebsart=*&masttypid=alle&tkvon=2501&tkbis=3000&hhvon=0&hhbis=50000&bhvon=0&bhbis=20000&fhvon=0&fhbis=10000&bjbis=2019&baujahr=0&hrs=100000&preisvon=0&hatbild=0&reifen=*&preisbis=1000000&landid=6&entfernung=0>
+{'country': 'Polen', 'product_url': 'https://www.forklift-international.com/de/e/Gabelstapler-gebraucht-Linde-H30-D-3449097s?b=1', 'images': []}
+2019-01-30 14:59:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.forklift-international.com/de/e/staplersuche.php?sortorder=2&Bauart=4%2C4&Fabrikat=Linde&sonderbit=0&typ=&antriebsart=*&masttypid=alle&tkvon=2501&tkbis=3000&hhvon=0&hhbis=50000&bhvon=0&bhbis=20000&fhvon=0&fhbis=10000&bjbis=2019&baujahr=0&hrs=100000&preisvon=0&hatbild=0&reifen=*&preisbis=1000000&landid=6&entfernung=0>
+{'country': 'Polen', 'product_url': 'https://www.forklift-international.com/de/e/Gabelstapler-gebraucht-Linde-H30D-3023927s?b=1', 'images': []}
+2019-01-30 14:59:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.forklift-international.com/de/e/staplersuche.php?sortorder=2&Bauart=4%2C4&Fabrikat=Linde&sonderbit=0&typ=&antriebsart=*&masttypid=alle&tkvon=2501&tkbis=3000&hhvon=0&hhbis=50000&bhvon=0&bhbis=20000&fhvon=0&fhbis=10000&bjbis=2019&baujahr=0&hrs=100000&preisvon=0&hatbild=0&reifen=*&preisbis=1000000&landid=6&entfernung=0>
+{'country': 'Polen', 'product_url': 'https://www.forklift-international.com/de/e/Gabelstapler-gebraucht-Linde-H30D-3163964s?b=1', 'images': []}
+2019-01-30 14:59:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.forklift-international.com/de/e/staplersuche.php?sortorder=2&Bauart=4%2C4&Fabrikat=Linde&sonderbit=0&typ=&antriebsart=*&masttypid=alle&tkvon=2501&tkbis=3000&hhvon=0&hhbis=50000&bhvon=0&bhbis=20000&fhvon=0&fhbis=10000&bjbis=2019&baujahr=0&hrs=100000&preisvon=0&hatbild=0&reifen=*&preisbis=1000000&landid=6&entfernung=0>
+{'country': 'Polen', 'product_url': 'https://www.forklift-international.com/de/e/Gabelstapler-gebraucht-Linde-H30D-3174090s?b=1', 'images': []}
+2019-01-30 14:59:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.forklift-international.com/de/e/staplersuche.php?sortorder=2&Bauart=4%2C4&Fabrikat=Linde&sonderbit=0&typ=&antriebsart=*&masttypid=alle&tkvon=2501&tkbis=3000&hhvon=0&hhbis=50000&bhvon=0&bhbis=20000&fhvon=0&fhbis=10000&bjbis=2019&baujahr=0&hrs=100000&preisvon=0&hatbild=0&reifen=*&preisbis=1000000&landid=6&entfernung=0>
+{'country': 'Polen', 'product_url': 'https://www.forklift-international.com/de/e/Gabelstapler-gebraucht-Linde-H30D-3176320s?b=1', 'images': []}
+2019-01-30 14:59:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.forklift-international.com/de/e/staplersuche.php?sortorder=2&Bauart=4%2C4&Fabrikat=Linde&sonderbit=0&typ=&antriebsart=*&masttypid=alle&tkvon=2501&tkbis=3000&hhvon=0&hhbis=50000&bhvon=0&bhbis=20000&fhvon=0&fhbis=10000&bjbis=2019&baujahr=0&hrs=100000&preisvon=0&hatbild=0&reifen=*&preisbis=1000000&landid=6&entfernung=0>
+{'country': 'Polen', 'product_url': 'https://www.forklift-international.com/de/e/Gabelstapler-gebraucht-Linde-H30D-3197700s?b=1', 'images': []}
+2019-01-30 14:59:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.forklift-international.com/de/e/staplersuche.php?sortorder=2&Bauart=4%2C4&Fabrikat=Linde&sonderbit=0&typ=&antriebsart=*&masttypid=alle&tkvon=2501&tkbis=3000&hhvon=0&hhbis=50000&bhvon=0&bhbis=20000&fhvon=0&fhbis=10000&bjbis=2019&baujahr=0&hrs=100000&preisvon=0&hatbild=0&reifen=*&preisbis=1000000&landid=6&entfernung=0>
+{'country': 'Polen', 'product_url': 'https://www.forklift-international.com/de/e/Gabelstapler-gebraucht-Linde-H30D-3401270s?b=1', 'images': []}
+2019-01-30 14:59:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.forklift-international.com/de/e/staplersuche.php?sortorder=2&Bauart=4%2C4&Fabrikat=Linde&sonderbit=0&typ=&antriebsart=*&masttypid=alle&tkvon=2501&tkbis=3000&hhvon=0&hhbis=50000&bhvon=0&bhbis=20000&fhvon=0&fhbis=10000&bjbis=2019&baujahr=0&hrs=100000&preisvon=0&hatbild=0&reifen=*&preisbis=1000000&landid=6&entfernung=0>
+{'country': 'Polen', 'product_url': 'https://www.forklift-international.com/de/e/Gabelstapler-gebraucht-Linde-H30D-3401272s?b=1', 'images': []}
+2019-01-30 14:59:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.forklift-international.com/de/e/staplersuche.php?sortorder=2&Bauart=4%2C4&Fabrikat=Linde&sonderbit=0&typ=&antriebsart=*&masttypid=alle&tkvon=2501&tkbis=3000&hhvon=0&hhbis=50000&bhvon=0&bhbis=20000&fhvon=0&fhbis=10000&bjbis=2019&baujahr=0&hrs=100000&preisvon=0&hatbild=0&reifen=*&preisbis=1000000&landid=6&entfernung=0>
+{'country': 'Polen', 'product_url': 'https://www.forklift-international.com/de/e/Gabelstapler-gebraucht-Linde-H30D-3417205s?b=1', 'images': []}
+2019-01-30 14:59:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.forklift-international.com/de/e/staplersuche.php?sortorder=2&Bauart=4%2C4&Fabrikat=Linde&sonderbit=0&typ=&antriebsart=*&masttypid=alle&tkvon=2501&tkbis=3000&hhvon=0&hhbis=50000&bhvon=0&bhbis=20000&fhvon=0&fhbis=10000&bjbis=2019&baujahr=0&hrs=100000&preisvon=0&hatbild=0&reifen=*&preisbis=1000000&landid=6&entfernung=0>
+{'country': 'Polen', 'product_url': 'https://www.forklift-international.com/de/e/Gabelstapler-gebraucht-Linde-H30D-393-2928800s?b=1', 'images': []}
+2019-01-30 14:59:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.forklift-international.com/de/e/staplersuche.php?sortorder=2&Bauart=4%2C4&Fabrikat=Linde&sonderbit=0&typ=&antriebsart=*&masttypid=alle&tkvon=2501&tkbis=3000&hhvon=0&hhbis=50000&bhvon=0&bhbis=20000&fhvon=0&fhbis=10000&bjbis=2019&baujahr=0&hrs=100000&preisvon=0&hatbild=0&reifen=*&preisbis=1000000&landid=6&entfernung=0>
+{'country': 'Polen', 'product_url': 'https://www.forklift-international.com/de/e/Gabelstapler-gebraucht-Linde-H30D-Side-shift-3270685s?b=1', 'images': []}
+2019-01-30 14:59:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.forklift-international.com/de/e/staplersuche.php?sortorder=2&Bauart=4%2C4&Fabrikat=Linde&sonderbit=0&typ=&antriebsart=*&masttypid=alle&tkvon=2501&tkbis=3000&hhvon=0&hhbis=50000&bhvon=0&bhbis=20000&fhvon=0&fhbis=10000&bjbis=2019&baujahr=0&hrs=100000&preisvon=0&hatbild=0&reifen=*&preisbis=1000000&landid=6&entfernung=0>
+{'country': 'Polen', 'product_url': 'https://www.forklift-international.com/de/e/Gabelstapler-gebraucht-Linde-H30D-01-3439924s?b=1', 'images': []}
+2019-01-30 14:59:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.forklift-international.com/de/e/staplersuche.php?sortorder=2&Bauart=4%2C4&Fabrikat=Linde&sonderbit=0&typ=&antriebsart=*&masttypid=alle&tkvon=2501&tkbis=3000&hhvon=0&hhbis=50000&bhvon=0&bhbis=20000&fhvon=0&fhbis=10000&bjbis=2019&baujahr=0&hrs=100000&preisvon=0&hatbild=0&reifen=*&preisbis=1000000&landid=6&entfernung=0>
+{'country': 'Polen', 'product_url': 'https://www.forklift-international.com/de/e/Gabelstapler-gebraucht-Linde-H30D-01-3440039s?b=1', 'images': []}
+2019-01-30 14:59:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.forklift-international.com/de/e/staplersuche.php?sortorder=2&Bauart=4%2C4&Fabrikat=Linde&sonderbit=0&typ=&antriebsart=*&masttypid=alle&tkvon=2501&tkbis=3000&hhvon=0&hhbis=50000&bhvon=0&bhbis=20000&fhvon=0&fhbis=10000&bjbis=2019&baujahr=0&hrs=100000&preisvon=0&hatbild=0&reifen=*&preisbis=1000000&landid=6&entfernung=0>
+{'country': 'Polen', 'product_url': 'https://www.forklift-international.com/de/e/Gabelstapler-gebraucht-Linde-H30D-01-Duplex-Side-Shift-3394465s?b=1', 'images': []}
+2019-01-30 14:59:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.forklift-international.com/de/e/staplersuche.php?sortorder=2&Bauart=4%2C4&Fabrikat=Linde&sonderbit=0&typ=&antriebsart=*&masttypid=alle&tkvon=2501&tkbis=3000&hhvon=0&hhbis=50000&bhvon=0&bhbis=20000&fhvon=0&fhbis=10000&bjbis=2019&baujahr=0&hrs=100000&preisvon=0&hatbild=0&reifen=*&preisbis=1000000&landid=6&entfernung=0>
+{'country': 'Polen', 'product_url': 'https://www.forklift-international.com/de/e/Gabelstapler-gebraucht-Linde-H30D-02-3434647s?b=1', 'images': []}
+2019-01-30 14:59:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.forklift-international.com/de/e/staplersuche.php?sortorder=2&Bauart=4%2C4&Fabrikat=Linde&sonderbit=0&typ=&antriebsart=*&masttypid=alle&tkvon=2501&tkbis=3000&hhvon=0&hhbis=50000&bhvon=0&bhbis=20000&fhvon=0&fhbis=10000&bjbis=2019&baujahr=0&hrs=100000&preisvon=0&hatbild=0&reifen=*&preisbis=1000000&landid=6&entfernung=0>
+{'country': 'Polen', 'product_url': 'https://www.forklift-international.com/de/e/Gabelstapler-gebraucht-Linde-H30D-02-3453421s?b=1', 'images': []}
+2019-01-30 14:59:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.forklift-international.com/de/e/staplersuche.php?sortorder=2&Bauart=4%2C4&Fabrikat=Linde&sonderbit=0&typ=&antriebsart=*&masttypid=alle&tkvon=2501&tkbis=3000&hhvon=0&hhbis=50000&bhvon=0&bhbis=20000&fhvon=0&fhbis=10000&bjbis=2019&baujahr=0&hrs=100000&preisvon=0&hatbild=0&reifen=*&preisbis=1000000&landid=6&entfernung=0>
+{'country': 'Polen', 'product_url': 'https://www.forklift-international.com/de/e/Gabelstapler-gebraucht-Linde-H30D-02-%28EVO%29-3416465s?b=1', 'images': []}
+2019-01-30 14:59:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.forklift-international.com/de/e/staplersuche.php?sortorder=2&Bauart=4%2C4&Fabrikat=Linde&sonderbit=0&typ=&antriebsart=*&masttypid=alle&tkvon=2501&tkbis=3000&hhvon=0&hhbis=50000&bhvon=0&bhbis=20000&fhvon=0&fhbis=10000&bjbis=2019&baujahr=0&hrs=100000&preisvon=0&hatbild=0&reifen=*&preisbis=1000000&landid=6&entfernung=0>
+{'country': 'Polen', 'product_url': 'https://www.forklift-international.com/de/e/Gabelstapler-gebraucht-Linde-H30D-02-393-3390401s?b=1', 'images': []}
+2019-01-30 14:59:49 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.forklift-international.com/de/e/staplersuche.php?sortorder=2&Bauart=4%2C4&Fabrikat=Linde&sonderbit=0&typ=&antriebsart=*&masttypid=alle&tkvon=2501&tkbis=3000&hhvon=0&hhbis=50000&bhvon=0&bhbis=20000&fhvon=0&fhbis=10000&bjbis=2019&baujahr=0&hrs=100000&preisvon=0&hatbild=0&reifen=*&preisbis=1000000&landid=6&entfernung=0> (referer: None)
+Traceback (most recent call last):
+  File "/home/coffeeincodeout/developer/forklift-crawler/lib/python3.6/site-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/home/coffeeincodeout/developer/forklift-crawler/lib/python3.6/site-packages/scrapy/spidermiddlewares/offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "/home/coffeeincodeout/developer/forklift-crawler/lib/python3.6/site-packages/scrapy/spidermiddlewares/referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/home/coffeeincodeout/developer/forklift-crawler/lib/python3.6/site-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/home/coffeeincodeout/developer/forklift-crawler/lib/python3.6/site-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/home/coffeeincodeout/developer/forklift-crawler/forklift/forklift/spiders/forklift_spider.py", line 83, in parse
+    yield scrapy.Request(pagination, callback=self.pageFollow)
+AttributeError: 'ForkLiftTestSpider' object has no attribute 'pageFollow'
+2019-01-30 15:00:01 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.forklift-international.com/de/e/staplersuche.php?sortorder=2&Bauart=4%2C4&Fabrikat=Linde&sonderbit=0&typ=&antriebsart=*&masttypid=alle&tkvon=2501&tkbis=3000&hhvon=0&hhbis=50000&bhvon=0&bhbis=20000&fhvon=0&fhbis=10000&bjbis=2019&baujahr=0&hrs=100000&preisvon=0&hatbild=0&reifen=*&preisbis=1000000&landid=24&entfernung=0> (referer: None)
+2019-01-30 15:00:01 [scrapy.proxies] DEBUG: Proxy user pass not found
+2019-01-30 15:00:01 [scrapy.proxies] DEBUG: Using proxy <http://213.16.55.138:48458>, 221 proxies left
+2019-01-30 15:00:01 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.forklift-international.com/de/e/staplersuche.php?sortorder=2&Bauart=4%2C4&Fabrikat=Linde&sonderbit=0&typ=&antriebsart=*&masttypid=alle&tkvon=2501&tkbis=3000&hhvon=0&hhbis=50000&bhvon=0&bhbis=20000&fhvon=0&fhbis=10000&bjbis=2019&baujahr=0&hrs=100000&preisvon=0&hatbild=0&reifen=*&preisbis=1000000&landid=24&entfernung=0> (referer: None)
+Traceback (most recent call last):
+  File "/home/coffeeincodeout/developer/forklift-crawler/lib/python3.6/site-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/home/coffeeincodeout/developer/forklift-crawler/lib/python3.6/site-packages/scrapy/spidermiddlewares/offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "/home/coffeeincodeout/developer/forklift-crawler/lib/python3.6/site-packages/scrapy/spidermiddlewares/referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/home/coffeeincodeout/developer/forklift-crawler/lib/python3.6/site-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/home/coffeeincodeout/developer/forklift-crawler/lib/python3.6/site-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/home/coffeeincodeout/developer/forklift-crawler/forklift/forklift/spiders/forklift_spider.py", line 83, in parse
+    yield scrapy.Request(pagination, callback=self.pageFollow)
+AttributeError: 'ForkLiftTestSpider' object has no attribute 'pageFollow'
+2019-01-30 15:00:06 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.forklift-international.com/de/e/staplersuche.php?sortorder=2&Bauart=4%2C4&Fabrikat=Linde&sonderbit=0&typ=&antriebsart=*&masttypid=alle&tkvon=2501&tkbis=3000&hhvon=0&hhbis=50000&bhvon=0&bhbis=20000&fhvon=0&fhbis=10000&bjbis=2019&baujahr=0&hrs=100000&preisvon=0&hatbild=0&reifen=*&preisbis=1000000&landid=14&entfernung=0> (referer: None)
+2019-01-30 15:00:06 [scrapy.proxies] DEBUG: Proxy user pass not found
+2019-01-30 15:00:06 [scrapy.proxies] DEBUG: Using proxy <http://89.208.20.250:34350>, 221 proxies left
+2019-01-30 15:00:06 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.forklift-international.com/de/e/staplersuche.php?sortorder=2&Bauart=4%2C4&Fabrikat=Linde&sonderbit=0&typ=&antriebsart=*&masttypid=alle&tkvon=2501&tkbis=3000&hhvon=0&hhbis=50000&bhvon=0&bhbis=20000&fhvon=0&fhbis=10000&bjbis=2019&baujahr=0&hrs=100000&preisvon=0&hatbild=0&reifen=*&preisbis=1000000&landid=14&entfernung=0> (referer: None)
+Traceback (most recent call last):
+  File "/home/coffeeincodeout/developer/forklift-crawler/lib/python3.6/site-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/home/coffeeincodeout/developer/forklift-crawler/lib/python3.6/site-packages/scrapy/spidermiddlewares/offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "/home/coffeeincodeout/developer/forklift-crawler/lib/python3.6/site-packages/scrapy/spidermiddlewares/referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/home/coffeeincodeout/developer/forklift-crawler/lib/python3.6/site-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/home/coffeeincodeout/developer/forklift-crawler/lib/python3.6/site-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/home/coffeeincodeout/developer/forklift-crawler/forklift/forklift/spiders/forklift_spider.py", line 83, in parse
+    yield scrapy.Request(pagination, callback=self.pageFollow)
+AttributeError: 'ForkLiftTestSpider' object has no attribute 'pageFollow'
+2019-01-30 15:00:09 [scrapy.extensions.logstats] INFO: Crawled 26 pages (at 6 pages/min), scraped 108 items (at 41 items/min)
+2019-01-30 15:00:18 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.forklift-international.com/de/e/staplersuche.php?sortorder=2&Bauart=4%2C4&Fabrikat=Linde&sonderbit=0&typ=&antriebsart=*&masttypid=alle&tkvon=2501&tkbis=3000&hhvon=0&hhbis=50000&bhvon=0&bhbis=20000&fhvon=0&fhbis=10000&bjbis=2019&baujahr=0&hrs=100000&preisvon=0&hatbild=0&reifen=*&preisbis=1000000&landid=63&entfernung=0> (referer: None)
+2019-01-30 15:00:18 [scrapy.proxies] DEBUG: Proxy user pass not found
+2019-01-30 15:00:18 [scrapy.proxies] DEBUG: Using proxy <http://203.201.174.82:23500>, 221 proxies left
+2019-01-30 15:00:18 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.forklift-international.com/de/e/staplersuche.php?sortorder=2&Bauart=4%2C4&Fabrikat=Linde&sonderbit=0&typ=&antriebsart=*&masttypid=alle&tkvon=2501&tkbis=3000&hhvon=0&hhbis=50000&bhvon=0&bhbis=20000&fhvon=0&fhbis=10000&bjbis=2019&baujahr=0&hrs=100000&preisvon=0&hatbild=0&reifen=*&preisbis=1000000&landid=63&entfernung=0> (referer: None)
+Traceback (most recent call last):
+  File "/home/coffeeincodeout/developer/forklift-crawler/lib/python3.6/site-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/home/coffeeincodeout/developer/forklift-crawler/lib/python3.6/site-packages/scrapy/spidermiddlewares/offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "/home/coffeeincodeout/developer/forklift-crawler/lib/python3.6/site-packages/scrapy/spidermiddlewares/referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/home/coffeeincodeout/developer/forklift-crawler/lib/python3.6/site-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/home/coffeeincodeout/developer/forklift-crawler/lib/python3.6/site-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/home/coffeeincodeout/developer/forklift-crawler/forklift/forklift/spiders/forklift_spider.py", line 83, in parse
+    yield scrapy.Request(pagination, callback=self.pageFollow)
+AttributeError: 'ForkLiftTestSpider' object has no attribute 'pageFollow'
+2019-01-30 15:00:28 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.forklift-international.com/de/e/staplersuche.php?sortorder=2&Bauart=4%2C4&Fabrikat=Linde&sonderbit=0&typ=&antriebsart=*&masttypid=alle&tkvon=2501&tkbis=3000&hhvon=0&hhbis=50000&bhvon=0&bhbis=20000&fhvon=0&fhbis=10000&bjbis=2019&baujahr=0&hrs=100000&preisvon=0&hatbild=0&reifen=*&preisbis=1000000&landid=26&entfernung=0> (referer: None)
+2019-01-30 15:00:28 [scrapy.proxies] DEBUG: Proxy user pass not found
+2019-01-30 15:00:28 [scrapy.proxies] DEBUG: Using proxy <http://118.175.93.71:54168>, 221 proxies left
+2019-01-30 15:00:28 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.forklift-international.com/de/e/staplersuche.php?sortorder=2&Bauart=4%2C4&Fabrikat=Linde&sonderbit=0&typ=&antriebsart=*&masttypid=alle&tkvon=2501&tkbis=3000&hhvon=0&hhbis=50000&bhvon=0&bhbis=20000&fhvon=0&fhbis=10000&bjbis=2019&baujahr=0&hrs=100000&preisvon=0&hatbild=0&reifen=*&preisbis=1000000&landid=26&entfernung=0> (referer: None)
+Traceback (most recent call last):
+  File "/home/coffeeincodeout/developer/forklift-crawler/lib/python3.6/site-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/home/coffeeincodeout/developer/forklift-crawler/lib/python3.6/site-packages/scrapy/spidermiddlewares/offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "/home/coffeeincodeout/developer/forklift-crawler/lib/python3.6/site-packages/scrapy/spidermiddlewares/referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/home/coffeeincodeout/developer/forklift-crawler/lib/python3.6/site-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/home/coffeeincodeout/developer/forklift-crawler/lib/python3.6/site-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/home/coffeeincodeout/developer/forklift-crawler/forklift/forklift/spiders/forklift_spider.py", line 83, in parse
+    yield scrapy.Request(pagination, callback=self.pageFollow)
+AttributeError: 'ForkLiftTestSpider' object has no attribute 'pageFollow'
+2019-01-30 15:00:40 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.forklift-international.com/de/e/staplersuche.php?sortorder=2&Bauart=4%2C4&Fabrikat=Linde&sonderbit=0&typ=&antriebsart=*&masttypid=alle&tkvon=2501&tkbis=3000&hhvon=0&hhbis=50000&bhvon=0&bhbis=20000&fhvon=0&fhbis=10000&bjbis=2019&baujahr=0&hrs=100000&preisvon=0&hatbild=0&reifen=*&preisbis=1000000&landid=12&entfernung=0> (referer: None)
+2019-01-30 15:00:40 [scrapy.proxies] DEBUG: Proxy user pass not found
+2019-01-30 15:00:40 [scrapy.proxies] DEBUG: Using proxy <http://186.224.94.6:48957>, 221 proxies left
+2019-01-30 15:00:40 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.forklift-international.com/de/e/staplersuche.php?sortorder=2&Bauart=4%2C4&Fabrikat=Linde&sonderbit=0&typ=&antriebsart=*&masttypid=alle&tkvon=2501&tkbis=3000&hhvon=0&hhbis=50000&bhvon=0&bhbis=20000&fhvon=0&fhbis=10000&bjbis=2019&baujahr=0&hrs=100000&preisvon=0&hatbild=0&reifen=*&preisbis=1000000&landid=12&entfernung=0>
+{'country': 'Schweiz', 'product_url': 'https://www.forklift-international.com/de/e/Gabelstapler-gebraucht-Linde-H-30-02-3419873s?b=1', 'images': []}
+2019-01-30 15:00:40 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.forklift-international.com/de/e/staplersuche.php?sortorder=2&Bauart=4%2C4&Fabrikat=Linde&sonderbit=0&typ=&antriebsart=*&masttypid=alle&tkvon=2501&tkbis=3000&hhvon=0&hhbis=50000&bhvon=0&bhbis=20000&fhvon=0&fhbis=10000&bjbis=2019&baujahr=0&hrs=100000&preisvon=0&hatbild=0&reifen=*&preisbis=1000000&landid=12&entfernung=0>
+{'country': 'Schweiz', 'product_url': 'https://www.forklift-international.com/de/e/Gabelstapler-gebraucht-Linde-H-30-D-3419842s?b=1', 'images': []}
+2019-01-30 15:00:40 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.forklift-international.com/de/e/staplersuche.php?sortorder=2&Bauart=4%2C4&Fabrikat=Linde&sonderbit=0&typ=&antriebsart=*&masttypid=alle&tkvon=2501&tkbis=3000&hhvon=0&hhbis=50000&bhvon=0&bhbis=20000&fhvon=0&fhbis=10000&bjbis=2019&baujahr=0&hrs=100000&preisvon=0&hatbild=0&reifen=*&preisbis=1000000&landid=12&entfernung=0>
+{'country': 'Schweiz', 'product_url': 'https://www.forklift-international.com/de/e/Gabelstapler-gebraucht-Linde-H30D-3439725s?b=1', 'images': []}
+2019-01-30 15:00:40 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.forklift-international.com/de/e/staplersuche.php?sortorder=2&Bauart=4%2C4&Fabrikat=Linde&sonderbit=0&typ=&antriebsart=*&masttypid=alle&tkvon=2501&tkbis=3000&hhvon=0&hhbis=50000&bhvon=0&bhbis=20000&fhvon=0&fhbis=10000&bjbis=2019&baujahr=0&hrs=100000&preisvon=0&hatbild=0&reifen=*&preisbis=1000000&landid=12&entfernung=0>
+{'country': 'Schweiz', 'product_url': 'https://www.forklift-international.com/de/e/Gabelstapler-gebraucht-Linde-H30D-3441116s?b=1', 'images': []}
+2019-01-30 15:00:40 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.forklift-international.com/de/e/staplersuche.php?sortorder=2&Bauart=4%2C4&Fabrikat=Linde&sonderbit=0&typ=&antriebsart=*&masttypid=alle&tkvon=2501&tkbis=3000&hhvon=0&hhbis=50000&bhvon=0&bhbis=20000&fhvon=0&fhbis=10000&bjbis=2019&baujahr=0&hrs=100000&preisvon=0&hatbild=0&reifen=*&preisbis=1000000&landid=12&entfernung=0>
+{'country': 'Schweiz', 'product_url': 'https://www.forklift-international.com/de/e/Gabelstapler-gebraucht-Linde-H30D-3272558s?b=1', 'images': []}
+2019-01-30 15:00:40 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.forklift-international.com/de/e/staplersuche.php?sortorder=2&Bauart=4%2C4&Fabrikat=Linde&sonderbit=0&typ=&antriebsart=*&masttypid=alle&tkvon=2501&tkbis=3000&hhvon=0&hhbis=50000&bhvon=0&bhbis=20000&fhvon=0&fhbis=10000&bjbis=2019&baujahr=0&hrs=100000&preisvon=0&hatbild=0&reifen=*&preisbis=1000000&landid=12&entfernung=0>
+{'country': 'Schweiz', 'product_url': 'https://www.forklift-international.com/de/e/Gabelstapler-gebraucht-Linde-H30D-3404923s?b=1', 'images': []}
+2019-01-30 15:00:40 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.forklift-international.com/de/e/staplersuche.php?sortorder=2&Bauart=4%2C4&Fabrikat=Linde&sonderbit=0&typ=&antriebsart=*&masttypid=alle&tkvon=2501&tkbis=3000&hhvon=0&hhbis=50000&bhvon=0&bhbis=20000&fhvon=0&fhbis=10000&bjbis=2019&baujahr=0&hrs=100000&preisvon=0&hatbild=0&reifen=*&preisbis=1000000&landid=12&entfernung=0>
+{'country': 'Schweiz', 'product_url': 'https://www.forklift-international.com/de/e/Gabelstapler-gebraucht-Linde-H30D-2977312s?b=1', 'images': []}
+2019-01-30 15:00:40 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.forklift-international.com/de/e/staplersuche.php?sortorder=2&Bauart=4%2C4&Fabrikat=Linde&sonderbit=0&typ=&antriebsart=*&masttypid=alle&tkvon=2501&tkbis=3000&hhvon=0&hhbis=50000&bhvon=0&bhbis=20000&fhvon=0&fhbis=10000&bjbis=2019&baujahr=0&hrs=100000&preisvon=0&hatbild=0&reifen=*&preisbis=1000000&landid=12&entfernung=0>
+{'country': 'Schweiz', 'product_url': 'https://www.forklift-international.com/de/e/Gabelstapler-gebraucht-Linde-H30D-02-3439724s?b=1', 'images': []}
+2019-01-30 15:00:40 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.forklift-international.com/de/e/staplersuche.php?sortorder=2&Bauart=4%2C4&Fabrikat=Linde&sonderbit=0&typ=&antriebsart=*&masttypid=alle&tkvon=2501&tkbis=3000&hhvon=0&hhbis=50000&bhvon=0&bhbis=20000&fhvon=0&fhbis=10000&bjbis=2019&baujahr=0&hrs=100000&preisvon=0&hatbild=0&reifen=*&preisbis=1000000&landid=12&entfernung=0> (referer: None)
+Traceback (most recent call last):
+  File "/home/coffeeincodeout/developer/forklift-crawler/lib/python3.6/site-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/home/coffeeincodeout/developer/forklift-crawler/lib/python3.6/site-packages/scrapy/spidermiddlewares/offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "/home/coffeeincodeout/developer/forklift-crawler/lib/python3.6/site-packages/scrapy/spidermiddlewares/referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/home/coffeeincodeout/developer/forklift-crawler/lib/python3.6/site-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/home/coffeeincodeout/developer/forklift-crawler/lib/python3.6/site-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/home/coffeeincodeout/developer/forklift-crawler/forklift/forklift/spiders/forklift_spider.py", line 83, in parse
+    yield scrapy.Request(pagination, callback=self.pageFollow)
+AttributeError: 'ForkLiftTestSpider' object has no attribute 'pageFollow'
+2019-01-30 15:00:45 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.forklift-international.com/de/e/staplersuche.php?sortorder=2&Bauart=4%2C4&Fabrikat=Linde&sonderbit=0&typ=&antriebsart=*&masttypid=alle&tkvon=2501&tkbis=3000&hhvon=0&hhbis=50000&bhvon=0&bhbis=20000&fhvon=0&fhbis=10000&bjbis=2019&baujahr=0&hrs=100000&preisvon=0&hatbild=0&reifen=*&preisbis=1000000&landid=65&entfernung=0> (referer: None)
+2019-01-30 15:00:45 [scrapy.proxies] DEBUG: Proxy user pass not found
+2019-01-30 15:00:45 [scrapy.proxies] DEBUG: Using proxy <http://175.29.177.126:41549>, 221 proxies left
+2019-01-30 15:00:45 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.forklift-international.com/de/e/staplersuche.php?sortorder=2&Bauart=4%2C4&Fabrikat=Linde&sonderbit=0&typ=&antriebsart=*&masttypid=alle&tkvon=2501&tkbis=3000&hhvon=0&hhbis=50000&bhvon=0&bhbis=20000&fhvon=0&fhbis=10000&bjbis=2019&baujahr=0&hrs=100000&preisvon=0&hatbild=0&reifen=*&preisbis=1000000&landid=65&entfernung=0> (referer: None)
+Traceback (most recent call last):
+  File "/home/coffeeincodeout/developer/forklift-crawler/lib/python3.6/site-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/home/coffeeincodeout/developer/forklift-crawler/lib/python3.6/site-packages/scrapy/spidermiddlewares/offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "/home/coffeeincodeout/developer/forklift-crawler/lib/python3.6/site-packages/scrapy/spidermiddlewares/referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/home/coffeeincodeout/developer/forklift-crawler/lib/python3.6/site-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/home/coffeeincodeout/developer/forklift-crawler/lib/python3.6/site-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/home/coffeeincodeout/developer/forklift-crawler/forklift/forklift/spiders/forklift_spider.py", line 83, in parse
+    yield scrapy.Request(pagination, callback=self.pageFollow)
+AttributeError: 'ForkLiftTestSpider' object has no attribute 'pageFollow'
+2019-01-30 15:00:54 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.forklift-international.com/de/e/staplersuche.php?sortorder=2&Bauart=4%2C4&Fabrikat=Linde&sonderbit=0&typ=&antriebsart=*&masttypid=alle&tkvon=2501&tkbis=3000&hhvon=0&hhbis=50000&bhvon=0&bhbis=20000&fhvon=0&fhbis=10000&bjbis=2019&baujahr=0&hrs=100000&preisvon=0&hatbild=0&reifen=*&preisbis=1000000&landid=25&entfernung=0> (referer: None)
+2019-01-30 15:00:54 [scrapy.proxies] DEBUG: Proxy user pass not found
+2019-01-30 15:00:54 [scrapy.proxies] DEBUG: Using proxy <http://5.202.18.58:8080>, 221 proxies left
+2019-01-30 15:00:54 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.forklift-international.com/de/e/staplersuche.php?sortorder=2&Bauart=4%2C4&Fabrikat=Linde&sonderbit=0&typ=&antriebsart=*&masttypid=alle&tkvon=2501&tkbis=3000&hhvon=0&hhbis=50000&bhvon=0&bhbis=20000&fhvon=0&fhbis=10000&bjbis=2019&baujahr=0&hrs=100000&preisvon=0&hatbild=0&reifen=*&preisbis=1000000&landid=25&entfernung=0> (referer: None)
+Traceback (most recent call last):
+  File "/home/coffeeincodeout/developer/forklift-crawler/lib/python3.6/site-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/home/coffeeincodeout/developer/forklift-crawler/lib/python3.6/site-packages/scrapy/spidermiddlewares/offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "/home/coffeeincodeout/developer/forklift-crawler/lib/python3.6/site-packages/scrapy/spidermiddlewares/referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/home/coffeeincodeout/developer/forklift-crawler/lib/python3.6/site-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/home/coffeeincodeout/developer/forklift-crawler/lib/python3.6/site-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/home/coffeeincodeout/developer/forklift-crawler/forklift/forklift/spiders/forklift_spider.py", line 83, in parse
+    yield scrapy.Request(pagination, callback=self.pageFollow)
+AttributeError: 'ForkLiftTestSpider' object has no attribute 'pageFollow'
+2019-01-30 15:01:03 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.forklift-international.com/de/e/staplersuche.php?sortorder=2&Bauart=4%2C4&Fabrikat=Linde&sonderbit=0&typ=&antriebsart=*&masttypid=alle&tkvon=2501&tkbis=3000&hhvon=0&hhbis=50000&bhvon=0&bhbis=20000&fhvon=0&fhbis=10000&bjbis=2019&baujahr=0&hrs=100000&preisvon=0&hatbild=0&reifen=*&preisbis=1000000&landid=13&entfernung=0> (referer: None)
+2019-01-30 15:01:03 [scrapy.proxies] DEBUG: Proxy user pass not found
+2019-01-30 15:01:03 [scrapy.proxies] DEBUG: Using proxy <http://109.86.181.198:38444>, 221 proxies left
+2019-01-30 15:01:03 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.forklift-international.com/de/e/staplersuche.php?sortorder=2&Bauart=4%2C4&Fabrikat=Linde&sonderbit=0&typ=&antriebsart=*&masttypid=alle&tkvon=2501&tkbis=3000&hhvon=0&hhbis=50000&bhvon=0&bhbis=20000&fhvon=0&fhbis=10000&bjbis=2019&baujahr=0&hrs=100000&preisvon=0&hatbild=0&reifen=*&preisbis=1000000&landid=13&entfernung=0>
+{'country': 'Slowenien', 'product_url': 'https://www.forklift-international.com/de/e/Gabelstapler-gebraucht-Linde-H30D-393-3396778s?b=1', 'images': []}
+2019-01-30 15:01:03 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.forklift-international.com/de/e/staplersuche.php?sortorder=2&Bauart=4%2C4&Fabrikat=Linde&sonderbit=0&typ=&antriebsart=*&masttypid=alle&tkvon=2501&tkbis=3000&hhvon=0&hhbis=50000&bhvon=0&bhbis=20000&fhvon=0&fhbis=10000&bjbis=2019&baujahr=0&hrs=100000&preisvon=0&hatbild=0&reifen=*&preisbis=1000000&landid=13&entfernung=0> (referer: None)
+Traceback (most recent call last):
+  File "/home/coffeeincodeout/developer/forklift-crawler/lib/python3.6/site-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/home/coffeeincodeout/developer/forklift-crawler/lib/python3.6/site-packages/scrapy/spidermiddlewares/offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "/home/coffeeincodeout/developer/forklift-crawler/lib/python3.6/site-packages/scrapy/spidermiddlewares/referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/home/coffeeincodeout/developer/forklift-crawler/lib/python3.6/site-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/home/coffeeincodeout/developer/forklift-crawler/lib/python3.6/site-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/home/coffeeincodeout/developer/forklift-crawler/forklift/forklift/spiders/forklift_spider.py", line 83, in parse
+    yield scrapy.Request(pagination, callback=self.pageFollow)
+AttributeError: 'ForkLiftTestSpider' object has no attribute 'pageFollow'
+2019-01-30 15:01:09 [scrapy.extensions.logstats] INFO: Crawled 32 pages (at 6 pages/min), scraped 117 items (at 9 items/min)
+2019-01-30 15:01:15 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.forklift-international.com/de/e/staplersuche.php?sortorder=2&Bauart=4%2C4&Fabrikat=Linde&sonderbit=0&typ=&antriebsart=*&masttypid=alle&tkvon=2501&tkbis=3000&hhvon=0&hhbis=50000&bhvon=0&bhbis=20000&fhvon=0&fhbis=10000&bjbis=2019&baujahr=0&hrs=100000&preisvon=0&hatbild=0&reifen=*&preisbis=1000000&landid=10&entfernung=0> (referer: None)
+2019-01-30 15:01:15 [scrapy.proxies] DEBUG: Proxy user pass not found
+2019-01-30 15:01:15 [scrapy.proxies] DEBUG: Using proxy <http://96.9.83.71:41721>, 221 proxies left
+2019-01-30 15:01:15 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.forklift-international.com/de/e/staplersuche.php?sortorder=2&Bauart=4%2C4&Fabrikat=Linde&sonderbit=0&typ=&antriebsart=*&masttypid=alle&tkvon=2501&tkbis=3000&hhvon=0&hhbis=50000&bhvon=0&bhbis=20000&fhvon=0&fhbis=10000&bjbis=2019&baujahr=0&hrs=100000&preisvon=0&hatbild=0&reifen=*&preisbis=1000000&landid=10&entfernung=0>
+{'country': 'Spanien', 'product_url': 'https://www.forklift-international.com/de/e/Gabelstapler-gebraucht-Linde-H30D-3429630s?b=1', 'images': []}
+2019-01-30 15:01:15 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.forklift-international.com/de/e/staplersuche.php?sortorder=2&Bauart=4%2C4&Fabrikat=Linde&sonderbit=0&typ=&antriebsart=*&masttypid=alle&tkvon=2501&tkbis=3000&hhvon=0&hhbis=50000&bhvon=0&bhbis=20000&fhvon=0&fhbis=10000&bjbis=2019&baujahr=0&hrs=100000&preisvon=0&hatbild=0&reifen=*&preisbis=1000000&landid=10&entfernung=0>
+{'country': 'Spanien', 'product_url': 'https://www.forklift-international.com/de/e/Gabelstapler-gebraucht-Linde-H30D-3429641s?b=1', 'images': []}
+2019-01-30 15:01:15 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.forklift-international.com/de/e/staplersuche.php?sortorder=2&Bauart=4%2C4&Fabrikat=Linde&sonderbit=0&typ=&antriebsart=*&masttypid=alle&tkvon=2501&tkbis=3000&hhvon=0&hhbis=50000&bhvon=0&bhbis=20000&fhvon=0&fhbis=10000&bjbis=2019&baujahr=0&hrs=100000&preisvon=0&hatbild=0&reifen=*&preisbis=1000000&landid=10&entfernung=0> (referer: None)
+Traceback (most recent call last):
+  File "/home/coffeeincodeout/developer/forklift-crawler/lib/python3.6/site-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/home/coffeeincodeout/developer/forklift-crawler/lib/python3.6/site-packages/scrapy/spidermiddlewares/offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "/home/coffeeincodeout/developer/forklift-crawler/lib/python3.6/site-packages/scrapy/spidermiddlewares/referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/home/coffeeincodeout/developer/forklift-crawler/lib/python3.6/site-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/home/coffeeincodeout/developer/forklift-crawler/lib/python3.6/site-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/home/coffeeincodeout/developer/forklift-crawler/forklift/forklift/spiders/forklift_spider.py", line 83, in parse
+    yield scrapy.Request(pagination, callback=self.pageFollow)
+AttributeError: 'ForkLiftTestSpider' object has no attribute 'pageFollow'
+2019-01-30 15:01:25 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.forklift-international.com/de/e/staplersuche.php?sortorder=2&Bauart=4%2C4&Fabrikat=Linde&sonderbit=0&typ=&antriebsart=*&masttypid=alle&tkvon=2501&tkbis=3000&hhvon=0&hhbis=50000&bhvon=0&bhbis=20000&fhvon=0&fhbis=10000&bjbis=2019&baujahr=0&hrs=100000&preisvon=0&hatbild=0&reifen=*&preisbis=1000000&landid=61&entfernung=0> (referer: None)
+2019-01-30 15:01:25 [scrapy.proxies] DEBUG: Proxy user pass not found
+2019-01-30 15:01:25 [scrapy.proxies] DEBUG: Using proxy <http://154.66.122.198:34647>, 221 proxies left
+2019-01-30 15:01:25 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.forklift-international.com/de/e/staplersuche.php?sortorder=2&Bauart=4%2C4&Fabrikat=Linde&sonderbit=0&typ=&antriebsart=*&masttypid=alle&tkvon=2501&tkbis=3000&hhvon=0&hhbis=50000&bhvon=0&bhbis=20000&fhvon=0&fhbis=10000&bjbis=2019&baujahr=0&hrs=100000&preisvon=0&hatbild=0&reifen=*&preisbis=1000000&landid=61&entfernung=0> (referer: None)
+Traceback (most recent call last):
+  File "/home/coffeeincodeout/developer/forklift-crawler/lib/python3.6/site-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/home/coffeeincodeout/developer/forklift-crawler/lib/python3.6/site-packages/scrapy/spidermiddlewares/offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "/home/coffeeincodeout/developer/forklift-crawler/lib/python3.6/site-packages/scrapy/spidermiddlewares/referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/home/coffeeincodeout/developer/forklift-crawler/lib/python3.6/site-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/home/coffeeincodeout/developer/forklift-crawler/lib/python3.6/site-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/home/coffeeincodeout/developer/forklift-crawler/forklift/forklift/spiders/forklift_spider.py", line 83, in parse
+    yield scrapy.Request(pagination, callback=self.pageFollow)
+AttributeError: 'ForkLiftTestSpider' object has no attribute 'pageFollow'
+2019-01-30 15:01:35 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.forklift-international.com/de/e/staplersuche.php?sortorder=2&Bauart=4%2C4&Fabrikat=Linde&sonderbit=0&typ=&antriebsart=*&masttypid=alle&tkvon=2501&tkbis=3000&hhvon=0&hhbis=50000&bhvon=0&bhbis=20000&fhvon=0&fhbis=10000&bjbis=2019&baujahr=0&hrs=100000&preisvon=0&hatbild=0&reifen=*&preisbis=1000000&landid=8&entfernung=0> (referer: None)
+2019-01-30 15:01:35 [scrapy.proxies] DEBUG: Proxy user pass not found
+2019-01-30 15:01:35 [scrapy.proxies] DEBUG: Using proxy <http://202.75.108.238:52030>, 221 proxies left
+2019-01-30 15:01:35 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.forklift-international.com/de/e/staplersuche.php?sortorder=2&Bauart=4%2C4&Fabrikat=Linde&sonderbit=0&typ=&antriebsart=*&masttypid=alle&tkvon=2501&tkbis=3000&hhvon=0&hhbis=50000&bhvon=0&bhbis=20000&fhvon=0&fhbis=10000&bjbis=2019&baujahr=0&hrs=100000&preisvon=0&hatbild=0&reifen=*&preisbis=1000000&landid=8&entfernung=0>
+{'country': 'Tschechien', 'product_url': 'https://www.forklift-international.com/de/e/Gabelstapler-gebraucht-Linde-H-30-D-22631--3455474s?b=1', 'images': []}
+2019-01-30 15:01:35 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.forklift-international.com/de/e/staplersuche.php?sortorder=2&Bauart=4%2C4&Fabrikat=Linde&sonderbit=0&typ=&antriebsart=*&masttypid=alle&tkvon=2501&tkbis=3000&hhvon=0&hhbis=50000&bhvon=0&bhbis=20000&fhvon=0&fhbis=10000&bjbis=2019&baujahr=0&hrs=100000&preisvon=0&hatbild=0&reifen=*&preisbis=1000000&landid=8&entfernung=0>
+{'country': 'Tschechien', 'product_url': 'https://www.forklift-international.com/de/e/Gabelstapler-gebraucht-Linde-H-30-D-22957--3459628s?b=1', 'images': []}
+2019-01-30 15:01:35 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.forklift-international.com/de/e/staplersuche.php?sortorder=2&Bauart=4%2C4&Fabrikat=Linde&sonderbit=0&typ=&antriebsart=*&masttypid=alle&tkvon=2501&tkbis=3000&hhvon=0&hhbis=50000&bhvon=0&bhbis=20000&fhvon=0&fhbis=10000&bjbis=2019&baujahr=0&hrs=100000&preisvon=0&hatbild=0&reifen=*&preisbis=1000000&landid=8&entfernung=0>
+{'country': 'Tschechien', 'product_url': 'https://www.forklift-international.com/de/e/Gabelstapler-gebraucht-Linde-H-30-D-23070--3455465s?b=1', 'images': []}
+2019-01-30 15:01:35 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.forklift-international.com/de/e/staplersuche.php?sortorder=2&Bauart=4%2C4&Fabrikat=Linde&sonderbit=0&typ=&antriebsart=*&masttypid=alle&tkvon=2501&tkbis=3000&hhvon=0&hhbis=50000&bhvon=0&bhbis=20000&fhvon=0&fhbis=10000&bjbis=2019&baujahr=0&hrs=100000&preisvon=0&hatbild=0&reifen=*&preisbis=1000000&landid=8&entfernung=0>
+{'country': 'Tschechien', 'product_url': 'https://www.forklift-international.com/de/e/Gabelstapler-gebraucht-Linde-H-30-D-23173--3454047s?b=1', 'images': []}
+2019-01-30 15:01:35 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.forklift-international.com/de/e/staplersuche.php?sortorder=2&Bauart=4%2C4&Fabrikat=Linde&sonderbit=0&typ=&antriebsart=*&masttypid=alle&tkvon=2501&tkbis=3000&hhvon=0&hhbis=50000&bhvon=0&bhbis=20000&fhvon=0&fhbis=10000&bjbis=2019&baujahr=0&hrs=100000&preisvon=0&hatbild=0&reifen=*&preisbis=1000000&landid=8&entfernung=0>
+{'country': 'Tschechien', 'product_url': 'https://www.forklift-international.com/de/e/Gabelstapler-gebraucht-Linde-H30D-3204989s?b=1', 'images': []}
+2019-01-30 15:01:35 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.forklift-international.com/de/e/staplersuche.php?sortorder=2&Bauart=4%2C4&Fabrikat=Linde&sonderbit=0&typ=&antriebsart=*&masttypid=alle&tkvon=2501&tkbis=3000&hhvon=0&hhbis=50000&bhvon=0&bhbis=20000&fhvon=0&fhbis=10000&bjbis=2019&baujahr=0&hrs=100000&preisvon=0&hatbild=0&reifen=*&preisbis=1000000&landid=8&entfernung=0> (referer: None)
+Traceback (most recent call last):
+  File "/home/coffeeincodeout/developer/forklift-crawler/lib/python3.6/site-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/home/coffeeincodeout/developer/forklift-crawler/lib/python3.6/site-packages/scrapy/spidermiddlewares/offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "/home/coffeeincodeout/developer/forklift-crawler/lib/python3.6/site-packages/scrapy/spidermiddlewares/referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/home/coffeeincodeout/developer/forklift-crawler/lib/python3.6/site-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/home/coffeeincodeout/developer/forklift-crawler/lib/python3.6/site-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/home/coffeeincodeout/developer/forklift-crawler/forklift/forklift/spiders/forklift_spider.py", line 83, in parse
+    yield scrapy.Request(pagination, callback=self.pageFollow)
+AttributeError: 'ForkLiftTestSpider' object has no attribute 'pageFollow'
+2019-01-30 15:01:42 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.forklift-international.com/de/e/staplersuche.php?sortorder=2&Bauart=4%2C4&Fabrikat=Linde&sonderbit=0&typ=&antriebsart=*&masttypid=alle&tkvon=2501&tkbis=3000&hhvon=0&hhbis=50000&bhvon=0&bhbis=20000&fhvon=0&fhbis=10000&bjbis=2019&baujahr=0&hrs=100000&preisvon=0&hatbild=0&reifen=*&preisbis=1000000&landid=32&entfernung=0> (referer: None)
+2019-01-30 15:01:42 [scrapy.proxies] DEBUG: Proxy user pass not found
+2019-01-30 15:01:42 [scrapy.proxies] DEBUG: Using proxy <http://213.74.123.83:41496>, 221 proxies left
+2019-01-30 15:01:42 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.forklift-international.com/de/e/staplersuche.php?sortorder=2&Bauart=4%2C4&Fabrikat=Linde&sonderbit=0&typ=&antriebsart=*&masttypid=alle&tkvon=2501&tkbis=3000&hhvon=0&hhbis=50000&bhvon=0&bhbis=20000&fhvon=0&fhbis=10000&bjbis=2019&baujahr=0&hrs=100000&preisvon=0&hatbild=0&reifen=*&preisbis=1000000&landid=32&entfernung=0> (referer: None)
+Traceback (most recent call last):
+  File "/home/coffeeincodeout/developer/forklift-crawler/lib/python3.6/site-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/home/coffeeincodeout/developer/forklift-crawler/lib/python3.6/site-packages/scrapy/spidermiddlewares/offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "/home/coffeeincodeout/developer/forklift-crawler/lib/python3.6/site-packages/scrapy/spidermiddlewares/referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/home/coffeeincodeout/developer/forklift-crawler/lib/python3.6/site-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/home/coffeeincodeout/developer/forklift-crawler/lib/python3.6/site-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/home/coffeeincodeout/developer/forklift-crawler/forklift/forklift/spiders/forklift_spider.py", line 83, in parse
+    yield scrapy.Request(pagination, callback=self.pageFollow)
+AttributeError: 'ForkLiftTestSpider' object has no attribute 'pageFollow'
+2019-01-30 15:01:50 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.forklift-international.com/de/e/staplersuche.php?sortorder=2&Bauart=4%2C4&Fabrikat=Linde&sonderbit=0&typ=&antriebsart=*&masttypid=alle&tkvon=2501&tkbis=3000&hhvon=0&hhbis=50000&bhvon=0&bhbis=20000&fhvon=0&fhbis=10000&bjbis=2019&baujahr=0&hrs=100000&preisvon=0&hatbild=0&reifen=*&preisbis=1000000&landid=22&entfernung=0> (referer: None)
+2019-01-30 15:01:50 [scrapy.proxies] DEBUG: Proxy user pass not found
+2019-01-30 15:01:50 [scrapy.proxies] DEBUG: Using proxy <http://37.1.63.112:53281>, 221 proxies left
+2019-01-30 15:01:50 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.forklift-international.com/de/e/staplersuche.php?sortorder=2&Bauart=4%2C4&Fabrikat=Linde&sonderbit=0&typ=&antriebsart=*&masttypid=alle&tkvon=2501&tkbis=3000&hhvon=0&hhbis=50000&bhvon=0&bhbis=20000&fhvon=0&fhbis=10000&bjbis=2019&baujahr=0&hrs=100000&preisvon=0&hatbild=0&reifen=*&preisbis=1000000&landid=22&entfernung=0> (referer: None)
+Traceback (most recent call last):
+  File "/home/coffeeincodeout/developer/forklift-crawler/lib/python3.6/site-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/home/coffeeincodeout/developer/forklift-crawler/lib/python3.6/site-packages/scrapy/spidermiddlewares/offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "/home/coffeeincodeout/developer/forklift-crawler/lib/python3.6/site-packages/scrapy/spidermiddlewares/referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/home/coffeeincodeout/developer/forklift-crawler/lib/python3.6/site-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/home/coffeeincodeout/developer/forklift-crawler/lib/python3.6/site-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/home/coffeeincodeout/developer/forklift-crawler/forklift/forklift/spiders/forklift_spider.py", line 83, in parse
+    yield scrapy.Request(pagination, callback=self.pageFollow)
+AttributeError: 'ForkLiftTestSpider' object has no attribute 'pageFollow'
+2019-01-30 15:01:59 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.forklift-international.com/de/e/staplersuche.php?sortorder=2&Bauart=4%2C4&Fabrikat=Linde&sonderbit=0&typ=&antriebsart=*&masttypid=alle&tkvon=2501&tkbis=3000&hhvon=0&hhbis=50000&bhvon=0&bhbis=20000&fhvon=0&fhbis=10000&bjbis=2019&baujahr=0&hrs=100000&preisvon=0&hatbild=0&reifen=*&preisbis=1000000&landid=31&entfernung=0> (referer: None)
+2019-01-30 15:01:59 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.forklift-international.com/de/e/staplersuche.php?sortorder=2&Bauart=4%2C4&Fabrikat=Linde&sonderbit=0&typ=&antriebsart=*&masttypid=alle&tkvon=2501&tkbis=3000&hhvon=0&hhbis=50000&bhvon=0&bhbis=20000&fhvon=0&fhbis=10000&bjbis=2019&baujahr=0&hrs=100000&preisvon=0&hatbild=0&reifen=*&preisbis=1000000&landid=31&entfernung=0> (referer: None)
+Traceback (most recent call last):
+  File "/home/coffeeincodeout/developer/forklift-crawler/lib/python3.6/site-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/home/coffeeincodeout/developer/forklift-crawler/lib/python3.6/site-packages/scrapy/spidermiddlewares/offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "/home/coffeeincodeout/developer/forklift-crawler/lib/python3.6/site-packages/scrapy/spidermiddlewares/referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/home/coffeeincodeout/developer/forklift-crawler/lib/python3.6/site-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/home/coffeeincodeout/developer/forklift-crawler/lib/python3.6/site-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/home/coffeeincodeout/developer/forklift-crawler/forklift/forklift/spiders/forklift_spider.py", line 83, in parse
+    yield scrapy.Request(pagination, callback=self.pageFollow)
+AttributeError: 'ForkLiftTestSpider' object has no attribute 'pageFollow'
+2019-01-30 15:01:59 [scrapy.core.engine] INFO: Closing spider (finished)
+2019-01-30 15:01:59 [scrapy.extensions.feedexport] INFO: Stored csv feed (124 items) in: /home/coffeeincodeout/developer/forklift-crawler/forklift/forklift/tmp/testurls.csv
+2019-01-30 15:01:59 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 25073,
+ 'downloader/request_count': 38,
+ 'downloader/request_method_count/GET': 38,
+ 'downloader/response_bytes': 636920,
+ 'downloader/response_count': 38,
+ 'downloader/response_status_count/200': 38,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2019, 1, 30, 20, 1, 59, 863551),
+ 'item_scraped_count': 124,
+ 'log_count/DEBUG': 240,
+ 'log_count/ERROR': 38,
+ 'log_count/INFO': 14,
+ 'log_count/WARNING': 1,
+ 'memusage/max': 85094400,
+ 'memusage/startup': 56750080,
+ 'response_received_count': 38,
+ 'scheduler/dequeued': 38,
+ 'scheduler/dequeued/memory': 38,
+ 'scheduler/enqueued': 38,
+ 'scheduler/enqueued/memory': 38,
+ 'spider_exceptions/AttributeError': 38,
+ 'start_time': datetime.datetime(2019, 1, 30, 19, 56, 9, 888603)}
+2019-01-30 15:01:59 [scrapy.core.engine] INFO: Spider closed (finished)

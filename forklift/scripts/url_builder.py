@@ -41,10 +41,17 @@ country_list = [
                 ]
 
 for n in country_list:
+    # country links
     url = 'https://www.forklift-international.com/en/e/staplersuche.php?sortorder=14&Bauart=alle' \
           '&Fabrikat=alle&sonderbit=0&typ=&antriebsart=*&masttypid=alle&tkvon=0&tkbis=200000&hhvon=0' \
           '&hhbis=50000&bhvon=0&bhbis=20000&fhvon=0&fhbis=10000&bjbis=2019&baujahr=0&hrs=100000&preisvon=0' \
           '&hatbild=0&reifen=*&preisbis=1000000&landid='+ str(n) +'&plz=&entfernung=1000'
-    file = open('crawl_links.txt', 'a')
-    file.write(url + "\n")
+    # links for test crawl
+    diesel_linde = 'https://www.forklift-international.com/de/e/staplersuche.php?sortorder=2&Bauart=4%2C4&Fabrikat=Linde' \
+                   '&sonderbit=0&typ=&antriebsart=*&masttypid=alle&tkvon=2501&tkbis=3000&hhvon=0&hhbis=50000&bhvon=0&' \
+                   'bhbis=20000&fhvon=0&fhbis=10000&bjbis=2019&baujahr=0&hrs=100000&preisvon=0&hatbild=0&reifen=*' \
+                   '&preisbis=1000000&landid=' + str(n) + '&entfernung=0'
+    file = open('forklift_test_links.txt', 'a')
+    file.write(diesel_linde + "\n")
     file.close()
+

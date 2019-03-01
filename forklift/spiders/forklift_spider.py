@@ -2,8 +2,8 @@ import scrapy
 from scrapy.selector import Selector
 from scrapy.crawler import CrawlerProcess
 from selenium import webdriver
-from selenium.webdriver.common.keys import Keys
 
+import pandas as pd
 import time
 import sys
 import os
@@ -176,7 +176,7 @@ class ForkliftSpider(scrapy.Spider):
             'make': make,
             'model': model,
             'year': year_yom,
-            'running hours': running_hours,
+            'hours': running_hours,
             'type': forklift_type,
             'engine_type': engine_type,
             'capacity': capacity,
@@ -205,24 +205,24 @@ class MascusSpider(scrapy.Spider):
     TMP_FILE = os.path.join(os.path.dirname(sys.modules['forklift'].__file__), 'tmp/mascus.csv')
     FIELDS = [
         'url',
-        'Company',
-        'Location',
-        'Price Excluding Tax',
-        'Brand / model',
-        'Category',
-        'Year',
-        'Hours',
-        'Country',
+        'company',
+        'location',
+        'price',
+        'model',
+        'category',
+        'year',
+        'hours',
+        'country',
         'Mascus ID',
-        'Unit Number',
-        'Serial Number',
-        'Maximum lift capacity',
-        'Maximum lift height',
-        'Overall Lowered Height',
-        'Fork length',
-        'Tire type',
-        'Transmission',
-        'Additional Information'
+        'unit Number',
+        'serial Number',
+        'capacity',
+        'lift height',
+        'closed Height',
+        'fork length',
+        'tyres',
+        'transmission',
+        'description'
     ]
 
     custom_settings = {
@@ -383,7 +383,7 @@ class TradusSpider(scrapy.Spider):
             'make': product_details.get('Make'),
             'model': product_details.get('Model'),
             'year': product_details.get('Year'),
-            'running hours': product_details.get('Hours run'),
+            'hours': product_details.get('Hours run'),
             'mileage': product_details.get('Mileage'),
             'engine': product_details.get('Engine'),
             'condition': product_details.get('Condition'),
@@ -403,16 +403,16 @@ class SupraliftSpider(scrapy.Spider):
         'url',
         'company',
         'location',
-        'Price',
+        'price',
         'model',
-        'Year of manufacture',
-        'Power unit',
-        'Type of truck',
-        'Capacity (kg)',
-        'Lift height (mm)',
+        'year',
+        'power unit',
+        'type',
+        'capacity',
+        'lift height (mm)',
         'Supralift product no.',
-        'Mast type',
-        'Comment',
+        'mast type',
+        'description',
     ]
 
     custom_settings = {
@@ -458,15 +458,21 @@ class SupraliftSpider(scrapy.Spider):
             final[k.strip()] = v.strip()
 
         yield final
-# TMP_FILE = os.path.join(os.path.dirname(sys.modules['forklift'].__file__), 'tmp/allforklift.csv')
-# FIELDS = ['url', 'company', 'location', 'price', 'make', 'model', 'year']
-process = CrawlerProcess({
-    # 'FEED_FORMAT': 'csv',
-    # 'FEED_URI': TMP_FILE,
-    # 'FEED_EXPORT_FIELDS': FIELDS,
-})
+# concurrent process to run all forklifts at the same time.
+process = CrawlerProcess()
 process.crawl(ForkliftSpider)
-# process.crawl(TradusSpider)
-# process.crawl(MascusSpider)
+process.crawl(TradusSpider)
+process.crawl(MascusSpider)
 process.crawl(SupraliftSpider)
 process.start()
+
+# combine all spread sheets once crawl is complete
+forklift_csv = '/home/coffeeincodeout/developer/forklift-crawler/forklift/forklift/tmp/forklift.csv'
+mascus_csv = '/home/coffeeincodeout/developer/forklift-crawler/forklift/forklift/tmp/mascus.csv'
+supralift_csv = '/home/coffeeincodeout/developer/forklift-crawler/forklift/forklift/tmp/supralift.csv'
+tradus_csv = '/home/coffeeincodeout/developer/forklift-crawler/forklift/forklift/tmp/tradus.csv'
+
+join_files = pd.concat([forklift_csv, mascus_csv, supralift_csv,tradus_csv], sort=False )
+FINAL_FILE_PATH = '/home/coffeeincodeout/developer/forklift-crawler/forklift/forklift/tmp/final.csv'
+# export as a CSV file
+join_files.to_csv(FINAL_FILE_PATH)
